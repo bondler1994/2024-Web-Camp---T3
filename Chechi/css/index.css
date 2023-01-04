@@ -1,6 +1,6 @@
 * {
   font-family: 'Lato', sans-serif;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* 文字標籤下面有預設margin、需要手動歸零  */
@@ -23,9 +23,15 @@ body{
 }
 
 .container {
-  background-color:#356618 ;
+  background-color:#356618;
 }
 
+@media (min-width:1440px) {
+  .container{
+    max-width: 1080px;
+  }
+  
+}
 /* header */
 
 h1 {
@@ -103,13 +109,14 @@ text-align: center;
 
 /* banner */
 
-.banner_wrapper{
-  height: 500px;
+/* .banner_wrapper{
+  height: 100vh;
   background-image: url('../img/gardening1.jpg');
-  background-position: center;
-  background-size: cover;
+  background-position:top;
+  background-size: contain;
+  background-repeat: no-repeat;
   position: relative;
-}
+} */
 
 .banner_introduction{
   background-color: rgba(0,0,0,0.5);
@@ -130,6 +137,21 @@ text-align: center;
 .banner_button {
   color:#7E9597;
   display: contents;
+}
+
+@media(max-width:767px){
+  .banner_introduction{
+    height: 40%;
+  }
+  .banner_content{
+    word-wrap: break-word;
+  }
+}
+
+@media(max-width:766px){
+  .banner_introduction{
+    display: none;
+  }
 }
 
 

@@ -1,0 +1,33 @@
+.featured_garden_container{
+    background-color: #FEFEFE;
+}
+
+.featured_garden_card{
+    border: 0;
+}
+.introduction_title{
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #DCE9E4;
+    color: #76470D;
+    border-bottom: #ABC79A solid 2px;
+}
+
+.featured_garden_information {
+    padding: 1rem 0rem;
+}
+
+.featured_garden_information h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #76470D;
+}
+
+.featured_garden_information p {
+    color: #494949;
+}
+
+ol{
+    padding-left: 1rem;
+}
