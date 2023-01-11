@@ -2,8 +2,8 @@
   outline: 1px red solid;
 }
 :root {
-  --bs-gutter-x: 1rem;
-  --bs-gutter-y: 1rem;
+  --gap-x: 1rem;
+  --gap-y: 1rem;
 }
 a {
   text-decoration: none;
@@ -13,21 +13,21 @@ body {
   background-image: url("../img/bg-body.jpg");
 }
 .row {
-  --bs-gutter-x: 1rem;
-  --bs-gutter-y: 1rem;
+  --bs-gutter-x: var(--gap-x);
+  --bs-gutter-y: var(--gap-y);
   /* 在root裡寫了，這裡還要寫？ */
   margin-top: 0;
   /* 當--bs-gutter-y不為零，row的負的上margin會跑出來 
   為保留row>*的上margin，故設0 */
 }
 .container {
-  padding-left: calc(0.5 * var(--bs-gutter-x));
-  padding-right: calc(0.5 * var(--bs-gutter-x));
+  padding-left: calc(0.5 * var(--gap-x));
+  padding-right: calc(0.5 * var(--gap-x));
   /* 改掉container預設左右padding 0.75rem */
 }
 body > .container {
   background-color: #356619;
-  padding: 0 var(--bs-gutter-x); /* 綠色背景內縮，為網頁內容區 */
+  padding: 0 var(--gap-x); /* 綠色背景內縮，為網頁內容區 */
 }
 
 /* 設定解析度>1200時的內容寬度，覆蓋掉原本bs的設定 */
@@ -42,15 +42,15 @@ body > .container {
   padding-bottom: 0.25rem;
 }
 .navbar .row,
-.info .row,
-.portfolio,
-.article {
+.banner_info_items,
+.portfolio_container .row,
+.article .row {
   margin-left: 0;
   margin-right: 0;
   /* 取消row預設的負左右margin */
 }
 .navbar .row > *,
-.info .row > * {
+.banner_info_items > * {
   margin-top: 0;
 }
 
@@ -62,11 +62,9 @@ body > .container {
 .logo {
   padding: 1rem 0;
 }
-
-/* <a>作為container 固定長寬>>螢幕放大縮小時，空白區會縮放*/
-
+/* <a>作為容器，避免換了比例差異大的圖後會跑版，故給寬高 */
 .logo_link {
-  display: block;
+  display: block; /*為了使用margin auto而設*/
   margin: 0 auto;
   width: 70%;
   height: 65px;
@@ -78,26 +76,30 @@ body > .container {
   /* 小尺寸避免圖比例跑掉 */
 }
 
-/* sm以上，logo固定大小 */
+/* sm以上，logo固定大小 
+<a>作為container 固定長寬>>螢幕放大縮小時，空白區會縮放*/
 @media (min-width: 576px) {
   .logo_link {
     width: 400px;
   }
 }
-/* sm以上，flex換行 */
-@media (min-width: 576px) {
+/* sm以上，flex換行，但因改用bs flex-wrap故先註解掉*/
+/* @media (min-width: 576px) {
   .header_container .navbar-expand-sm {
     flex-wrap: wrap;
   }
-}
-/* 漢堡圖連結，因為沒設navbar-light，bs預設設定不會出來 */
+} */
+/* 漢堡圖連結，因為沒設navbar-light，bs預設設定不會出來 
+取消navbar-light是為了不要吃到bs對navbar-link等的顏色設定*/
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 /* navbar ul>li顏色設定 */
+/* 加大navbar-nav padding */
 .navbar-nav .nav-link {
   background-color: #4b4b4b;
   color: #f1f3ca;
+  padding: 1rem 0.5rem;
 }
 .navbar-nav .active {
   background-color: #95b285;
@@ -108,11 +110,7 @@ body > .container {
   background-color: #d9eacf;
   color: #63725b;
 }
-/* 加大navbar-nav padding */
-.navbar .nav-link {
-  padding: 1rem 0.5rem;
-}
-
+/* banner文字在小裝置排在圖下面，在md以上以absolute移到圖上 */
 .banner_article {
   background-color: #4b4b4b;
   padding: 1rem;
@@ -123,6 +121,7 @@ body > .container {
     bottom: 0;
     left: 0;
     right: 0;
+    /* 以left 0 & right 0撐滿整個card寬 */
     padding: 1rem;
     background-color: rgb(0, 0, 0, 0.6);
   }
@@ -132,26 +131,26 @@ body > .container {
   border: none;
   border-radius: 0;
 }
-.banner .card-title,
-.info .card-title {
+.banner_container .card-title,
+.banner_info .banner_subtitle {
   color: #edef9f;
 }
 
-.banner .card-text,
-.info .card-text,
+.banner_container .card-text,
+.banner_info .banner_text,
 .copyright {
   color: #f3f7f0;
 }
-.banner span {
+.banner_container .card-text {
   display: inline-block;
   width: calc(100% - 30px);
   vertical-align: middle;
 }
-.banner a {
+.banner_container .text_more {
   display: inline-block;
   vertical-align: middle;
 }
-.banner i {
+.banner_container .text_more i {
   font-size: 22px;
   color: #fff;
 }
@@ -164,10 +163,10 @@ body > .container {
 }
 
 @media (min-width: 992px) {
-  .banner .text_more {
+  .banner_container .text_more {
     display: none;
   }
-  .banner span {
+  .banner_container .card-text {
     width: 100%;
   }
 }
@@ -175,23 +174,23 @@ body > .container {
   border: 1px white solid;
 }
 
-.info_border {
+.banner_info_border {
   border-bottom: 1px solid grey;
 }
 @media (min-width: 992px) {
-  .info_border {
+  .banner_info_border {
     border-bottom: none;
     border-right: 1px solid grey;
   }
-  .info > div {
+  .banner_info > .row > div {
     margin-top: calc(0.5 * var(--bs-gutter-y));
     margin-bottom: calc(0.5 * var(--bs-gutter-y));
     padding-top: calc(0.5 * var(--bs-gutter-y));
     padding-bottom: calc(0.5 * var(--bs-gutter-y));
   }
 }
-.info a:hover,
-.portfolio a:hover {
+.banner_info a:hover,
+.portfolio_container a:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
@@ -199,12 +198,14 @@ body > .container {
   background-color: #fff;
 }
 
-.title {
+.portfolio_container .title,
+.article_container .title {
   background-color: #dce7d4;
   border-bottom: 3px #abc79a solid;
 }
-.title,
-.portfolio .card-title {
+.portfolio_container .title,
+.article_container .title,
+.portfolio_container .card-title {
   color: #8b6854;
 }
 .card-body {
@@ -213,17 +214,17 @@ body > .container {
 hr {
   margin: 0;
 }
-.article ol {
+.article_container ol {
   margin-bottom: 0;
 }
-.article ol li::marker {
+.article_container ol li::marker {
   font-weight: bold;
 }
-.article .article_img {
+.article_container .article_img {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .article > :last-child {
+  .article_container .row > :last-child {
     order: -1;
   }
 }
@@ -232,10 +233,8 @@ hr {
 }
 .copyright {
   background-color: #356619;
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  /* margin-left: -8px; */
-  /* margin-right: -8px; */
+  margin-left: calc(-0.5 * var(--gap-x));
+  margin-right: calc(-0.5 * var(--gap-x));
 }
 .footer_container .card {
   background-color: #dce8d4;
