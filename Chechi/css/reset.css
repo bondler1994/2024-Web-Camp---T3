@@ -1,19 +1,25 @@
 * {
-    font-family: 'Lato', sans-serif;
-    outline: 1px solid red;
-  }
-  
-  /* 文字標籤下面有預設margin、需要手動歸零  */
-  
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  ul,
-  li {
-    margin: 0;
-    padding: 0;
-  }
+  font-family: "Lato", sans-serif;
+  /* outline: 1px solid red; */
+}
+
+/* 文字標籤下面有預設margin、需要手動歸零  */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* 統一字體的大小 */
+
+p {
+  font-size :14px;
+}

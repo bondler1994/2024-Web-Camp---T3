@@ -1,0 +1,211 @@
+
+/* header */
+
+.logo_wrapper {
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+h1 img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.logo_big_container{
+  display: inline-block;
+  width: 420px;
+}
+
+.logo_small_container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .logo_big_container {
+    display: none;
+  }
+  .logo_small_container {
+    display: inline-block;
+    height: 65px;
+  }
+}
+
+/* nav */
+
+nav {
+  border-bottom: #ffffff solid 1px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+  display: none;
+  padding: 24px 12px;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  border: 0px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
+@media (max-width: 991px) {
+  .navbar-toggler {
+    display: inline-block;
+  }
+}
+
+.navbar {
+  background-color: #4b4b4b;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 15px 0 15px;
+  color: #ebedc5 ;
+  flex-grow: 1;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+  color: #286000;
+  background-color: #96b285;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #4b4b4b;
+  background-color: #d9eacf;
+}
+
+.banner_introduction {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  z-index: 999; /* 不讓此區塊受輪播圖按鈕影響 */
+}
+
+.banner_title {
+  color: #ebee9e;
+  font-size: 24px;
+}
+
+.banner_content {
+  color: #fdfdfc;
+  font-size: 15px;
+  line-height: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.banner_content:hover{
+  background-color: #d9eacf;
+  color: #4b4b4b
+}
+
+.banner_button {
+  color: #7e9597;
+  display: contents;
+}
+
+.banner_button:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .banner_introduction {
+    height: 40%;
+  }
+  .banner_content {
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 766px) {
+  .banner_introduction {
+    display: none;
+  }
+}
+
+/* garden_tips */
+
+.garden_tips.row{
+  --bs-gutter-x: 0;
+}
+
+.garden_card img {
+  display: block;
+  width: 100px; /* 定尺寸 */
+  height: 100px;
+  border: #fdfdfc solid 2px;
+  transition: transform 0.25s; /* 柔滑動畫效果 */
+}
+
+.garden_card img:hover {
+  transform: scale(1.1);
+}
+
+.row.garden_tips > * {
+  padding: 0;
+}
+
+.garden_card {
+  display: flex;
+  position: relative;
+}
+
+.garden_card:not(:last-child)::after {
+  content: "";
+  width: 3px;
+  background-color: #3f7420;
+  border-right: #2a5a0e solid 1px;
+}
+
+@media (max-width: 1023px) {
+  .garden_card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #ebee9e;
+    bottom: 0;
+    width: 95%;
+  }
+}
+
+.garden_card h3 {
+  color: #ebee9e;
+  font-size: 18px;
+}
+
+.garden_card p {
+  color: #fdfdfc;
+  word-wrap: break-word;
+}
+
+.card_information p {
+  width: 85%; /* 讓RWD時還能正常運作 */
+}
+
+
+@media (max-width: 1023px) {
+  .card_information p {
+    width: 100%;
+  }
+  .garden_card p {
+    color: #fdfdfc;
+    font-size: 14px;
+  }
+}

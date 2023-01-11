@@ -1,0 +1,15 @@
+/* body */
+
+body {
+    background-image: url("../img/bg-body.jpg");
+  }
+  
+  .container {
+    background-color: #356618;
+  }
+  
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1080px;
+    }
+  }

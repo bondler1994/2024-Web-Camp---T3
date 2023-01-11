@@ -1,33 +1,74 @@
-.featured_garden_container{
-    background-color: #FEFEFE;
+.featured_garden_container {
+  background-color: #fefefe;
 }
 
-.featured_garden_card{
-    border: 0;
+.featured_garden_item {
+  border: 0;
 }
-.introduction_title{
-    font-size: 22px;
-    font-weight: 400;
-    text-transform: uppercase;
-    background-color: #DCE9E4;
-    color: #76470D;
-    border-bottom: #ABC79A solid 2px;
+
+.featured_garden_item a {
+  overflow: hidden;
+}
+
+.featured_garden_item img {
+  transition: transform 0.6s ease;
+}
+
+.featured_garden_item img:hover {
+  transform: scale(1.15);
+}
+.introduction_title {
+  font-size: 22px;
+  font-weight: 400;
+  text-shadow: 1px 1px #fff; /* 文字邊框 */
+  text-transform: uppercase;
+  background-color: #dce9e4;
+  color: #76470d;
+  border-bottom: #abc79a solid 2px;
 }
 
 .featured_garden_information {
-    padding: 1rem 0rem;
+  padding: 16px 0px;
 }
 
 .featured_garden_information h4 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #76470D;
+  font-size: 20px;
+  font-weight: 400;
+  color: #76470d;
 }
 
 .featured_garden_information p {
-    color: #494949;
+  color: #494949;
 }
 
-ol{
-    padding-left: 1rem;
+
+hr {
+    margin: 8px 0 24px;
+}
+
+.tips_image {
+    object-fit: contain;
+}
+
+.tips_content {
+    height: 180px;
+    overflow: scroll;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol > li::marker {
+    font-weight: bold;
+  } /* li加粗體 */
+
+.tips_content li + li {
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .tips_container {
+    order: -1;
+  }
 }
