@@ -1,0 +1,323 @@
+* {
+  outline: 1px red solid;
+}
+:root {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background-image: url("../img/bg-body.jpg");
+}
+.row {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+  /* 在root裡寫了，這裡還要寫？ */
+  margin-top: 0;
+  /* 當--bs-gutter-y不為零，row的負的上margin會跑出來 
+  為保留row>*的上margin，故設0 */
+}
+.container {
+  padding-left: calc(0.5 * var(--bs-gutter-x));
+  padding-right: calc(0.5 * var(--bs-gutter-x));
+  /* 改掉container預設左右padding 0.75rem */
+}
+body > .container {
+  background-color: #356619;
+  padding: 0 var(--bs-gutter-x); /* 綠色背景內縮，為網頁內容區 */
+}
+
+/* 設定解析度>1200時的內容寬度，覆蓋掉原本bs的設定 */
+@media (min-width: 1200px) {
+  body > .container {
+    max-width: 1067px;
+  }
+}
+
+.navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.navbar .row,
+.info .row,
+.portfolio,
+.article {
+  margin-left: 0;
+  margin-right: 0;
+  /* 取消row預設的負左右margin */
+}
+.navbar .row > *,
+.info .row > * {
+  margin-top: 0;
+}
+
+.header_container {
+  background-color: #fff;
+}
+
+/* h1包住圖和<a>，寬度佔滿container-fluid */
+.logo {
+  padding: 1rem 0;
+}
+
+/* <a>作為container 固定長寬>>螢幕放大縮小時，空白區會縮放*/
+
+.logo_link {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 65px;
+}
+.logo_link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* 小尺寸避免圖比例跑掉 */
+}
+
+/* sm以上，logo固定大小 */
+@media (min-width: 576px) {
+  .logo_link {
+    width: 400px;
+  }
+}
+/* sm以上，flex換行 */
+@media (min-width: 576px) {
+  .header_container .navbar-expand-sm {
+    flex-wrap: wrap;
+  }
+}
+/* 漢堡圖連結，因為沒設navbar-light，bs預設設定不會出來 */
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* navbar ul>li顏色設定 */
+.navbar-nav .nav-link {
+  background-color: #4b4b4b;
+  color: #f1f3ca;
+}
+.navbar-nav .active {
+  background-color: #95b285;
+  color: #4a7532;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: #d9eacf;
+  color: #63725b;
+}
+/* 加大navbar-nav padding */
+.navbar .nav-link {
+  padding: 1rem 0.5rem;
+}
+
+.banner_article {
+  background-color: #4b4b4b;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .banner_article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, 0.6);
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+.banner .card-title,
+.info .card-title {
+  color: #edef9f;
+}
+
+.banner .card-text,
+.info .card-text,
+.copyright {
+  color: #f3f7f0;
+}
+.banner span {
+  display: inline-block;
+  width: calc(100% - 30px);
+  vertical-align: middle;
+}
+.banner a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.banner i {
+  font-size: 22px;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .text-truncate {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .text_more {
+    display: none;
+  }
+  .banner span {
+    width: 100%;
+  }
+}
+.border_white {
+  border: 1px white solid;
+}
+
+.info_border {
+  border-bottom: 1px solid grey;
+}
+@media (min-width: 992px) {
+  .info_border {
+    border-bottom: none;
+    border-right: 1px solid grey;
+  }
+  .info > div {
+    margin-top: calc(0.5 * var(--bs-gutter-y));
+    margin-bottom: calc(0.5 * var(--bs-gutter-y));
+    padding-top: calc(0.5 * var(--bs-gutter-y));
+    padding-bottom: calc(0.5 * var(--bs-gutter-y));
+  }
+}
+.info a:hover,
+.portfolio a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.background_light {
+  background-color: #fff;
+}
+
+.title {
+  background-color: #dce7d4;
+  border-bottom: 3px #abc79a solid;
+}
+.title,
+.portfolio .card-title {
+  color: #8b6854;
+}
+.card-body {
+  padding: 0;
+}
+hr {
+  margin: 0;
+}
+.article ol {
+  margin-bottom: 0;
+}
+.article ol li::marker {
+  font-weight: bold;
+}
+.article .article_img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .article > :last-child {
+    order: -1;
+  }
+}
+.footer_container {
+  background-color: #dce8d4;
+}
+.copyright {
+  background-color: #356619;
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  /* margin-left: -8px; */
+  /* margin-right: -8px; */
+}
+.footer_container .card {
+  background-color: #dce8d4;
+  border-radius: initial;
+}
+.footer_container .card-title,
+.footer_container p,
+.footer_container .card-text {
+  color: #888789;
+}
+
+.footer_container .under_md_collapse {
+  display: grid;
+  /* 小裝置時按鈕出現，本來是設dispaly:block，但參考bs botton block-button滿版按鈕的設定，加了d-grid在按鈕父層，故直接在此改grid */
+}
+.footer_container .normal_title {
+  display: none;
+  /* 普通標題隱藏 */
+}
+
+@media (min-width: 768px) {
+  .footer_container .under_md_collapse {
+    display: none;
+  }
+  .footer_container .collapse {
+    display: block;
+  }
+  .footer_container .normal_title {
+    display: block;
+  }
+}
+.under_md_collapse i {
+  color: #888789;
+}
+.footer_content > div {
+  border-bottom: 1px solid grey;
+}
+.footer_content > :last-child {
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .footer_content > :nth-child(odd) {
+    border-right: 1px solid grey;
+  }
+  .footer_content :nth-last-child(2) {
+    border-bottom: none;
+  }
+}
+@media (min-width: 992px) {
+  .footer_content > div {
+    border-bottom: none;
+    border-right: 1px solid grey;
+  }
+  .footer_content > :last-child {
+    border-right: none;
+  }
+}
+.footer_container .row > div {
+  margin-top: 0;
+}
+.footer_container > .row > * {
+  padding-left: var(--bs-gutter-x);
+  padding-right: var(--bs-gutter-x);
+}
+.footer_container a {
+  display: block;
+  width: fit-content;
+  color: #888789;
+}
+.footer_container a:hover {
+  color: #356619;
+  transform: scale(1.1);
+}
+.footer_container .collapse i {
+  color: #356619;
+  font-size: 22px;
+}
+.card-title,
+h1,
+h2,
+h3,
+h5,
+p {
+  margin-bottom: 0;
+}

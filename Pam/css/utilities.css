@@ -1,0 +1,41 @@
+/* make a gap by padding */
+.py_half_gap {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py_gap {
+  padding-top: var(--bs-body-font-size);
+  padding-bottom: var(--bs-body-font-size);
+}
+.px_gap {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* .ps_half_gap {
+  padding-left: 0.5rem;
+} */
+/* make a gap by margin */
+.mt_half_gap {
+  margin-top: 0.5rem;
+}
+.mt_gap {
+  margin-top: 1rem;
+}
+
+.mb_gap {
+  margin-bottom: 1rem;
+}
+/* .mb_half_gap {
+  margin-bottom: 0.5rem;
+} */
+.me_half_gap {
+  margin-right: 0.5rem;
+}
+/* .ms_gap {
+  margin-left: 1rem;
+} */
+.mx_half_gap {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/* 要改gap時，除了以上的值，還要記得改bs .row --bs-gutter-x & .container padding帶入的--bs-gutter-x */
