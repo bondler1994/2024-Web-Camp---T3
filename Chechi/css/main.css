@@ -2,10 +2,6 @@
   background-color: #fefefe;
 }
 
-.featured_garden_item {
-  border: 0;
-}
-
 .featured_garden_item a {
   overflow: hidden;
 }
@@ -41,13 +37,14 @@
   color: #494949;
 }
 
-
 hr {
     margin: 8px 0 24px;
 }
 
 .tips_image {
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .tips_content {
@@ -68,7 +65,11 @@ ol > li::marker {
 }
 
 @media (max-width: 767px) {
-  .tips_container {
+  .tips_wrapper {
     order: -1;
+  }
+  .tips_content {
+    height: fit-content;
+    overflow: auto;
   }
 }
