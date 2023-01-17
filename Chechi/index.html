@@ -32,7 +32,7 @@
     <title>Garden Walkthrough</title>
   </head>
   <body>
-    <div class="container px-3">
+    <div class="container my_container px-3">
       <header>
         <div class="logo_wrapper p-3">
           <button
@@ -91,7 +91,7 @@
                 alt="gardenings_tips"
               />
               <div class="banner_introduction px-3 py-3">
-                <h2 class="banner_title pb-1">GARRDENINGS TIPS</h2>
+                <h2 class="banner_title pb-1">GARDENINGS TIPS</h2>
                 <p class="banner_content">
                   This is just a place holder, so you can see what the site
                   would look like. This is just a place holder, so you can see
@@ -168,7 +168,7 @@
               <a href="##"
                 ><img src="./img/gardening2.jpg" alt="garden_tips"
               /></a>
-              <div class="card_information ps-3">
+              <div class="card_information">
                 <h3 class="mb-2">Tips</h3>
                 <p>This is just a place holder.This is just a place holder.</p>
               </div>
@@ -179,7 +179,7 @@
               <a href="##"
                 ><img src="./img/gardening3.jpg" alt="garden_tips"
               /></a>
-              <div class="card_information ps-3">
+              <div class="card_information">
                 <h3 class="mb-2">Happy Gardener</h3>
                 <p>This is just a place holder.This is just a place holder.</p>
               </div>
@@ -190,7 +190,7 @@
               <a href="##"
                 ><img src="./img/gardening4.jpg" alt="garden_tips"
               /></a>
-              <div class="card_information ps-3">
+              <div class="card_information">
                 <h3 class="mb-2">Planting</h3>
                 <p>This is just a place holder.This is just a place holder.</p>
               </div>
@@ -200,8 +200,10 @@
       </header>
 
       <main class="featured_garden_container px-3 pt-3">
-        <h3 class="introduction_title ps-3 py-2">feature gardens</h3>
-        <div class="row gx-3 pt-3">
+        <div class="row gx-3">
+          <div class="col-12 mb-3">
+          <h3 class="introduction_title ps-3 py-2">feature gardens</h3>
+        </div>
           <div class="col-lg-3 col-md-6">
             <div class="card featured_garden_item">
               <a href="##"
@@ -272,17 +274,17 @@
           </div>
         </div>
         <hr />
-        <div class="row mt-2 pb-2">
+        <div class="row mt-2 pb-3">
           <div class="col-lg-4 col-md-6 pb-3">
             <img
               class="tips_image"
               src="./img/gardening5.jpg"
             />
         </div>
-          <div class="tips_wrapper col-lg-8 col-md-6">
+          <div class="col-lg-8 col-md-6">
             <div class="tips_container">
               <h3 class="introduction_title ps-3 py-2">tips of the week</h3>
-              <ol class="mt-4 tips_content">
+              <ol class="mt-4 mb-0 tips_content">
                 <li>
                   This is just a place holder, so you can see what the site would
                   look like. This is just a place holder, so you can see what the
@@ -308,7 +310,15 @@
           <div class="row">
             <div class="p-3 footer_card_container col-lg-3 col-md-6 col-sm-12">
               <div class="footer_card">
-                <h4 class="footer_card_title pb-2">PLACE HOLDER</h4>
+                <h4 class="footer_card_title mb-2">PLACE HOLDER</h4>
+                <a href="##"><span>This is just a place holder.</span></a>
+                <a href="##">This is just a place holder.</a>
+                <a href="##">This is just a place holder.</a>
+              </div>
+            </div>
+            <div class="p-3 footer_card_container col-lg-3 col-md-6 col-sm-12">
+              <div class="footer_card ">
+                <h4 class="footer_card_title mb-2">PLACE HOLDER</h4>
                 <a href="##">This is just a place holder.</a>
                 <a href="##">This is just a place holder.</a>
                 <a href="##">This is just a place holder.</a>
@@ -316,23 +326,15 @@
             </div>
             <div class="p-3 footer_card_container col-lg-3 col-md-6 col-sm-12">
               <div class="footer_card">
-                <h4 class="footer_card_title pb-2">PLACE HOLDER</h4>
-                <a href="##">This is just a place holder.</a>
-                <a href="##">This is just a place holder.</a>
-                <a href="##">This is just a place holder.</a>
-              </div>
-            </div>
-            <div class="p-3 footer_card_container col-lg-3 col-md-6 col-sm-12">
-              <div class="footer_card">
-                <h4 class="footer_card_title pb-2">PLACE HOLDER</h4>
+                <h4 class="footer_card_title mb-2">PLACE HOLDER</h4>
                 <a href="##">This is just a place holder.</a>
                 <a href="##">This is just a place holder.</a>
                 <a href="##">This is just a place holder.</a>
               </div>
             </div>
             <div class="footer_card_container col-lg-3 col-md-6 col-sm-12 p-3">
-              <div class="footer_connect_card">
-                <h4 class="footer_card_title pb-2">CONNECT</h4>
+              <div class="footer_card footer_connect_card">
+                <h4 class="footer_card_title mb-2">CONNECT</h4>
                 <div class="footer_card_icon_container">
                   <a class="footer_card_icon" href="##"
                     ><i class="fa-solid fa-envelope fa-fw"></i
@@ -356,9 +358,9 @@
           </div>
         </div>
         <div class="copyright p-2">
-          <div class="copyright_content">
-            <p>Garden Walkthrough &copy; 2023 <span>|</span></p>
-            <p>All Rights Reserved</p>
+          <p class="copyright_content">
+            <span>Garden Walkthrough &copy; 2023 <span class="seperate">|</span></span>
+            <span>All Rights Reserved</span>
           </div>
         </div>
       </footer>

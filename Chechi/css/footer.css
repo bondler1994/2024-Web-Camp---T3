@@ -8,9 +8,9 @@
   border-right: #c2d786 1px solid;
 }
 
-.footer_card_title {
-  text-shadow: 1px 1px #fff; /* 文字邊框 */
-  font-size: 20px;
+.footer_card_container h4 {
+    text-shadow: 1px 1px #fff; /* 文字邊框 */
+    font-size: 20px;
 }
 
 .footer_card_icon_container {
@@ -23,7 +23,7 @@
 }
 
 .footer_connect_card {
-  color: #7e7c7f;
+    color: #7e7c7f;
 }
 
 .footer_card a {
@@ -62,14 +62,14 @@
 .footer_card_icon i {
   color: #356618;
   margin-right: 5px;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 20px;
 }
 
 .footer_card_icon span {
   color: #7e7c7f;
   font-size: 14px;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .footer_card_icon span:hover {
@@ -83,16 +83,16 @@
   margin: auto;
 }
 
-.copyright p {
+.copyright_content span {
   display: inline-block;
 }
 
 @media (max-width: 376px) {
-  .copyright p {
+  .copyright_content span {
     display: block;
   }
 
-  .copyright_content span {
+  span.seperate {
     display: none;
   }
 }
@@ -101,10 +101,7 @@
   .footer_card {
     text-align: center;
   }
-  .footer_card a {
+  .footer_card:not(.footer_connect_card) a {
     margin: auto;
-  }
-  .footer_connect_card {
-    text-align: center;
   }
 }
