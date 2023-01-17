@@ -2,7 +2,7 @@
     /* outline: red .5px solid; */
 }
 
-/* reset */
+/* setting */
 .card {
     border-radius: 0;
 }
@@ -16,9 +16,17 @@
     --accent-color3: #E2E698;
     --accent-color4: #8F6444;
     --accent-color5: #feffe6;
+    --nav-home: #96B285;
+    --nav-default: #4B4B4B;
+    --nav-default2: #F1F3C9;
+    --nav-hover: #96B285;
 }
 
+.page__background {
+    background-color: var(--theme-color1);
+}
 
+/* nav */
 .nav-toggler {
     display: inline-block;
 }
@@ -39,7 +47,9 @@
 
 .offcanvas-body {
     background-color: var(--accent-color5);
+    padding: initial;
 }
+
 
 .navbar .nav-link.active {
     color: var(--theme-color1);
@@ -48,7 +58,6 @@
 .nav-item:hover {
     background-color: var(--accent-color1);
 }
-
 
 /* cover story */
 .coverstory .carousel-item img {
@@ -107,43 +116,28 @@
     border-radius: initial;
 }
 
-
-/* test AAAA */
-/* .topics .card__topics {
-    background-color: var(--theme-color1);
+.card__wrapper .card {
+    border: initial;
 }
 
-.card__topics img {
-    width: 10em;
-}
-
-
-.card__topics .card-title {
-    display: inline-block;
-    color: var(--accent-color3);
-}
-
-.card__topics .card-text {
-    display: inline-block;
-    color: #ffffff;
-}
-
-.card__banner {
-    background-color: var(--theme-color2);
-    border-bottom: var(--theme-color1);
-}
-
-.card__banner h3 {
+.card__wrapper h5 {
     color: var(--accent-color4);
 }
 
-.card__featured h5 {
-    color: var(--accent-color4);
-    margin: 1em auto;
+/* weekly */
+.weekly__wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.card__featured p {
-    font-weight: 500;
-} */
+.weekly__wrapper .card {
+    border: initial;
+}
 
-/* test AAA */
+.weekly__wrapper img {
+    border-radius: initial;
+}
+
+.weekly__wrapper ::marker {
+    font-weight: bold;
+}
