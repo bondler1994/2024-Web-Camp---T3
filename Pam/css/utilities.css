@@ -11,7 +11,9 @@
   padding-left: var(--gap-x);
   padding-right: var(--gap-x);
 }
-
+.ps_gap {
+  padding-left: var(--gap-x);
+}
 /* make a gap by margin */
 .mt_half_gap {
   margin-top: calc(0.5 * var(--gap-y));
@@ -24,8 +26,8 @@
   margin-bottom: var(--gap-y);
 }
 
-.me_half_gap {
-  margin-right: calc(0.5 * var(--gap-x));
+.mb_half_gap {
+  margin-left: calc(0.5 * var(--gap-x));
 }
 
 .mx_half_gap {
