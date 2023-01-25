@@ -22,9 +22,8 @@
   </head>
   <body class="body">
     <div class="container">
-      <!-- logo + rwd navbar -->
-      <header class="header_container">
-        <nav class="navbar navbar-expand-md flex-wrap">
+      <header class="header">
+        <nav class="navbar navbar-expand-md navbar_theme flex-wrap">
             <button
             class="navbar-toggler"
             type="button"
@@ -38,7 +37,8 @@
             </button>
             <h1 class="logo">
               <a class="logo_link" href="##">
-                <img src="./img/logo-small.png" alt="logo" />
+                <img src="./img/logo-small.png" alt="logo_small" />
+                <img src="./img/logo.png" alt="logo_large" />
               </a>
             </h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,15 +70,14 @@
         </nav>
       </header>
       <main>
-        <div class="banner_container">
-          <div class="card">
+        <div class="banner">
             <div id="banner_carousel" class="carousel slide" data-bs-ride="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./img/carousel-1.jpg" class="d-block w-100" alt="banner_GARDENING TIPS">
                   <div class="banner_article">
-                    <h2 class="card-title">GARDENING TIPS</h2>
-                    <span class="card-text text-truncate">
+                    <h2 class="banner_title">GARDENING TIPS</h2>
+                    <span class="banner_text text-truncate">
                       This is just a place holder, so you can see what the site would
                       look like. This is just a place holder, so you can see what the
                       site would look like. This is just a place holder, so you can see
@@ -90,8 +89,8 @@
                 <div class="carousel-item">
                   <img src="./img/carousel-2.jpg" class="d-block w-100" alt="banner_Happy Gardener">
                   <div class="banner_article">
-                    <h2 class="card-title">Happy Gardener</h2>
-                    <span class="card-text text-truncate">
+                    <h2 class="banner_title">Happy Gardener</h2>
+                    <span class="banner_text text-truncate">
                       This is just a place holder, so you can see what the site would
                       look like. This is just a place holder, so you can see what the
                       site would look like. This is just a place holder, so you can see
@@ -103,8 +102,8 @@
                 <div class="carousel-item">
                   <img src="./img/carousel-3.jpg" class="d-block w-100" alt="banner_Planting">
                   <div class="banner_article">
-                    <h2 class="card-title">Planting</h2>
-                    <span class="card-text text-truncate">
+                    <h2 class="banner_title">Planting</h2>
+                    <span class="banner_text text-truncate">
                       This is just a place holder, so you can see what the site would
                       look like. This is just a place holder, so you can see what the
                       site would look like. This is just a place holder, so you can see
@@ -115,10 +114,10 @@
                 </div>
               </div>
             </div>
-          </div>
           <div class="container banner_info">
             <div class="row">
-              <div class="col-12 col-lg-4 py_gap banner_info_items banner_info_border">
+              <div class="col-12 col-lg-4 position-relative a">
+                <div class="banner_info_items">
                   <div class="row justify-content-center">
                     <a class="col-3 col-md-2 col-lg-4 active" type="button" data-bs-target="#banner_carousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
                       <img
@@ -128,14 +127,16 @@
                       />
                     </a>
                     <div class="col-9 col-md-6 col-lg-8">
-                        <h5 class="banner_subtitle">Tips</h5>
+                        <h5 class="banner_title mb_gap">Tips</h5>
                         <p class="banner_text">
                           This is iust a place holder. This is just a place holder.
                         </p>
                     </div>
                   </div>
+                </div>  
               </div>
-              <div class="col-12 col-lg-4 py_gap banner_info_items banner_info_border">
+              <div class="col-12 col-lg-4 position-relative a">
+                <div class="banner_info_items">
                   <div class="row justify-content-center">
                     <a class="col-3 col-md-2 col-lg-4" type="button" data-bs-target="#banner_carousel" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2">
                       <img
@@ -145,14 +146,16 @@
                       />
                     </a>
                     <div class="col-9 col-md-6 col-lg-8">
-                        <h5 class="banner_subtitle">Happy Gardener</h5>
+                        <h5 class="banner_title mb_gap">Happy Gardener</h5>
                         <p class="banner_text">
                           This is iust a place holder. This is just a place holder.
                         </p>
                     </div>
                   </div>
+                </div>    
               </div>
-              <div class="col-12 col-lg-4 py_gap banner_info_items">
+              <div class="col-12 col-lg-4 position-relative a">
+                <div class="banner_info_items">
                   <div class="row justify-content-center">
                     <a class="col-3 col-md-2 col-lg-4" type="button" data-bs-target="#banner_carousel" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3">
                       <img
@@ -162,58 +165,59 @@
                       />
                     </a>
                     <div class="col-9 col-md-6 col-lg-8">
-                        <h5 class="banner_subtitle">Planting</h5>
+                        <h5 class="banner_title mb_gap">Planting</h5>
                         <p class="banner_text">
                           This is iust a place holder. This is just a place holder.
                         </p>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container background_light py_gap">
-          <div class="portfolio_container mb_gap">
-            <h3 class="title mx_half_gap px_gap py_half_gap">FEATURED GARDENS</h3>
-            <div class="row gy-4 justify-content-center">
-              <div class="card col-8 col-sm-6 col-lg-3">
-                <a href="##"><img src="./img/garden1.jpg" class="card-img-top" alt="portfolio_JULIET'S GARDEN" /></a>
-                <div class="card-body">
-                  <h5 class="card-title mt_gap">JULIET'S GARDEN</h5>
-                  <p class="card-text mt_gap">
-                    This is just a place holder, so you can see what the site
-                    would look like.
-                  </p>
+        <div class="container background_light">
+          <div class="portfolio">
+            <h3 class="title px_gap py_half_gap mb_gap">FEATURED GARDENS</h3>
+            <div class="row justify-content-center">
+              <div class="col-7 col-sm-6 col-md-5 col-lg-3">
+                <div class="items">
+                  <a href="##"><img src="./img/garden1.jpg" class="" alt="portfolio_JULIET'S GARDEN" /></a>
+                    <h5 class="items_title">JULIET'S GARDEN</h5>
+                    <p class="items_content">
+                      This is just a place holder, so you can see what the site
+                      would look like.
+                    </p>
                 </div>
               </div>
-              <div class="card col-8 col-sm-6 col-lg-3">
-                <a href="##"><img src="./img/garden2.jpg" class="card-img-top" alt="porfolio_JOANNE'S GARDEN" /></a>
-                <div class="card-body">
-                  <h5 class="card-title mt_gap">JOANNE'S GARDEN</h5>
-                  <p class="card-text mt_gap">
-                    This is just a place holder, so you can see what the site
-                    would look like.
-                  </p>
+              <div class="col-7 col-sm-6 col-md-5 col-lg-3">
+                <div class="items">
+                  <a href="##"><img src="./img/garden2.jpg" class="" alt="portfolio_JULIET'S GARDEN" /></a>
+                    <h5 class="items_title">JOANNE'S GARDEN</h5>
+                    <p class="items_content">
+                      This is just a place holder, so you can see what the site
+                      would look like.
+                    </p>
                 </div>
               </div>
-              <div class="card col-8 col-sm-6 col-lg-3">
-                <a href="##"><img src="./img/garden3.jpg" class="card-img-top" alt="portfolio_JETTKA'S GARDEN" /></a>
-                <div class="card-body">
-                  <h5 class="card-title mt_gap">JETTKA'S GARDEN</h5>
-                  <p class="card-text mt_gap">
-                    This is just a place holder, so you can see what the site
-                    would look like.
-                  </p>
+              <div class="col-7 col-sm-6 col-md-5 col-lg-3">
+                <div class="items">
+                  <a href="##"><img src="./img/garden3.jpg" class="" alt="portfolio_JULIET'S GARDEN" /></a>
+                    <h5 class="items_title">JETTKA'S GARDEN</h5>
+                    <p class="items_content">
+                      This is just a place holder, so you can see what the site
+                      would look like.
+                    </p>
                 </div>
               </div>
-              <div class="card col-8 col-sm-6 col-lg-3">
-                <a href="##"><img src="./img/garden4.jpg" class="card-img-top" alt="portfolio_JIA'S GARDEN" /></a>
-                <div class="card-body">
-                  <h5 class="card-title mt_gap">JIA'S GARDEN</h5>
-                  <p class="card-text mt_gap">
-                    This is just a place holder, so you can see what the site
-                    would look like.
-                  </p>
+              <div class="col-7 col-sm-6 col-md-5 col-lg-3">
+                <div class="items">
+                  <a href="##"><img src="./img/garden4.jpg" class="" alt="portfolio_JULIET'S GARDEN" /></a>
+                    <h5 class="items_title">JIA'S GARDEN</h5>
+                    <p class="items_content">
+                      This is just a place holder, so you can see what the site
+                      would look like.
+                    </p>
                 </div>
               </div>
             </div>
@@ -238,60 +242,70 @@
                   </li>
                 </ol>
               </div>
-              <div class="col-10 col-lg-4"><img src="./img/garden5.jpg" alt="article images" class="article_img"></img></div>
+              <div class="col-8 col-lg-4 mb_gap"><img src="./img/garden5.jpg" alt="article images" class="article_img"></img></div>
             </div>
           </div>
         </div>
       </main>
-      <footer class="footer_container container">
-        <div class="row footer_content">
-          <div class="card col-12 col-md-6 col-lg-3">
-            <p class="under_md_collapse ">
-              <button class="btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#footer_content_1" aria-expanded="false" aria-controls="collapseExample">
-                <h5 class="">PLACE HOLDER</h5>
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-            </p>
-            <div class="collapse" id="footer_content_1">
-                  <p class="text-md-start mt_gap">This is just a place holder.
-                  This is just a place holder.
-                  This is just a place holder.</p>
-            </div>
-          </div>
-          <div class="card col-12 col-md-6 col-lg-3">
-            <p class="under_md_collapse">
-              <button class="btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#footer_content_2" aria-expanded="false" aria-controls="collapseExample">
-                <h5 class="">PLACE HOLDER</h5>
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-            </p>
-            <div class="collapse" id="footer_content_2">
-                  <p class="text-md-start mt_gap">This is just a place holder.
-                  This is just a place holder.
-                  This is just a place holder.</p>
-            </div>
-          </div>
-          <div class="card col-12 col-md-6 col-lg-3">
-            <p class="under_md_collapse">
-              <button class="btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#footer_content_3" aria-expanded="false" aria-controls="collapseExample">
-                <h5 class="">PLACE HOLDER</h5>
-                <i class="fa-solid fa-caret-down"></i>
-              </button>
-            </p>
-            <div class="collapse" id="footer_content_3">
-                  <p class="text-md-start mt_gap">This is just a place holder.
-                  This is just a place holder.
-                  This is just a place holder.</p>
-            </div>
-          </div>
-          <div class="contact col-12 col-md-6 col-lg-3">
-              <h5 class="mb_gap">CONNECT</h5>
-              <div class="justify-content-center justify-content-md-start">
-                <a href="##" class=""><i class="contact_icon fa-solid fa-envelope align-middle"></i><span class="contact_text align-middle mb_half_gap">Email us</span></a>
-                <a href="##" class=""><i class="contact_icon fa-brands fa-square-facebook align-middle"></i><span class="contact_text align-middle mb_half_gap">Facebook</span></a>
-                <a href="##" class=""><i class="contact_icon fa-brands fa-twitter align-middle"></i><span class="contact_text align-middle mb_half_gap">Twitter</span></a>
-                <a href="##" class=""><i class="contact_icon fa-brands fa-square-google-plus align-middle"></i><span class="contact_text align-middle mb_half_gap">Google+</span></a>
+      <footer class="footer_container">
+        <div class="container">
+          <div class="row footer_content">
+            <div class="col-12 col-md-6 col-lg-3 position-relative footer_col">
+              <div class="items">
+                <button class="btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#footer_content_1" aria-expanded="false" aria-controls="collapseExample">
+                  <h5 class="items_title">PLACE HOLDER</h5>
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div class="collapse" id="footer_content_1">
+                  <p class="items_content text-md-start">
+                      This is just a place holder.
+                      This is just a place holder.
+                      This is just a place holder.
+                  </p>
+                </div>
               </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 position-relative footer_col">
+              <div class="items">
+                <button class="btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#footer_content_2" aria-expanded="false" aria-controls="collapseExample">
+                  <h5 class="items_title">PLACE HOLDER</h5>
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div class="collapse" id="footer_content_2">
+                  <p class="items_content text-md-start">
+                    This is just a place holder.
+                    This is just a place holder.
+                    This is just a place holder.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 position-relative footer_col">
+              <div class="items">
+                <button class="btn d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#footer_content_3" aria-expanded="false" aria-controls="collapseExample">
+                  <h5 class="items_title">PLACE HOLDER</h5>
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div class="collapse" id="footer_content_3">
+                  <p class="items_content text-md-start">
+                    This is just a place holder.
+                    This is just a place holder.
+                    This is just a place holder.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contact col-12 col-md-6 col-lg-3 position-relative footer_col">
+                <div class="items">
+                  <h5 class="items_title">CONNECT</h5>
+                  <div class="items_content">
+                    <a href="##" class="contact_link"><i class="contact_icon fa-solid fa-envelope align-middle"></i><span class="contact_text align-middle mb_half_gap">Email us</span></a>
+                    <a href="##" class="contact_link"><i class="contact_icon fa-brands fa-square-facebook align-middle"></i><span class="contact_text align-middle mb_half_gap">Facebook</span></a>
+                    <a href="##" class="contact_link"><i class="contact_icon fa-brands fa-twitter align-middle"></i><span class="contact_text align-middle mb_half_gap">Twitter</span></a>
+                    <a href="##" class="contact_link"><i class="contact_icon fa-brands fa-square-google-plus align-middle"></i><span class="contact_text align-middle mb_half_gap">Google+</span></a>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
         <div class="copyright text-center py_half_gap">
