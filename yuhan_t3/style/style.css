@@ -7,6 +7,18 @@
     border-radius: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+}
+
 :root {
     --hover-opacity: .7;
     --theme-color1: #37671C;
@@ -16,6 +28,7 @@
     --accent-color3: #E2E698;
     --accent-color4: #8F6444;
     --accent-color5: #feffe6;
+
     --nav-home: #96B285;
     --nav-default: #4B4B4B;
     --nav-default2: #F1F3C9;
@@ -27,6 +40,10 @@
 }
 
 /* nav */
+.container__navlist {
+    display: none;
+}
+
 .nav-toggler {
     display: inline-block;
 }
@@ -36,9 +53,9 @@
     color: var(--theme-color2);
 }
 
-
 .offcanvas-header {
     background-color: var(--theme-color1);
+    opacity: .9;
 }
 
 .offcanvas-title {
@@ -46,20 +63,39 @@
 }
 
 .offcanvas-body {
-    background-color: var(--accent-color5);
+    background-color: var(--nav-default);
     padding: initial;
 }
 
+.offcanvas-body li {
+    background-color: var(--nav-default);
+    opacity: .9;
+}
 
-.navbar .nav-link.active {
+.offcanvas-body li:hover {
+    background-color: var(--nav-hover);
+}
+
+.offcanvas-body li:nth-child(1) {
+    background-color: var(--nav-home);
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--nav-default2);
+}
+
+.navbar-nav .nav-link.active:hover {
     color: var(--theme-color1);
 }
 
-.nav-item:hover {
-    background-color: var(--accent-color1);
+
+/* check later */
+/* cover story */
+.coverstory .carousel-item {
+    height: 300px;
 }
 
-/* cover story */
 .coverstory .carousel-item img {
     min-height: 100%;
     object-fit: cover;
@@ -79,13 +115,43 @@
     border-radius: 0;
 }
 
+.coverstory .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 0;
+}
+
+.coverstory .carousel-caption h2 {
+    color: var(--accent-color3);
+}
+
+.coverstory .carousel-caption p {
+    display: inline-block;
+    margin: 0;
+    text-overflow: ellipsis;
+    color: var(--accent-color5);
+}
+
+
+
 /* topics */
 .topics__card {
     background-color: var(--theme-color1);
 }
 
-
 .topics__card-picture {
+    /* border: #ffffff solid 1px; */
+    width: 5rem;
+    flex-shrink: 0;
+}
+
+.topics__card-picture img {
     border: #ffffff solid 1px;
 }
 
@@ -100,11 +166,21 @@
 .topics__card-container {
     display: flex;
     flex-direction: row;
+    align-items: top;
 }
 
 /* carousel cards */
+.carousel__banner h4 {
+    width: 100%;
+    background-color: var(--theme-color2);
+    border-bottom: var(--accent-color1) 1.5px solid;
+    font-weight: 400;
+    color: var(--accent-color4);
+}
+
 .carousel__cards {
     margin-top: 1rem;
+    background-color: #ffffff;
 }
 
 .card__wrapper {
@@ -140,4 +216,86 @@
 
 .weekly__wrapper ::marker {
     font-weight: bold;
+}
+
+/* footer-placeholder  */
+.placeholder__wrap {
+    background-color: var(--theme-color2);
+    border-right: var(--accent-color1) solid 1.5px;
+}
+
+.placeholder__wrap h5 {
+    color: #8C8E8A;
+}
+
+.placeholder__wrap p {
+    color: #8C8E8A;
+}
+
+/* .placeholder__wrap ul {
+    list-style: none;
+} */
+
+/* copyright */
+.copyright p {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* the third */
+.articles {
+    background-color: #FFFFFF;
+}
+
+/* pc version */
+@media (min-width:576px) {
+
+    /* test */
+    .page__background {
+        background-color: red;
+    }
+
+    /* nav */
+    .container__navlist {
+        display: initial;
+    }
+
+    .container__navlist .nav-item {
+        background-color: var(--nav-default);
+        display: flex;
+        padding: 0.5rem;
+    }
+
+    .container__navlist .nav-link {
+        color: var(--nav-default2);
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .container__navlist .nav-item:hover {
+        background-color: var(--nav-hover);
+    }
+
+    .container__navlist .nav-link:hover {
+        color: var(--theme-color1);
+    }
+
+    .coverstory .carousel-item {
+        height: 100%;
+    }
+
+    .header__sp {
+        display: none;
+    }
+
+    .header__pc .container {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+    }
+
+    body {
+        background-image: url(/img/bg-body.jpg);
+    }
+
 }
