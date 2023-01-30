@@ -200,6 +200,11 @@ h1 {
     color: var(--accent-color4);
 }
 
+/* articles */
+.articles__pc {
+    display: none;
+}
+
 /* weekly */
 .weekly__wrapper {
     display: flex;
@@ -250,11 +255,6 @@ h1 {
 /* pc version */
 @media (min-width:576px) {
 
-    /* test */
-    .page__background {
-        background-color: red;
-    }
-
     /* nav */
     .container__navlist {
         display: initial;
@@ -296,6 +296,14 @@ h1 {
 
     body {
         background-image: url(/img/bg-body.jpg);
+    }
+
+    .articles__phone {
+        display: none;
+    }
+
+    .articles__pc {
+        display: initial;
     }
 
 }
