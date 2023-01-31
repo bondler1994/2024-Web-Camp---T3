@@ -177,7 +177,7 @@ img[alt="logo_large"] {
 .banner_info_items .row {
   --bs-gutter-y: 0;
 }
-.banner_info_items::after {
+.banner_info > .row :not(:last-child) .banner_info_items:after {
   content: "";
   display: inline-block;
   background-color: grey;
@@ -186,13 +186,13 @@ img[alt="logo_large"] {
   left: 0;
   right: 0;
   bottom: calc(-1 * var(--gap-y));
+  /* 寫在.banner_info_items上，有沒有更好的選擇器寫法？ */
 }
 @media (min-width: 992px) {
-  .banner_info_items::after {
+  .banner_info > .row :not(:last-child) .banner_info_items:after {
     display: none;
   }
-  .banner_info > .row > div:not(:first-child)::before {
-    /* .banner_info_items::before { */
+  .banner_info > .row :not(:first-child) .banner_info_items::before {
     content: "";
     display: inline-block;
     background-color: grey;
@@ -318,7 +318,7 @@ hr {
   .contact {
     text-align: initial;
   }
-  .footer_col:not(:nth-child(odd))::after {
+  .footer_col:nth-child(odd)::after {
     content: "";
     display: inline-block;
     width: 1px;
@@ -326,7 +326,7 @@ hr {
     position: absolute;
     top: calc(-1 * var(--gap-y));
     bottom: calc(-1 * var(--gap-y));
-    left: 0;
+    right: 0;
   }
   .footer_col:nth-child(2)::before {
     display: none;
