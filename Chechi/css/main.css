@@ -38,7 +38,7 @@
 }
 
 hr {
-    margin: 8px 0 24px;
+    margin: 4px 0 16px;
 }
 
 .tips_image {
@@ -49,7 +49,17 @@ hr {
 
 .tips_content {
     height: 180px;
-    overflow: scroll;
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .tips_wrapper {
+    order: -1;
+  }
+  .tips_content {
+    height: fit-content;
+    overflow: auto;
+  }
 }
 
 ol {
@@ -62,14 +72,4 @@ ol > li::marker {
 
 .tips_content li + li {
   margin-top: 15px;
-}
-
-@media (max-width: 767px) {
-  .tips_wrapper {
-    order: -1;
-  }
-  .tips_content {
-    height: fit-content;
-    overflow: auto;
-  }
 }

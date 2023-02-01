@@ -111,14 +111,30 @@ nav {
 
 .banner_button {
   color: #7e9597;
-  display: contents;
+  display: inline-block;
 }
 
 .banner_button:hover {
   color: #fff;
 }
 
+@media (max-width: 991px) {
+  .banner_button {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+  }
+  .banner_content {
+    padding-right: 15px;
+  }
+}
 @media (max-width: 768px) {
+  .banner_content {   
+    -webkit-line-clamp: 1;
+  }
+}
+
+@media (max-width: 576px) {
   .banner_content {
     word-wrap: break-word;
   }
@@ -146,6 +162,7 @@ nav {
   height: 110%;
   position: relative;
   bottom: 5%;
+  left: 5%;
 }
 
 @media (max-width: 992px) {
@@ -156,12 +173,13 @@ nav {
     background: #ebee9e;
     bottom: 0;
     width: 95%;
+    left: 2%;
   }
 }
 
 .garden_card {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
 }
 
 .garden_card img {
@@ -184,18 +202,4 @@ nav {
 .garden_card p {
   color: #fdfdfc;
   word-wrap: break-word;
-}
-
-.card_information p {
-  width: 85%; /* 讓RWD時還能正常運作 */
-}
-
-@media (max-width: 1023px) {
-  .card_information p {
-    width: 100%;
-  }
-  .garden_card p {
-    color: #fdfdfc;
-    font-size: 14px;
-  }
 }
