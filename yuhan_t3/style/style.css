@@ -1,5 +1,5 @@
 * {
-    /* outline: red .5px solid; */
+    outline: rgb(0, 187, 255) .5px solid;
 }
 
 /* setting */
@@ -20,7 +20,7 @@ h1 {
 }
 
 :root {
-    --hover-opacity: .7;
+    --hover-opacity: .8;
     --theme-color1: #37671C;
     --theme-color2: #DAEAD0;
     --accent-color1: #ABC79A;
@@ -35,8 +35,18 @@ h1 {
     --nav-hover: #96B285;
 }
 
+
 .page__background {
     background-color: var(--theme-color1);
+}
+
+/* hover animation*/
+.card__wrapper :hover {
+    opacity: var(--hover-opacity);
+}
+
+.topics__card .card__wrapper:hover {
+    background-color: #c79abc;
 }
 
 /* nav */
@@ -89,8 +99,6 @@ h1 {
     color: var(--theme-color1);
 }
 
-
-/* check later */
 /* cover story */
 .coverstory .carousel-item {
     height: 300px;
@@ -118,12 +126,12 @@ h1 {
 .coverstory .carousel-caption {
     display: flex;
     flex-direction: column;
-    background-color: rgba(128, 128, 128, 0.6);
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     text-align: left;
+    background-color: rgba(128, 128, 128, 0.6);
     padding: 0;
 }
 
@@ -139,20 +147,19 @@ h1 {
 }
 
 
-
 /* topics */
 .topics__card {
     background-color: var(--theme-color1);
 }
 
 .topics__card-picture {
-    /* border: #ffffff solid 1px; */
     width: 5rem;
     flex-shrink: 0;
 }
 
 .topics__card-picture img {
     border: #ffffff solid 1px;
+    align-items: center;
 }
 
 .topics__card-text h3 {
@@ -160,6 +167,7 @@ h1 {
 }
 
 .topics__card-text p {
+    margin: 0;
     color: #ffffff;
 }
 
@@ -170,12 +178,13 @@ h1 {
 }
 
 /* carousel cards */
-.carousel__banner h4 {
+.articles__heading h4 {
     width: 100%;
     background-color: var(--theme-color2);
     border-bottom: var(--accent-color1) 1.5px solid;
     font-weight: 400;
     color: var(--accent-color4);
+    text-shadow: 2px 1px #FFFFFF;
 }
 
 .carousel__cards {
@@ -205,41 +214,29 @@ h1 {
     display: none;
 }
 
+.articles hr {
+    border-width: 2px;
+    color: #d2d1ce;
+}
+
 /* weekly */
-.weekly__wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.weekly__wrapper .card {
-    border: initial;
-}
-
-.weekly__wrapper img {
-    border-radius: initial;
-}
-
-.weekly__wrapper ::marker {
-    font-weight: bold;
+.weekly__container img {
+    width: 100%;
 }
 
 /* footer-placeholder  */
-.placeholder__wrap {
+.placeholder__container {
     background-color: var(--theme-color2);
     border-right: var(--accent-color1) solid 1.5px;
 }
 
-.placeholder__wrap h5 {
+.placeholder__container h5 {
     color: #8C8E8A;
 }
 
-.placeholder__wrap p {
+.placeholder__container p {
     color: #8C8E8A;
 }
-
-/* .placeholder__wrap ul {
-    list-style: none;
-} */
 
 /* copyright */
 .copyright p {
@@ -252,6 +249,20 @@ h1 {
     background-color: #FFFFFF;
 }
 
+.snslinks a {
+    display: block;
+}
+
+.snslinks a i {
+    font-size: 20px;
+    color: var(--theme-color1);
+}
+
+.snslinks span {
+    color: var(--theme-color1);
+    font-weight: 500;
+}
+
 /* pc version */
 @media (min-width:576px) {
 
@@ -260,15 +271,20 @@ h1 {
         display: initial;
     }
 
+    .container__navlist ul {
+        border-bottom: var(--accent-color5) solid 1px;
+    }
+
     .container__navlist .nav-item {
         background-color: var(--nav-default);
         display: flex;
-        padding: 0.5rem;
     }
 
     .container__navlist .nav-link {
-        color: var(--nav-default2);
+        display: block;
         text-align: center;
+        width: 100%;
+        color: var(--nav-default2);
         font-weight: 500;
     }
 
@@ -298,6 +314,17 @@ h1 {
         background-image: url(/img/bg-body.jpg);
     }
 
+    /* articles */
+    .articles {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .articles__container {
+        width: 98%;
+    }
+
     .articles__phone {
         display: none;
     }
@@ -306,4 +333,30 @@ h1 {
         display: initial;
     }
 
+    /* weekly */
+    .weekly__text {
+        padding-left: 1rem;
+    }
 }
+
+/* tablets */
+/* @media (min-width:768px) {} */
+
+
+
+/* test pseudo elements */
+/* topics's divider*/
+/* .topics>.row .topics__card {
+        position: relative;
+    }
+
+    .topics>.row .topics__card:nth-child(2)::before {
+        content: "";
+        width: 2px;
+        height: 85%;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: auto;
+    } */
