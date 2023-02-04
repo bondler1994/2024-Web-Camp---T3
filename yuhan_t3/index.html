@@ -14,6 +14,7 @@
 <body>
     <div class="px-3 container page__background">
         <header>
+            <!-- pc's nav logo -->
             <nav class="navbar bg-body-tertiary header__pc">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -23,8 +24,9 @@
                     </a>
                 </div>
             </nav>
+            <!-- pc's nav button -->
             <nav class="container__navlist">
-                <ul class="nav justify-content-center">
+                <ul class="navbar justify-content-center">
                     <li class="nav-item col-2">
                         <a class="nav-link py-3" href="#">Home</a>
                     </li>
@@ -45,15 +47,19 @@
                     </li>
                 </ul>
             </nav>
+            <!-- nav -->
             <nav class="navbar bg-body-tertiary fixed-top header__sp">
                 <div class="container-fluid">
+                    <!-- logo -->
                     <a class="navbar-brand col-9" href="#">
                         <img src="/img/logo.png" alt="Garden Walkthrough's logo" width="100%" height="50">
                     </a>
+                    <!-- hamburger -->
                     <button class="navbar-toggler d-flex d-lg-none" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- offcanvas' page -->
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
@@ -84,6 +90,7 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- offcanvas page ended -->
                 </div>
             </nav>
         </header>

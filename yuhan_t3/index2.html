@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>yuhan_t3</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <script src="https://kit.fontawesome.com/5b47e4858d.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="/style/style2.css">
+   <link rel="stylesheet" href="/style/nav.css">
+</head>
+
+<body>
+   <div class="px-3 container page__background">
+      <header>
+         <!-- nav offcanvas -->
+         <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+               <!-- logo -->
+               <a class="navbar-brand col-9" href="#">
+                  <img src="/img/logo.png" alt="Garden Walkthrough's logo" width="100%" height="50">
+               </a>
+               <!-- hamburger -->
+               <button class="d-lg-none navbar-toggler d-flex" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- offcanvas' page -->
+               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <!-- offcanvas header -->
+                  <div class="offcanvas-header">
+                     <h4 class="offcanvas-title" id="offcanvasNavbarLabel">GardenWalkthrough</h4>
+                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <!-- nav's items -->
+                  <div class="offcanvas-body">
+                     <ul class="nav__items navbar-nav justify-content-end flex-grow-1">
+                        <li class="nav-item py-2">
+                           <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item py-2">
+                           <a class="nav-link active px-3" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item py-2">
+                           <a class="nav-link active px-3" aria-current="page" href="#">Plants</a>
+                        </li>
+                        <li class="nav-item py-2">
+                           <a class="nav-link active px-3" aria-current="page" href="#">Garden</a>
+                        </li>
+                        <li class="nav-item py-2">
+                           <a class="nav-link active px-3" aria-current="page" href="#">News</a>
+                        </li>
+                        <li class="nav-item py-2">
+                           <a class="nav-link active px-3" aria-current="page" href="#">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- offcanvas page ended -->
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section class="coverstory">
+            <!-- carousel slides -->
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="img/carousel-1.jpg" class="d-block w-100" alt="...">
+                     <div class="carousel-caption">
+                        <a href="">
+                           <h2 class="px-3">Gardening Tips</h2>
+                        </a>
+                        <a href="">
+                           <p class="px-3">This is just a placeholder, so you can see what the site would
+                              look
+                              like.This is just a placeholder, so you can see what the site would
+                              look
+                              like.<i class="fa-sharp fa-solid fa-circle-arrow-right px-3"></i>
+                           </p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="img/carousel-2.jpg" class="d-block w-100" alt="...">
+                     <div class="carousel-caption">
+                        <a href="">
+                           <h2 class="px-3">Gardening Tips</h2>
+                        </a>
+                        <a href="">
+                           <p class="px-3">This is just a placeholder, so you can see what the site would
+                              look
+                              like.This is just a placeholder, so you can see what the site would
+                              look
+                              like.<i class="fa-sharp fa-solid fa-circle-arrow-right px-3"></i>
+                           </p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="img/carousel-3.jpg" class="d-block w-100" alt="...">
+                     <div class="carousel-caption">
+                        <a href="">
+                           <h2 class="px-3">Gardening Tips</h2>
+                        </a>
+                        <a href="">
+                           <p class="px-3">This is just a placeholder, so you can see what the site would
+                              look
+                              like.This is just a placeholder, so you can see what the site would
+                              look
+                              like.<i class="fa-sharp fa-solid fa-circle-arrow-right px-3"></i>
+                           </p>
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </button>
+            </div>
+
+            <!-- carousel slides connection cards -->
+            <div class="row g-0">
+               <div class="col-12 col-md-4 topics__card card__wrapper" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                  <div class=" mt-2 topics__card-container">
+                     <div class="topics__card-picture">
+                        <img class="w-100" src="/img/gardening1.jpg" alt="">
+                     </div>
+                     <div class="ms-3 topics__card-text">
+                        <a href="">
+                           <h3>Tips</h3>
+                        </a>
+                        <p>This is just a placeholder. This is just a placeholder.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4 topics__card card__wrapper" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2">
+                  <div class="mt-2 topics__card-container">
+                     <div class="topics__card-picture">
+                        <img class="w-100" src="/img/gardening2.jpg" alt="">
+                     </div>
+                     <div class="ms-3 topics__card-text">
+                        <h3>Happy Gardener</h3>
+                        <p>This is just a placeholder. This is just a placeholder.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-4 topics__card card__wrapper" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3">
+                  <div class="topics__card-container mt-2">
+                     <div class="topics__card-picture">
+                        <img class="w-100" src="/img/gardening3.jpg" alt="">
+                     </div>
+                     <div class="ms-3 topics__card-text">
+                        <h3>Planting</h3>
+                        <p>This is just a placeholder. This is just a placeholder.</p>
+                     </div>
+                  </div>
+               </div>
+         </section>
+         <!-- articles block/ white area -->
+         <section class="articles">
+            <div class="p-2 articles__container">
+               <div class="mt-2 articles__heading">
+                  <h4 class="p-2">FEATURED GARDEN</h4>
+               </div>
+               <!-- carousel cards (phone)-->
+               <div class="carousel-cards__container articles__phone">
+
+                  <div id="carouselExampleAutoplaying" class="carousel slide carousel__cards" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="card__wrapper">
+                              <div class="card" style="width: 18rem;">
+                                 <a href=""><img src="/img/featured-1.jpg" class="card-img-top" alt="..."></a>
+                                 <div class="card-body">
+                                    <a href="">
+                                       <h5 class="card-title">JULIET'S GARDEN</h5>
+                                    </a>
+                                    <p class="card-text">This is just a placeholder, so you can see what the
+                                       site would
+                                       look
+                                       like.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="card__wrapper">
+                              <div class="card" style="width: 18rem;">
+                                 <a href=""><img src="/img/featured-2.jpg" class="card-img-top" alt="..."></a>
+                                 <div class="card-body">
+                                    <a href="">
+                                       <h5 class="card-title">JOANNES'S GARDEN</h5>
+                                    </a>
+                                    <p class="card-text">This is just a placeholder, so you can see what the
+                                       site would
+                                       look
+                                       like.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="card__wrapper">
+                              <div class="card" style="width: 18rem;">
+                                 <a href=""><img src="/img/featured-3.jpg" class="card-img-top" alt="..."></a>
+                                 <div class="card-body">
+                                    <a href="">
+                                       <h5 class="card-title">JETTKA'S GARDEN</h5>
+                                    </a>
+                                    <p class="card-text">This is just a placeholder, so you can see what the
+                                       site would
+                                       look
+                                       like.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="card__wrapper">
+                              <div class="card" style="width: 18rem;">
+                                 <a href=""><img src="/img/featured-4.jpg" class="card-img-top" alt="..."></a>
+                                 <div class="card-body">
+                                    <a href="">
+                                       <h5 class="card-title">JIA'S GARDEN</h5>
+                                    </a>
+                                    <p class="card-text">This is just a placeholder, so you can see what the
+                                       site would
+                                       look
+                                       like.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                     </button>
+                  </div>
+               </div>
+
+               <!-- cards (pc) -->
+               <div class="row articles__pc">
+                  <div class="row mx-0">
+                     <div class="col-sm-6 col-lg-3 card__wrapper">
+                        <div class="card" style="width: 18rem;">
+                           <a href=""><img src="/img/featured-1.jpg" class="card-img-top" alt="..."></a>
+                           <div class="card-body">
+                              <a href="">
+                                 <h5 class="card-title">JULIET'S GARDEN</h5>
+                              </a>
+                              <p class="card-text">This is just a placeholder, so you can see what the site
+                                 would look like.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-lg-3 card__wrapper">
+                        <div class="card" style="width: 18rem;">
+                           <a href=""><img src="/img/featured-2.jpg" class="card-img-top" alt="..."></a>
+                           <div class="card-body">
+                              <a href="">
+                                 <h5 class="card-title">JOANNES'S GARDEN</h5>
+                              </a>
+                              <p class="card-text">This is just a placeholder, so you can see what the site
+                                 would look like.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-lg-3 card__wrapper">
+                        <div class="card" style="width: 18rem;">
+                           <a href=""><img src="/img/featured-3.jpg" class="card-img-top" alt="..."></a>
+                           <div class="card-body">
+                              <a href="">
+                                 <h5 class="card-title">JETTKA'S GARDEN</h5>
+                              </a>
+                              <p class="card-text">This is just a placeholder, so you can see what the site
+                                 would look like.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6 col-lg-3 card__wrapper">
+                        <div class="card" style="width: 18rem;">
+                           <a href=""><img src="/img/featured-4.jpg" class="card-img-top" alt="..."></a>
+                           <div class="card-body">
+                              <a href="">
+                                 <h5 class="card-title">JIA'S GARDEN</h5>
+                              </a>
+                              <p class="card-text">This is just a placeholder, so you can see what the site
+                                 would look like.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <!-- weekly cards (common) -->
+               <div class="weekly__container">
+                  <div class="row g-0">
+                     <div class="col-md-8 weekly__text">
+                        <div class="articles__heading">
+                           <h4 class="p-2">TIPS OF THE WEEK</h4>
+                        </div>
+                        <div class="card-body mt-3">
+                           <ol>
+                              <li>
+                                 <p class="card-text">This is just a placeholder, so you can see what the
+                                    site
+                                    would look
+                                    like.This is
+                                    just a placeholder, so you can see what the site would look like.</p>
+                              </li>
+                              <li class="mt-2">
+                                 <p class="card-text">This is just a placeholder, so you can see what the
+                                    site
+                                    would look
+                                    like.This is
+                                    just a placeholder, so you can see what the site would look like.</p>
+                              </li>
+                              <li class="mt-2">
+                                 <p class="card-text">This is just a placeholder, so you can see what the
+                                    site
+                                    would look
+                                    like.This is
+                                    just a placeholder, so you can see what the site would look like.</p>
+                              </li>
+                           </ol>
+                        </div>
+                     </div>
+                     <div class="weekly__img col-12 col-md-4 order-md-first">
+                        <a href=""><img src="img/week.jpg" alt=""></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer>
+         <div class="card-group">
+            <div class="card mb-0 placeholder__container">
+               <div class="card-body">
+                  <h5 class="card-title">PLACE HOLDER</h5>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+               </div>
+            </div>
+            <div class="card mb-0 placeholder__container">
+               <div class="card-body">
+                  <h5 class="card-title">PLACE HOLDER</h5>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+               </div>
+            </div>
+            <div class="card mb-0 placeholder__container">
+               <div class="card-body">
+                  <h5 class="card-title">PLACE HOLDER</h5>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+                  <p class="card-text mb-0">This is a just a place holder.</p>
+               </div>
+            </div>
+            <div class="card mb-0 placeholder__container">
+               <div class="card-body">
+                  <h5 class="card-title">CONNECT</h5>
+                  <ul class="ps-0 snslinks">
+                     <li>
+                        <a href="">
+                           <i class="fa-fw fa-brands fa-facebook-f pe-1"></i>
+                           <span class="ms-2">FACEBOOK</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <i class="fa-fw fa-brands fa-twitter pe-1"></i>
+                           <span class="ms-2">TWITTER</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <i class="fa-fw fa-brands fa-pinterest-p pe-1"></i>
+                           <span class="ms-2">PINTEREST</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <i class="fa-fw fa-brands fa-square-instagram pe-1"></i>
+                           <span class="ms-2">INSTAGRAM</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <p class="mb-0">Garden Walkthrough&copy;2023|All Rights Reserved</p>
+         </div>
+
+      </footer>
+
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+      </script>
+</body>
+
+</html>

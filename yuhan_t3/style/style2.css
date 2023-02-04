@@ -258,7 +258,7 @@ h1 {
 }
 
 .snslinks span {
-    color: var(--theme-color1);
+    color: #8C8E8A;
     font-weight: 500;
 }
 
@@ -337,25 +337,3 @@ h1 {
         padding-left: 1rem;
     }
 }
-
-/* tablets */
-/* @media (min-width:768px) {} */
-
-
-
-/* test pseudo elements */
-/* topics's divider*/
-/* .topics>.row .topics__card {
-        position: relative;
-    }
-
-    .topics>.row .topics__card:nth-child(2)::before {
-        content: "";
-        width: 2px;
-        height: 85%;
-        background-color: red;
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin: auto;
-    } */
