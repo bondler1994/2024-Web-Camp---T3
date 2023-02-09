@@ -1,0 +1,67 @@
+/*使用字型
+font-family: 'Harmattan', sans-serif;
+font-family: 'IBM Plex Sans Devanagari', sans-serif;
+*/
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+/*
+@media(min-width:576px)
+@media(min-width:768px)
+@media(min-width:1200px)
+*/
+/* 
+* {
+  outline: 1px solid orange;
+} */
+
+/* size setting+background */
+
+/* 1/2/3/4/5
+*.25/*.50/*1/*1.5/*.3
+0/4/8/16/24/32 */
+
+body {
+  min-width: 375px;
+  background-image: url("../img/bg-body.jpg");
+}
+
+.wrap {
+  background-color: #356618; 
+  padding:0 16px;
+}
+
+@media (min-width: 768px) {
+.wrap {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+.wrap {
+    max-width: 992px;
+  }
+}
+
+/* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
