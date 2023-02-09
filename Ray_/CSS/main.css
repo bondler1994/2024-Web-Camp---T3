@@ -14,7 +14,10 @@ main {
   text-shadow: #ffffff 1px 1px;
 }
 
+
+
 /* garden_introduction_container */
+
 .garden_content:not(:last-child) {
   margin-bottom: 20px;
 }
