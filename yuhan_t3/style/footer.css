@@ -1,0 +1,62 @@
+@import url(style/setting.css);
+
+/* footer */
+.placeholder__container {
+    background-color: var(--theme-color2);
+    border-right: var(--accent-color1) solid 1.5px;
+}
+
+.placeholder__container h5 {
+    color: #8C8E8A;
+}
+
+.placeholder__container p {
+    color: #8C8E8A;
+}
+
+.snslinks a {
+    display: block;
+}
+
+.snslinks a i {
+    font-size: 20px;
+    color: var(--theme-color1);
+}
+
+/* copyright */
+.copyright {
+    background-color: var(--theme-color1);
+    text-align: center;
+}
+
+.copyright p {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    color: #FFFFFF;
+}
+
+.copyright p span {
+    display: inline-block;
+}
+
+@media (min-width:576px) {
+    .copyright>p>span+span {
+        position: relative;
+        padding-left: 0.5rem;
+    }
+}
+
+@media (min-width:576px) {
+    .copyright>p>span+span::before {
+        display: inline-block;
+        position: absolute;
+        width: 2px;
+        height: 70%;
+        content: "";
+        background-color: #FFFFFF;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,36 @@
+/* setting */
+.card {
+    border-radius: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+:root {
+    --hover-opacity: .8;
+    --theme-color1: #37671C;
+    --theme-color2: #DAEAD0;
+    --accent-color1: #ABC79A;
+    --accent-color2: #4B4B4B;
+    --accent-color3: #E2E698;
+    --accent-color4: #8F6444;
+    --accent-color5: #feffe6;
+
+    --nav-home: #96B285;
+    --nav-default: #4B4B4B;
+    --nav-default2: #F1F3C9;
+    --nav-hover: #96B285;
+}
+
+.card__wrapper :hover {
+    opacity: var(--hover-opacity);
+}
