@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: rgb(0, 187, 255) .5px solid;
-}
+} */
 
 /* setting */
 .card {
@@ -39,12 +39,14 @@ h1 {
     opacity: var(--hover-opacity);
 }
 
+.page__background {
+    background-color: var(--theme-color1);
+}
 
 /* nav */
 .navbar .container-fluid {
     padding: 0rem 0.5rem;
 }
-
 /* 手機版nav‘s spacing */
 
 /* logo */
@@ -117,6 +119,10 @@ h1 {
 }
 
 /* cover story */
+.coverstory .carousel {
+    background-color: #ffffff;
+}
+
 .coverstory .carousel-item {
     height: 300px;
 }
@@ -124,6 +130,10 @@ h1 {
 .coverstory .carousel-item img {
     min-height: 100%;
     object-fit: cover;
+}
+
+.coverstory .carousel-item img:hover {
+    opacity: var(--hover-opacity);
 }
 
 
@@ -178,6 +188,7 @@ h1 {
 /* topics */
 .topics {
     background-color: var(--theme-color1);
+    padding: 1rem;
 }
 
 .topics h3 {
@@ -286,8 +297,12 @@ h1 {
 }
 
 /* weekly */
+.weekly__img {
+    text-align: center;
+}
+
 .weekly__container img {
-    width: 100%;
+    width: 80%;
 }
 
 .heading__text {
@@ -295,20 +310,27 @@ h1 {
 }
 
 .weekly__container ol {
-    margin: 0;
+    margin: auto -0.5rem;
+    width: 100%;
+}
+
+.weekly__container li::marker {
+    font-weight: bold;
+    padding: -1rem;
+
 }
 
 /* footer */
 .placeholder__container {
     background-color: var(--theme-color2);
     border-right: var(--accent-color1) solid 1.5px;
+    border-top: var(--accent-color1) solid 1.5px;
 }
 
 .placeholder__container h5 {
     color: #8C8E8A;
     font-size: larger;
     text-shadow: 2px 1px #FFFFFF;
-
 }
 
 .placeholder__container p {
@@ -317,7 +339,6 @@ h1 {
 
 /* copyright */
 .copyright {
-    background-color: var(--theme-color1);
     text-align: center;
     padding: 0.5rem 0;
 }
@@ -353,10 +374,6 @@ h1 {
 
 /* pc version */
 @media (min-width:576px) {
-
-    .page__background {
-        background-color: var(--theme-color1);
-    }
 
     /* logo */
     .navbar-brand {
@@ -421,6 +438,10 @@ h1 {
         white-space: normal;
     }
 
+    .topics {
+        padding: 1rem 0;
+    }
+
     .topics__card {
         margin: 0;
     }
@@ -430,11 +451,6 @@ h1 {
     .articles {
         display: flex;
         justify-content: center;
-    }
-
-
-    .articles__container {
-        width: 98%;
     }
 
     .articles__phone {
@@ -447,7 +463,15 @@ h1 {
 
     /* weekly */
     .weekly__text {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .weekly__img {
+        text-align: initial;
+    }
+
+    .weekly__container img {
+        width: 100%;
     }
 
     .topics__card-container {
