@@ -482,13 +482,3 @@ h1 {
         visibility: hidden;
     }
 }
-
-/* @media (min-width:320px) and (max-width:992px) {
-    .topics__card-picture {
-        width: 4rem;
-    }
-
-    .topics>div+div::before {
-        visibility: hidden;
-    }
-} */
