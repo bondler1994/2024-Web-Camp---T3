@@ -1,76 +1,102 @@
-@import url(style/setting.css);
+@import url(/style/setting.css);
 
 .articles {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+@media (min-width: 576px) {
+  .articles {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .articles__heading h4 {
-    width: 100%;
-    background-color: var(--theme-color2);
-    border-bottom: var(--accent-color1) 1.5px solid;
-    font-weight: 400;
-    color: var(--accent-color4);
-    text-shadow: 2px 1px #FFFFFF;
+  width: 100%;
+  background-color: var(--theme-color2);
+  border-bottom: var(--accent-color1) 1.5px solid;
+  font-weight: 400;
+  color: var(--accent-color4);
+  text-shadow: 2px 1px #ffffff;
 }
 
 .carousel__cards {
-    margin-top: 1rem;
-    background-color: #ffffff;
+  margin-top: 1rem;
+  background-color: #ffffff;
 }
 
 .card__wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.card__wrapper :hover {
-    opacity: var(--hover-opacity);
+  display: flex;
+  justify-content: center;
 }
 
 .card__wrapper img {
-    border-radius: initial;
+  border-radius: initial;
 }
 
 .card__wrapper .card {
-    border: initial;
+  border: initial;
 }
 
 .card__wrapper h5 {
-    color: var(--accent-color4);
+  color: var(--accent-color4);
 }
 
+/* articles */
 .articles__pc {
-    display: none;
+  display: none;
 }
 
-@media (min-width:576px) {
-    .articles__pc {
-        display: initial;
-    }
+@media (min-width: 576px) {
+  .articles__pc {
+    display: initial;
+  }
 }
 
 .articles__pc .row {
-    margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .articles__phone {
+    display: none;
+  }
 }
 
 .articles hr {
-    border-width: 2px;
-    color: #d2d1ce;
+  border-width: 2px;
+  color: #d2d1ce;
 }
 
 .articles .card-body {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .articles h5 {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* weekly */
 .weekly__container img {
-    width: 100%;
+  width: 100%;
 }
 
 .heading__text {
-    padding: 0.5rem 0rem 0.5rem 1.5rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+
+.weekly__container ol {
+  margin: auto -0.5rem;
+  width: 100%;
+}
+
+.weekly__container li::marker {
+  font-weight: bold;
+  padding: -1rem;
+}
+
+@media (min-width: 576px) {
+  .weekly__text {
+    padding-left: 1.5rem;
+  }
 }

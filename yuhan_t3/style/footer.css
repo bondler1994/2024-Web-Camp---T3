@@ -1,62 +1,68 @@
-@import url(style/setting.css);
+@import url(/style/setting.css);
 
 /* footer */
 .placeholder__container {
-    background-color: var(--theme-color2);
-    border-right: var(--accent-color1) solid 1.5px;
+  background-color: var(--theme-color2);
+  border-right: var(--accent-color1) solid 1.5px;
+  border-top: var(--accent-color1) solid 1.5px;
 }
 
 .placeholder__container h5 {
-    color: #8C8E8A;
+  color: #8c8e8a;
+  font-size: larger;
+  text-shadow: 2px 1px #ffffff;
 }
 
 .placeholder__container p {
-    color: #8C8E8A;
-}
-
-.snslinks a {
-    display: block;
-}
-
-.snslinks a i {
-    font-size: 20px;
-    color: var(--theme-color1);
+  color: #8c8e8a;
 }
 
 /* copyright */
 .copyright {
-    background-color: var(--theme-color1);
-    text-align: center;
+  text-align: center;
+  padding: 0.5rem 0;
 }
 
 .copyright p {
-    display: inline-block;
-    text-align: center;
-    width: 80%;
-    color: #FFFFFF;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  width: 80%;
 }
 
 .copyright p span {
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .copyright > p > span + span {
+    position: relative;
+    padding-left: 0.5rem;
+  }
+
+  .copyright > p > span + span::before {
     display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 70%;
+    content: "";
+    background-color: #ffffff;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
 }
 
-@media (min-width:576px) {
-    .copyright>p>span+span {
-        position: relative;
-        padding-left: 0.5rem;
-    }
+.socialmedia a {
+  display: block;
 }
 
-@media (min-width:576px) {
-    .copyright>p>span+span::before {
-        display: inline-block;
-        position: absolute;
-        width: 2px;
-        height: 70%;
-        content: "";
-        background-color: #FFFFFF;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-    }
+.socialmedia a i {
+  font-size: 20px;
+  color: var(--theme-color1);
+}
+
+.socialmedia span {
+  color: #8c8e8a;
+  font-weight: 500;
 }

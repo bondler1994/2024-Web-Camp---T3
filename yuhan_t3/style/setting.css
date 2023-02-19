@@ -1,36 +1,46 @@
 /* setting */
 .card {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 :root {
-    --hover-opacity: .8;
-    --theme-color1: #37671C;
-    --theme-color2: #DAEAD0;
-    --accent-color1: #ABC79A;
-    --accent-color2: #4B4B4B;
-    --accent-color3: #E2E698;
-    --accent-color4: #8F6444;
-    --accent-color5: #feffe6;
+  --hover-opacity: 0.8;
+  --theme-color1: #37671c;
+  --theme-color2: #daead0;
+  --accent-color1: #abc79a;
+  --accent-color2: #4b4b4b;
+  --accent-color3: #e2e698;
+  --accent-color4: #8f6444;
+  --accent-color5: #feffe6;
 
-    --nav-home: #96B285;
-    --nav-default: #4B4B4B;
-    --nav-default2: #F1F3C9;
-    --nav-hover: #96B285;
+  --nav-home: #96b285;
+  --nav-default: #4b4b4b;
+  --nav-default2: #f1f3c9;
+  --nav-hover: #96b285;
 }
 
 .card__wrapper :hover {
-    opacity: var(--hover-opacity);
+  opacity: var(--hover-opacity);
+}
+
+@media (min-width: 576px) {
+  body {
+    background-image: url(/img/bg-body.jpg);
+  }
+}
+
+.page__background {
+  background-color: var(--theme-color1);
 }
