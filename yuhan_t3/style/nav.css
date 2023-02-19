@@ -7,6 +7,7 @@
 
 @media (min-width: 576px) {
   .navbar > .container-fluid {
+    flex-direction: column;
     padding: 0;
     align-items: stretch;
   }
@@ -34,12 +35,6 @@
 }
 
 /* nav links */
-@media (min-width: 576px) {
-  nav > .container-fluid {
-    flex-direction: column;
-  }
-}
-
 .nav__items {
   width: 100%;
 }

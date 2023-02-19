@@ -11,6 +11,10 @@
   }
 }
 
+.articles__heading {
+  width: 100%;
+}
+
 .articles__heading h4 {
   width: 100%;
   background-color: var(--theme-color2);
@@ -85,6 +89,10 @@
   padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
 
+.weekly__container .card-body {
+  order: 4;
+}
+
 .weekly__container ol {
   margin: auto -0.5rem;
   width: 100%;
@@ -95,8 +103,23 @@
   padding: -1rem;
 }
 
+.weekly__text {
+  display: contents;
+}
+
 @media (min-width: 576px) {
   .weekly__text {
     padding-left: 1.5rem;
+    display: block;
+  }
+}
+
+.weekly__img {
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+  .weekly__img {
+    margin-top: unset;
   }
 }

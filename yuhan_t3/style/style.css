@@ -360,9 +360,9 @@ h1 {
     flex-direction: column;
   }
 
-  .navbar-brand img {
-    /* width: 100%; */
-  }
+  /* .navbar-brand img {
+    width: 100%;
+  } */
 
   .navbar > .container-fluid {
     padding: 0;
