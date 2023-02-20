@@ -53,8 +53,8 @@
 
 @media (min-width: 576px) {
   .coverstory .carousel-caption span {
-    display: initial;
-    text-overflow: initial;
+    display: unset;
+    text-overflow: unset;
     width: 95%;
     white-space: normal;
   }

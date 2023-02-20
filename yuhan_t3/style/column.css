@@ -1,25 +1,15 @@
 @import url(/style/setting.css);
 
-.articles {
+.column {
   background-color: #ffffff;
 }
 
-@media (min-width: 576px) {
-  .articles {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.articles__heading {
+.column h4 {
   width: 100%;
-}
-
-.articles__heading h4 {
-  width: 100%;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+  font-weight: 400;
   background-color: var(--theme-color2);
   border-bottom: var(--accent-color1) 1.5px solid;
-  font-weight: 400;
   color: var(--accent-color4);
   text-shadow: 2px 1px #ffffff;
 }
@@ -35,58 +25,54 @@
 }
 
 .card__wrapper img {
-  border-radius: initial;
+  border-radius: unset;
 }
 
 .card__wrapper .card {
-  border: initial;
+  border: unset;
 }
 
 .card__wrapper h5 {
   color: var(--accent-color4);
 }
 
-/* articles */
-.articles__pc {
+/* featured */
+.featured__pc {
   display: none;
 }
 
 @media (min-width: 576px) {
-  .articles__pc {
-    display: initial;
+  .featured__pc {
+    display: unset;
   }
 }
 
-.articles__pc .row {
+.featured__pc .row {
   margin-top: 2rem;
 }
 
 @media (min-width: 576px) {
-  .articles__phone {
+  .featured__phone {
     display: none;
   }
 }
 
-.articles hr {
+.column hr {
   border-width: 2px;
   color: #d2d1ce;
 }
 
-.articles .card-body {
+.column .card-body {
   padding-left: 0;
 }
 
-.articles h5 {
+.column h5 {
   display: inline-block;
 }
 
 /* weekly */
 .weekly__container img {
   width: 100%;
-}
-
-.heading__text {
-  padding: 0.5rem 0rem 0.5rem 1.5rem;
 }
 
 .weekly__container .card-body {

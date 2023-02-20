@@ -1,16 +1,14 @@
 @import url(/style/setting.css);
 
 /* nav */
-.navbar {
-  position: fixed;
+header {
+  position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+  z-index: 1020;
 }
 
 @media (min-width: 576px) {
-  .navbar {
+  header {
     position: unset;
   }
 }
