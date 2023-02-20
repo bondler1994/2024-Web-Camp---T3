@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.header .header_button {
+    box-shadow: 0 0 0 0;
+}
+
+.header_navbar .navbar-nav {
+    width: 100%;
+    background-color:#535151;
+    border-bottom: 2px solid white;
+}
+
+.header_navbar_outlook .nav-item {
+    flex:2;
+    text-align: center;
+}
+
+.header_navbar .navbar-nav .nav-item .nav-link{
+    color:#f4f5c7;
+}
+
+.header_navbar_outlook .nav-item .nav-link:hover{
+    background-color: #d5e4cc;
+    color: black;
+    border-radius: 0;
+}
+
+.header_navbar_outlook .nav-item .nav-link:focus{
+    background-color: #95B285;
+    color: #39691D;
+    border-radius: 0;
+}
+
+
+/* 漢堡圖片 */
+ .navbar-toggler-icon {
+    background-image: url(/Jessie_t3/img/navbar.svg);
+}
+
+/* 由小而大後，讓漢堡消失 */
+@media (min-width: 768px) {
+    .header_button {
+        display: none;
+    }
+}
