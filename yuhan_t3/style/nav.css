@@ -1,0 +1,115 @@
+@import url(/style/setting.css);
+
+/* nav */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+@media (min-width: 576px) {
+  header {
+    position: unset;
+  }
+}
+
+.navbar > .container-fluid {
+  padding: 0rem 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .navbar > .container-fluid {
+    flex-direction: column;
+    padding: 0;
+    align-items: stretch;
+  }
+}
+
+/* logo */
+.navbar-brand {
+  align-self: center;
+  width: 75%;
+}
+
+@media (min-width: 576px) {
+  .navbar-brand {
+    margin: 1rem 0;
+    width: auto;
+  }
+}
+
+.navbar-brand img {
+  width: auto;
+}
+
+.navbar-brand img:hover {
+  opacity: var(--hover-opacity);
+}
+
+/* nav links */
+.nav__items {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .nav__items {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav__items .nav-link {
+    text-align: center;
+  }
+
+  .nav__items .nav-item {
+    flex-grow: 1;
+    border-bottom: var(--accent-color3) solid 2px;
+    flex-basis: 0;
+  }
+}
+
+.navbar-toggler {
+  align-self: center;
+  padding: 1px;
+  color: transparent;
+}
+
+.offcanvas-header {
+  background-color: var(--theme-color1);
+  opacity: var(--hover-opacity);
+}
+
+.offcanvas-title {
+  color: #ffffff;
+}
+
+.offcanvas-body {
+  padding: initial;
+  background-color: var(--nav-default);
+}
+
+.offcanvas-body li {
+  background-color: var(--nav-default);
+}
+
+.offcanvas-body li:hover {
+  background-color: var(--nav-hover);
+}
+
+.offcanvas-body li:nth-child(1) {
+  background-color: var(--nav-home);
+}
+
+.offcanvas-body a {
+  padding: 1.5rem;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: var(--nav-default2);
+}
+
+.navbar-nav .nav-link.active:hover {
+  color: var(--theme-color1);
+}

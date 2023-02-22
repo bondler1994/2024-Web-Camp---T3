@@ -174,7 +174,6 @@ a.gallery_image_outlook:hover {
   .gallery_body_outlook {
     display: block;
     text-align: center;
-    
   }
   .gallery_text_outlook {
     margin: 0;
@@ -235,4 +234,8 @@ a.gallery_image_outlook:hover {
     flex-basis: 0;
     flex-grow: 2;
   }
+}
+
+.thumbnail_text {
+  margin: 0;
 }

@@ -1,15 +1,15 @@
 /* body */
 
 body {
-    background-image: url("../img/bg-body.jpg");
+  background-image: url("../img/bg-body.jpg");
+}
+
+.my_container.container {
+  background-color: #356618;
+}
+
+@media (min-width: 1440px) {
+  .my_container.container {
+    max-width: 1080px;
   }
-  
-  .container {
-    background-color: #356618;
-  }
-  
-  @media (min-width: 1440px) {
-    .container {
-      max-width: 1080px;
-    }
-  }
+}

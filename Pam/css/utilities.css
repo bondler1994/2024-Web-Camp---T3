@@ -13,9 +13,6 @@
 }
 
 /* make a gap by margin */
-.mt_half_gap {
-  margin-top: calc(0.5 * var(--gap-y));
-}
 .mt_gap {
   margin-top: var(--gap-y);
 }
@@ -24,12 +21,6 @@
   margin-bottom: var(--gap-y);
 }
 
-.me_half_gap {
-  margin-right: calc(0.5 * var(--gap-x));
-}
-
-.mx_half_gap {
+.mb_half_gap {
   margin-left: calc(0.5 * var(--gap-x));
-  margin-right: calc(0.5 * var(--gap-x));
 }
-/* 要改gap時，除了以上的值，還要記得改bs .row --bs-gutter-x & .container padding帶入的--bs-gutter-x */

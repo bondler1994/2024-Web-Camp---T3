@@ -8,214 +8,264 @@
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h5,
+p {
+  margin-bottom: 0;
+}
 body {
   margin: 0;
   background-image: url("../img/bg-body.jpg");
 }
-.row {
+.row.modified {
   --bs-gutter-x: var(--gap-x);
   --bs-gutter-y: var(--gap-y);
-  /* 在root裡寫了，這裡還要寫？ */
-  margin-top: 0;
-  /* 當--bs-gutter-y不為零，row的負的上margin會跑出來 
-  為保留row>*的上margin，故設0 */
 }
-.container {
-  padding-left: calc(0.5 * var(--gap-x));
-  padding-right: calc(0.5 * var(--gap-x));
+.container.modified {
+  padding: var(--gap-y) var(--gap-x);
   /* 改掉container預設左右padding 0.75rem */
 }
-body > .container {
+body > .container.modified {
   background-color: #356619;
-  padding: 0 var(--gap-x); /* 綠色背景內縮，為網頁內容區 */
+  padding: 0 var(--gap-x);
+  /* 綠色背景內縮，為網頁內容區 */
 }
 
 /* 設定解析度>1200時的內容寬度，覆蓋掉原本bs的設定 */
 @media (min-width: 1200px) {
-  body > .container {
+  body > .container.modified {
     max-width: 1067px;
   }
 }
-
-.navbar {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-.navbar .row,
-.banner_info_items,
-.portfolio_container .row,
-.article .row {
-  margin-left: 0;
-  margin-right: 0;
-  /* 取消row預設的負左右margin */
-}
-.navbar .row > *,
-.banner_info_items > * {
-  margin-top: 0;
-}
-
-.header_container {
+.header {
   background-color: #fff;
 }
-
-/* h1包住圖和<a>，寬度佔滿container-fluid */
-.logo {
-  padding: 1rem 0;
+.navbar.modified {
+  justify-content: flex-start;
+  padding: calc(0.5 * var(--gap-y)) calc(0.5 * var(--gap-x));
+  gap: calc(0.5 * var(--gap-y)) calc(0.5 * var(--gap-x));
 }
-/* <a>作為容器，避免換了比例差異大的圖後會跑版，故給寬高 */
+@media (min-width: 768px) {
+  .navbar.modified {
+    justify-content: center;
+    padding: var(--gap-y) 0 calc(0.25 * var(--gap-y));
+    gap: var(--gap-y) calc(0.5 * var(--gap-x));
+  }
+}
+
+.logo {
+  font-size: 0;
+}
+img[alt="logo_large"] {
+  display: none;
+}
 .logo_link {
-  display: block; /*為了使用margin auto而設*/
-  margin: 0 auto;
-  width: 70%;
-  height: 65px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
 }
 .logo_link img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  /* 小尺寸避免圖比例跑掉 */
 }
-
-/* sm以上，logo固定大小 
+/* md以上，大logo固定尺寸
 <a>作為container 固定長寬>>螢幕放大縮小時，空白區會縮放*/
-@media (min-width: 576px) {
+@media (min-width: 768px) {
+  img[alt="logo_small"] {
+    display: none;
+  }
+  img[alt="logo_large"] {
+    display: inline-block;
+  }
   .logo_link {
     width: 400px;
+    height: 65px;
+  }
+  .header .navbar-expand-md .navbar-collapse {
+    flex-basis: 100%;
   }
 }
-/* sm以上，flex換行，但因改用bs flex-wrap故先註解掉*/
-/* @media (min-width: 576px) {
-  .header_container .navbar-expand-sm {
-    flex-wrap: wrap;
-  }
-} */
+
 /* 漢堡圖連結，因為沒設navbar-light，bs預設設定不會出來 
 取消navbar-light是為了不要吃到bs對navbar-link等的顏色設定*/
-.navbar .navbar-toggler-icon {
+.navbar_theme .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-collapse.modified {
+  margin: 0 calc(-0.5 * var(--gap-x)) calc(-0.5 * var(--gap-y));
+}
+@media (min-width: 768px) {
+  .navbar-collapse.modified {
+    margin: initial;
+  }
 }
 /* navbar ul>li顏色設定 */
 /* 加大navbar-nav padding */
-.navbar-nav .nav-link {
+.navbar_theme .navbar-nav .nav-link {
   background-color: #4b4b4b;
   color: #f1f3ca;
   padding: 1rem 0.5rem;
 }
-.navbar-nav .active {
+.navbar_theme .navbar-nav .active {
   background-color: #95b285;
   color: #4a7532;
 }
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
+.navbar_theme .navbar-nav .nav-link:hover,
+.navbar_theme .navbar-nav .nav-link:focus {
   background-color: #d9eacf;
   color: #63725b;
 }
 /* banner文字在小裝置排在圖下面，在md以上以absolute移到圖上 */
-.banner_article {
+.carousel .banner_article {
   background-color: #4b4b4b;
   padding: 1rem;
+  font-size: 0;
 }
 @media (min-width: 768px) {
-  .banner_article {
+  .carousel .banner_article {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    /* 以left 0 & right 0撐滿整個card寬 */
+    /* 以left 0 & right 0撐滿整個容器寬 */
     padding: 1rem;
     background-color: rgb(0, 0, 0, 0.6);
   }
 }
-
-.card {
-  border: none;
-  border-radius: 0;
-}
-.banner_container .card-title,
-.banner_info .banner_subtitle {
+.banner_title {
   color: #edef9f;
 }
-
-.banner_container .card-text,
-.banner_info .banner_text,
+.banner_text,
 .copyright {
   color: #f3f7f0;
 }
-.banner_container .card-text {
+
+.carousel-inner .banner_text {
   display: inline-block;
-  width: calc(100% - 30px);
+  width: calc(100% - 1.5rem);
+  vertical-align: middle;
+  font-size: 1rem;
+}
+.text_more {
+  display: inline-block;
   vertical-align: middle;
 }
-.banner_container .text_more {
-  display: inline-block;
-  vertical-align: middle;
-}
-.banner_container .text_more i {
-  font-size: 22px;
+.text_more i {
+  font-size: 1.5rem;
   color: #fff;
 }
-@media (min-width: 992px) {
-  .text-truncate {
-    text-overflow: initial;
-    overflow: initial;
-    white-space: initial;
-  }
-}
 
-@media (min-width: 992px) {
-  .banner_container .text_more {
-    display: none;
-  }
-  .banner_container .card-text {
-    width: 100%;
-  }
+.banner_info > .row,
+.footer .row {
+  --bs-gutter-x: calc(2 * var(--gap-x));
+  --bs-gutter-y: calc(2 * var(--gap-y));
+}
+.banner_info_items .banner_img img {
+  width: 100%;
 }
 .border_white {
   border: 1px white solid;
 }
-
-.banner_info_border {
-  border-bottom: 1px solid grey;
+.banner_info_items {
+  gap: var(--gap-y) var(--gap-x);
+}
+.banner_info_items .banner_img {
+  width: 20%;
+}
+.banner_info_items .banner_article {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .banner_info_items {
+    flex-direction: column;
+  }
+  .banner_info_items .banner_img,
+  .banner_info_items .banner_article {
+    width: 100%;
+    text-align: center;
+  }
+  .banner_info_items .banner_img img {
+    width: 50%;
+  }
 }
 @media (min-width: 992px) {
-  .banner_info_border {
-    border-bottom: none;
-    border-right: 1px solid grey;
+  .banner_info_items {
+    flex-direction: row;
   }
-  .banner_info > .row > div {
-    margin-top: calc(0.5 * var(--bs-gutter-y));
-    margin-bottom: calc(0.5 * var(--bs-gutter-y));
-    padding-top: calc(0.5 * var(--bs-gutter-y));
-    padding-bottom: calc(0.5 * var(--bs-gutter-y));
+  .banner_info .banner_img {
+    width: 33.33%;
+    text-align: initial;
+  }
+  .banner_info_items .banner_article {
+    width: 66.67%;
+    text-align: initial;
+  }
+  .banner_info_items .banner_img img {
+    width: 100%;
+  }
+}
+.banner_info > .row > :not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  background-color: grey;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(-1 * var(--gap-y));
+  /* 寫在.col上，內容被抽掉，分隔線還在*/
+}
+@media (min-width: 768px) {
+  .banner_info > .row > :not(:last-child)::after {
+    display: none;
+  }
+  .banner_info > .row > :not(:first-child)::before {
+    content: "";
+    display: inline-block;
+    background-color: grey;
+    width: 1px;
+    position: absolute;
+    top: calc(-0.5 * var(--gap-y));
+    bottom: calc(-0.5 * var(--gap-y));
+    left: 0;
   }
 }
 .banner_info a:hover,
-.portfolio_container a:hover {
+.portfolio a:hover {
   transform: scale(1.05);
   opacity: 0.8;
 }
 .background_light {
   background-color: #fff;
 }
-
-.portfolio_container .title,
-.article_container .title {
+.title,
+.portfolio .items_title {
+  color: #8b6854;
+}
+.title {
   background-color: #dce7d4;
   border-bottom: 3px #abc79a solid;
 }
-.portfolio_container .title,
-.article_container .title,
-.portfolio_container .card-title {
-  color: #8b6854;
+.items > * + * {
+  margin-top: var(--gap-y);
 }
-.card-body {
-  padding: 0;
+.portfolio .items a {
+  display: inline-block;
+  width: 100%;
+}
+.items img {
+  width: 100%;
 }
 hr {
-  margin: 0;
+  margin: var(--gap-y) 0;
 }
 .article_container ol {
   margin-bottom: 0;
+}
+.article_container li + li {
+  margin-top: var(--gap-y);
 }
 .article_container ol li::marker {
   font-weight: bold;
@@ -228,7 +278,7 @@ hr {
     order: -1;
   }
 }
-.footer_container {
+.footer {
   background-color: #dce8d4;
 }
 .copyright {
@@ -236,87 +286,114 @@ hr {
   margin-left: calc(-0.5 * var(--gap-x));
   margin-right: calc(-0.5 * var(--gap-x));
 }
-.footer_container .card {
-  background-color: #dce8d4;
-  border-radius: initial;
-}
-.footer_container .card-title,
-.footer_container p,
-.footer_container .card-text {
+
+.footer h5,
+.footer p {
   color: #888789;
 }
 
-.footer_container .under_md_collapse {
-  display: grid;
-  /* 小裝置時按鈕出現，本來是設dispaly:block，但參考bs botton block-button滿版按鈕的設定，加了d-grid在按鈕父層，故直接在此改grid */
+/* .footer > .row > div {
+  padding: var(--gap-y) var(--gap-x);
+} */
+.footer button {
+  width: 100%;
+  padding: 0;
 }
-.footer_container .normal_title {
+.footer .container {
+  border: 1px #abc79a solid;
+}
+.footer_col:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #abc79a;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(-1 * var(--gap-y));
+}
+.contact {
+  text-align: center;
+}
+.contact div {
+  font-size: 0;
+}
+.contact_text {
+  font-size: 1rem;
   display: none;
-  /* 普通標題隱藏 */
 }
-
-@media (min-width: 768px) {
-  .footer_container .under_md_collapse {
-    display: none;
-  }
-  .footer_container .collapse {
-    display: block;
-  }
-  .footer_container .normal_title {
-    display: block;
-  }
-}
-.under_md_collapse i {
-  color: #888789;
-}
-.footer_content > div {
-  border-bottom: 1px solid grey;
-}
-.footer_content > :last-child {
-  border-bottom: none;
-}
-@media (min-width: 768px) {
-  .footer_content > :nth-child(odd) {
-    border-right: 1px solid grey;
-  }
-  .footer_content :nth-last-child(2) {
-    border-bottom: none;
-  }
-}
-@media (min-width: 992px) {
-  .footer_content > div {
-    border-bottom: none;
-    border-right: 1px solid grey;
-  }
-  .footer_content > :last-child {
-    border-right: none;
-  }
-}
-.footer_container .row > div {
-  margin-top: 0;
-}
-.footer_container > .row > * {
-  padding-left: var(--bs-gutter-x);
-  padding-right: var(--bs-gutter-x);
-}
-.footer_container a {
-  display: block;
+.contact_link {
+  display: inline-block;
   width: fit-content;
   color: #888789;
 }
-.footer_container a:hover {
+.contact_link + .contact_link {
+  margin-left: var(--gap-x);
+}
+.footer .btn i {
+  color: #888789;
+}
+@media (min-width: 768px) {
+  .footer .collapse {
+    display: block;
+  }
+  .footer:last-child h5 {
+    text-align: left;
+  }
+  .footer .btn i {
+    display: none;
+  }
+  .footer button {
+    pointer-events: none;
+    padding: 0;
+  }
+  .contact {
+    text-align: initial;
+  }
+  .footer_col:nth-child(odd)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #abc79a;
+    position: absolute;
+    top: calc(-1 * var(--gap-y));
+    bottom: calc(-1 * var(--gap-y));
+    right: 0;
+  }
+  .footer_col:nth-child(2)::before {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .contact_text {
+    display: inline;
+  }
+  .contact_link {
+    display: block;
+  }
+  .contact_link + .contact_link {
+    margin-left: 0;
+    margin-top: calc(var(--gap-y) * 0.5);
+  }
+  .footer_col:not(:first-child)::before {
+    display: none;
+  }
+  .footer_col:not(:first-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    background-color: #abc79a;
+    position: absolute;
+    top: calc(-1 * var(--gap-y));
+    bottom: calc(-1 * var(--gap-y));
+    left: 0;
+  }
+}
+.contact_link:hover {
   color: #356619;
   transform: scale(1.1);
 }
-.footer_container .collapse i {
+.contact_icon {
   color: #356619;
-  font-size: 22px;
-}
-.card-title,
-h1,
-h2,
-h3,
-h5,
-p {
-  margin-bottom: 0;
+  font-size: 32px;
 }
