@@ -1,5 +1,8 @@
 .header_box {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
   justify-content: center;
   background-color: white;
 }
@@ -15,8 +18,13 @@
 }
 
 .header_navbar .nav-item {
-  flex: 2;
+  flex: 1;
   text-align: center;
+}
+
+.navbar-nav .nav-link.active {
+  background-color: rgb(157, 177, 138);
+  color: rgb(45, 110, 37);
 }
 
 .header_navbar .navbar-nav .nav-item .nav-link {

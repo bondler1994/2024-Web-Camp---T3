@@ -11,28 +11,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!--引入 .css-->
-    <link href="./css_v2/body.css" rel="stylesheet" type="text/css">
-    <link href="./css_v2/header.css" rel="stylesheet" type="text/css">
-    <link href="./css_v2/main.css" rel="stylesheet" type="text/css">
-    <link href="./css_v2/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/body.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="container" >
         <!-- header -->
         <header>
-            <div class="header_box">
+            <div class="header_box navbar p-3 ">
                 <!-- 漢堡選單 -->
-                <button class="header_box_button navbar-toggler navbar-light" type="button" 
+                <button class="header_box_button navbar-toggler navbar-light p-0" type="button" 
                 data-bs-toggle="collapse" data-bs-target="#navbarContent" 
                 aria-controls="navbarContent" aria-expanded="false" 
                 aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> 
-                    <!-- 漢堡線沒跑出來？？？？ -->
-                 
+                    <span class="navbar-toggler-icon"></span>  
                 </button>
                 <!-- logo -->
-                <h1 class="header_box_logo p-3">
-                    <a href="##"><img class="w-100" src="img/logo.png" alt="Walking through garden's logo"></a>
+                <h1 class="header_box_logo">
+                    <a href="##"><img class="w-100" src="./img/logo.png" alt="Walking through garden'slogo"></a>
                 </h1>
             </div>
             <!-- nav href -->
@@ -67,6 +65,7 @@
         <main>
             <!-- 上半區 -->
             <section class="main_carousel">
+                <!-- 輪播圖區 -->
                 <figure  class="carousel slide carousel-fade" id="carouselControls">
                     <!-- 輪播圖片與文字區塊 -->
                     <div class="carousel-inner">
@@ -112,35 +111,43 @@
                 </figure>
 
                 <!-- 三格圖文 -->
-                <div class="main_carousel_thumbnail">
-                    <div class="thumbnail_body px-3 py-2">
-                        <a class="thumbnail_body_image active" data-bs-target="#carouselControls" 
-                        data-bs-slide-to="0" aria-current="true" aria-label="Slide1" href="##">
-                        <img class="h-100" src="img/gardening-tip.jpg" alt="tips of digging"></a>
-                        <div class="thumbnail_body_text "> 
-                            <h3>Tips</h3>
-                            <p>This is just a place holder, so you can see the site would look like.</p>
+                <div class="thumbnail_items p-3">
+                    <div class="row"> 
+                        <div class="col-md-4">
+                            <div class="thumbnail_body pb-3 p-lg-0">
+                                <a class="thumbnail_body_image active" data-bs-target="#carouselControls" 
+                                data-bs-slide-to="0" aria-current="true" aria-label="Slide1" href="##">
+                                    <img class="h-100" src="img/gardening-tip.jpg" alt="tips of digging"></a>
+                                <div class="thumbnail_body_text">
+                                    <h3>Tips</h3>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="thumbnail_body  px-3 py-2">
-                        <a class="thumbnail_body_image " data-bs-target="#carouselControls" 
-                        data-bs-slide-to="1" aria-current="true" aria-label="Slide2" href="##">
-                        <img class="h-100" src="img/gardening-happy-gardener.jpg" alt="Happy-gardene"></a>
-                        <div class="thumbnail_body_text "> 
-                            <h3>Happy-gardener</h3>
-                            <p>This is just a place holder, so you can see the site would look like.</p>
+                        <div class="col-md-4">
+                            <div class="thumbnail_body pb-3 p-lg-0">
+                                <a class="thumbnail_body_image" data-bs-target="#carouselControls" 
+                                data-bs-slide-to="1" aria-current="true" aria-label="Slide2" href="##">
+                                    <img class="h-100" src="img/gardening-happy-gardener.jpg" alt="Happy-garden"></a>
+                                <div class="thumbnail_body_text">
+                                    <h3>Happy-gardener</h3>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="thumbnail_body  px-3 py-2">
-                        <a class="thumbnail_body_image" data-bs-target="#carouselControls" 
-                        data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" href="##">
-                        <img class="h-100" src="img/gardening-planting.jpg" alt="planting plants"></a>
-                        <div class="thumbnail_body_text"> 
-                            <h3>Planting</h3>
-                            <p>This is just a place holder, so you can see the site would look like.</p>
+                        <div class="col-md-4">
+                            <div class="thumbnail_body pb-3 p-lg-0">
+                                <a class="thumbnail_body_image" data-bs-target="#carouselControls" 
+                                data-bs-slide-to="2" aria-current="true" aria-label="Slide3" href="##">
+                                    <img class="h-100" src="img/gardening-planting.jpg" alt="planting plants"></a>
+                                <div class="thumbnail_body_text">
+                                    <h3>Planting</h3>
+                                    <p>This is just a place holder, so you can see the site would look like.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
+
             </section>
 
             <!-- 下半區 -->
@@ -197,9 +204,10 @@
 
                 <!-- 大區塊圖文 -->
                 <div class="tips tips_outlook">
+                   
                     <div class="tips_image_outlook"><img class="w-100" src="img/tip-of-the-week.jpg" alt="Planting to the ground"></div>
                     <div class="tips_text tips_text_outlook">
-                        <h4 class="tips_title mb-3 ps-4">TIPS OF THE WEEK</h4>
+                         <h4 class="tips_title mb-3 ps-4">TIPS OF THE WEEK</h4>
                         <ul>
                             <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
                             <li class="mb-3">This is just a place holder, so you can see the site would look like.This is just a place holder, so you can see the site would look like.</li>
@@ -217,15 +225,8 @@
                     <div class="footer_body  h-100 py-3 p-md-3">
                         <h5>
                             <span>PLACE HOLDER</span>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                            data-bs-target="#footer-column1" aria-expanded="false" aria-controls="footer-column1" 
-                            aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fa-solid fa-sort-down"></i>
-                                </span>
-                            </button>
                         </h5>
-                        <div class="footer_text  collapse" id="footer-column1">
+                        <div class="footer_text">
                             <a href="##">This is just a place holder.</a>
                             <a href="##">This is just a place holder.</a>
                             <a href="##">This is just a place holder.</a>
@@ -236,13 +237,8 @@
                     <div class="footer_body  h-100 py-3 p-md-3">
                         <h5>
                             <span>PLACE HOLDER</span>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column2" aria-controls="footer-column2" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fa-solid fa-sort-down"></i>
-                                </span>
-                            </button>
                         </h5>
-                        <div class="footer_text  collapse" id="footer-column2">
+                        <div class="footer_text">
                             <a href="##">This is just a place holder.</a>
                             <a href="##">This is just a place holder.</a>
                             <a href="##">This is just a place holder.</a>
@@ -253,30 +249,21 @@
                     <div class="footer_body  h-100 py-3 p-md-3">
                         <h5>
                             <span>PLACE HOLDER</span>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column3" aria-controls=footer-column3" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fa-solid fa-sort-down"></i>
-                                </span>
-                            </button>
                         </h5>
-                        <div class="footer_text collapse" id="footer-column3">
+                        <div class="footer_text">
                             <a href="##">This is just a place holder.</a>
                             <a href="##">This is just a place holder.</a>
                             <a href="##">This is just a place holder.</a>
                         </div>
                     </div>
                 </div>
+              
                 <div class="footer_items col-md-6 col-lg-3">
                     <div class="footer_body  h-100 py-3 p-md-3">
                         <h5>
                             <span>CONNECT</span>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#footer-column4" aria-controls="footer-column4" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon">
-                                    <i class="fa-solid fa-sort-down"></i>
-                                </span>
-                            </button>
                         </h5>
-                        <div class="footer_text  collapse" id="footer-column4">
+                        <div class="footer_text">
                             <a href="##"><i class="fa-fw fa-solid fa-envelope"></i><span>Email us</span></a>
                             <a href="##"><i class="fa-fw fa-brands fa-facebook-square"></i><span>Facebook</span></a>
                             <a href="##"><i class="fa-fw fa-brands fa-twitter"></i><span>Twitter</span></a>
@@ -298,4 +285,5 @@
    
 </body>
 </html>
+
 
