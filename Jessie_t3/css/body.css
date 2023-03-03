@@ -1,20 +1,20 @@
-* {
-  /* outline: 1px solid red; */
-}
+/* * {
+  outline: 1px solid red;
+} */
 
 body {
   background-image: url("../img/bg-body.jpg");
-  min-width: 350px;
+  min-width: 320px;
 }
 
-.container {
+.dev.container {
   background-color: #356618;
 }
 
 p,
 h1,
-h4,
-h5 {
+h2,
+h3 {
   margin: 0;
 }
 

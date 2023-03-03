@@ -11,6 +11,10 @@
   box-shadow: 0 0 0 0;
 }
 
+.header_box_logo a {
+  display: inline-block;
+}
+
 .header_navbar .navbar-nav {
   width: 100%;
   background-color: #535151;
@@ -18,7 +22,8 @@
 }
 
 .header_navbar .nav-item {
-  flex: 1;
+  flex-grow: 1;
+  flex-basis: 0;
   text-align: center;
 }
 
@@ -43,9 +48,9 @@
   border-radius: 0;
 }
 
-.header_box .navbar-toggler-icon {
+/* .header_box .navbar-toggler-icon {
   background-image: url(/Jessie_t3/img/navbar.svg);
-}
+} */
 
 /* 由小而大後，讓漢堡消失 */
 @media (min-width: 768px) {

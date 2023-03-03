@@ -71,35 +71,3 @@ footer {
     border-right: 1px #b3cca3 solid;
   }
 }
-
-/* 手風琴改寫 */
-.accordion-button,
-.collapsed {
-  text-shadow: 2px 2px #fff;
-  background-color: #dbe9d4;
-  text-align: center;
-  justify-content: center;
-}
-.accordion-button span {
-  color: #808080;
-  font-size: 1.25rem;
-}
-
-.accordion-body {
-  background: #dbe9d4;
-  text-align: center;
-}
-
-.accordion-body a {
-  display: block;
-  text-decoration: none;
-  color: #808080;
-}
-
-.accordion-body a:hover {
-  color: #356618;
-}
-
-.accordion-item .accordion-button:not(.collapsed) {
-  background-color: #dbe9d4;
-}

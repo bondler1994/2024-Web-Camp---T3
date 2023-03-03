@@ -61,16 +61,6 @@
   color: white;
 }
 
-/* 三格圖文 */
-/* .main_carousel_thumbnail {
-  gap: 10px;
-}
-@media (min-width: 768px) {
-  .main_carousel_thumbnail {
-    gap: 0;
-  }
-} */
-
 /* .thumbnail_body */
 .thumbnail_body {
   display: flex;
@@ -119,6 +109,12 @@
   .thumbnail_body_text p {
     display: block;
   }
+  .thumbnail_item {
+    border-right: 4px ridge rgba(253, 253, 253, 0.2);
+  }
+  .thumbnail_item:nth-last-of-type(1) {
+    border-color: rgba(255, 255, 255, 0);
+  }
 }
 
 /* .thumbnail_body_image */
@@ -145,7 +141,7 @@ a.gallery_image {
   display: inline-block;
 }
 
-.gallery_text h4 {
+.gallery_text h3 {
   font-size: 18px;
   text-transform: uppercase;
   color: #836045;
@@ -154,13 +150,14 @@ a.gallery_image {
   font-size: 13px;
 }
 
-.gallery_title {
+.title {
   line-height: 40px;
   font-size: 20px;
   text-shadow: 1px 1px white;
   color: #836045;
   background-color: #dbe8d4;
   border-bottom: #b3cca3 2px solid;
+  text-transform: uppercase;
 }
 
 a.gallery_image_outlook:hover {
@@ -169,7 +166,7 @@ a.gallery_image_outlook:hover {
 
 /* gallery:由小而大會改變的部分  */
 
-.gallery_body {
+.gallery_card {
   display: flex;
 }
 
@@ -177,7 +174,7 @@ a.gallery_image_outlook:hover {
   margin-left: 16px;
 }
 @media (min-width: 768px) {
-  .gallery_body {
+  .gallery_card {
     display: block;
     text-align: center;
   }
@@ -189,7 +186,7 @@ a.gallery_image_outlook:hover {
 }
 
 @media (min-width: 992px) {
-  .gallery_body {
+  .gallery_card {
     text-align: left;
   }
 }
@@ -199,16 +196,6 @@ a.gallery_image_outlook:hover {
 }
 
 /* tips:不會改變的 */
-
-.tips_title {
-  line-height: 40px;
-  font-size: 20px;
-  text-shadow: 1px 1px white;
-  text-transform: uppercase;
-  color: #836045;
-  background-color: #dbe8d4;
-  border-bottom: #b3cca3 2px solid;
-}
 
 .tips_text_outlook ul {
   padding-left: 1rem;
