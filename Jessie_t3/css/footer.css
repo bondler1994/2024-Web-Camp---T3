@@ -10,7 +10,7 @@ footer {
   color: #356618;
 }
 
-.footer_body h5 {
+.footer_body h4 span {
   text-shadow: 2px 2px white;
 }
 
@@ -55,7 +55,7 @@ footer {
     align-items: flex-start;
   }
 
-  .footer_body h5 {
+  .footer_body h4 {
     margin-bottom: 16px;
   }
   .copyright span {

@@ -85,7 +85,7 @@
 
 /* .thumbnail_body_text */
 .thumbnail_body_text {
-  margin: 0 0 0 16px;
+  margin-left: 16px;
 }
 .thumbnail_body_text h3 {
   color: #e3e699;
@@ -148,6 +148,7 @@ a.gallery_image {
 }
 .gallery_text p {
   font-size: 13px;
+  letter-spacing: 0.8px;
 }
 
 .title {

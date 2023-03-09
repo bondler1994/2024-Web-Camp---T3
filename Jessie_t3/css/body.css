@@ -7,6 +7,7 @@ body {
   min-width: 320px;
 }
 
+/* 前面放一個自己的class 避免範圍太大，選到其他的container */
 .dev.container {
   background-color: #356618;
 }
@@ -14,7 +15,8 @@ body {
 p,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
