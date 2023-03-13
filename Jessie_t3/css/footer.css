@@ -6,11 +6,11 @@ footer {
 }
 
 .footer_body i {
-  font-size: 20px;
+  font-size: 34px;
   color: #356618;
 }
 
-.footer_body_outlook h5 {
+.footer_body h4 span {
   text-shadow: 2px 2px white;
 }
 
@@ -20,8 +20,8 @@ footer {
   text-decoration: none;
 }
 
-.footer_body_outlook a:hover,
-.footer_body_outlook i:hover {
+.footer_body a:hover,
+.footer_body i:hover {
   color: orange;
 }
 
@@ -40,7 +40,7 @@ footer {
   border-bottom: 1px #b3cca3 solid;
 }
 
-.footer_body_outlook {
+.footer_body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,11 +51,11 @@ footer {
   .footer_items:nth-of-type(3) {
     border-right: 1px #b3cca3 solid;
   }
-  .footer_body_outlook {
+  .footer_body {
     align-items: flex-start;
   }
 
-  .footer_body_outlook h5 {
+  .footer_body h4 {
     margin-bottom: 16px;
   }
   .copyright span {

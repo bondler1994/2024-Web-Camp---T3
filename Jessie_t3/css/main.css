@@ -1,26 +1,19 @@
-/* Carousel:不會改變的部分 */
-
-.my_carousel .carousel-control-prev,
-.my_carousel .carousel-control-next {
+/* .main_carousel */
+.main_carousel .carousel-control-prev,
+.main_carousel .carousel-control-next {
   width: 5%;
 }
+.main_carousel figure {
+  margin-bottom: 0;
+}
+
+/* 輪播區說明文 */
+/* .carousel_text */
 .carousel_text {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-.carousel_icon_content {
-  font-size: 20px;
-  color: gray;
-}
-
-.carousel_icon_outlook:hover {
-  color: white;
-}
-
-/* Carousel:由小而大會改變的部分  */
-
-.carousel_text_outlook {
+.carousel_text {
   display: none;
 }
 
@@ -37,7 +30,7 @@
 }
 
 @media (min-width: 768px) {
-  .carousel_text_outlook {
+  .carousel_text {
     display: block;
     position: absolute;
   }
@@ -58,58 +51,29 @@
   }
 }
 
-/* thumbnail：不會改變的 */
-
-.thumbnail_text h3 {
-  color: #e3e699;
-  font-size: 16px;
+/* 下一個箭頭小符號 */
+/* .carousel_icon */
+.carousel_icon {
+  font-size: 20px;
+  color: gray;
 }
-
-.thumbnail_text p {
+.carousel_icon:hover {
   color: white;
-  font-size: 13px;
 }
 
-.thumbnail_image {
-  height: 90px;
-  border: 1px solid white;
-}
-
-a.thumbnail_image {
-  display: inline-block;
-}
-
-a.thumbnail_image:hover {
-  opacity: 0.8;
-}
-
-/* thumbnail：由小而大會改變的部分 */
-
+/* .thumbnail_body */
 .thumbnail_body {
   display: flex;
   flex-grow: 1;
   text-align: left;
 }
-
-.thumbnail_text_outlook {
-  margin: 0 0 0 16px;
-}
-
 @media (min-width: 768px) {
-  .my_thumbnail {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 10px 0;
-  }
   .thumbnail_body {
     display: block;
     text-align: center;
   }
-  .thumbnail_body:not(:last-child) {
+  .thumbnail__body_outlook:not(:last-child) {
     box-shadow: 4px 0 3px -3px #4d8928;
-  }
-  .thumbnail_text_outlook {
-    margin: 16px 0 0 0;
   }
 }
 
@@ -117,19 +81,59 @@ a.thumbnail_image:hover {
   .thumbnail_body {
     display: flex;
   }
+}
 
-  .thumbnail_text_outlook {
+/* .thumbnail_body_text */
+.thumbnail_body_text {
+  margin-left: 16px;
+}
+.thumbnail_body_text h3 {
+  color: #e3e699;
+  font-size: 16px;
+}
+
+.thumbnail_body_text p {
+  color: white;
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .thumbnail_body_text {
+    margin: 16px 0 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .thumbnail_body_text {
     margin: 0 0 0 16px;
     text-align: left;
   }
-  .thumbnail_text_outlook p {
+  .thumbnail_body_text p {
     display: block;
   }
+  .thumbnail_item {
+    border-right: 4px ridge rgba(253, 253, 253, 0.2);
+  }
+  .thumbnail_item:nth-last-of-type(1) {
+    border-color: rgba(255, 255, 255, 0);
+  }
+}
+
+/* .thumbnail_body_image */
+.thumbnail_body_image {
+  height: 90px;
+  border: 1px solid white;
+}
+
+a.thumbnail_body_image {
+  display: inline-block;
+}
+
+a.thumbnail_body_image:hover {
+  opacity: 0.8;
 }
 
 /* gallery:不會改變的  */
 
-.my_gallery {
+.main_gallery {
   background-color: white;
 }
 
@@ -137,23 +141,24 @@ a.gallery_image {
   display: inline-block;
 }
 
-.gallery_text h4 {
+.gallery_text h3 {
   font-size: 18px;
   text-transform: uppercase;
   color: #836045;
 }
-
 .gallery_text p {
   font-size: 13px;
+  letter-spacing: 0.8px;
 }
 
-.gallery_title {
+.title {
   line-height: 40px;
   font-size: 20px;
   text-shadow: 1px 1px white;
   color: #836045;
   background-color: #dbe8d4;
   border-bottom: #b3cca3 2px solid;
+  text-transform: uppercase;
 }
 
 a.gallery_image_outlook:hover {
@@ -162,26 +167,27 @@ a.gallery_image_outlook:hover {
 
 /* gallery:由小而大會改變的部分  */
 
-.gallery_body_outlook {
+.gallery_card {
   display: flex;
 }
 
-.gallery_text_outlook {
+.gallery_text {
   margin-left: 16px;
 }
-
 @media (min-width: 768px) {
-  .gallery_body_outlook {
+  .gallery_card {
     display: block;
     text-align: center;
   }
-  .gallery_text_outlook {
+}
+@media (min-width: 768px) {
+  .gallery_text {
     margin: 0;
   }
 }
 
 @media (min-width: 992px) {
-  .gallery_body_outlook {
+  .gallery_card {
     text-align: left;
   }
 }
@@ -191,16 +197,6 @@ a.gallery_image_outlook:hover {
 }
 
 /* tips:不會改變的 */
-
-.tips_title {
-  line-height: 40px;
-  font-size: 20px;
-  text-shadow: 1px 1px white;
-  text-transform: uppercase;
-  color: #836045;
-  background-color: #dbe8d4;
-  border-bottom: #b3cca3 2px solid;
-}
 
 .tips_text_outlook ul {
   padding-left: 1rem;
@@ -225,7 +221,6 @@ a.gallery_image_outlook:hover {
     flex-direction: row;
     gap: 20px;
   }
-
   .tips_image_outlook {
     flex-basis: 0;
     flex-grow: 1;
