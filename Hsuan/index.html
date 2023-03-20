@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container px-sm-4 px-0">
+    <div class="container px-sm-4 px-0 whole_container">
         <header>
-            <div class="logo_container navbar p-4">
+            <div class="logo navbar p-4">
                 <button class="navbar-toggler d-md-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <h1 class="m-0 logo">
+                <h1 class="m-0">
                     <a href="##">
                         <img src="./img/logo.png" alt="logo">
                     </a>
@@ -49,7 +49,7 @@
         </header>
         <main>
             <section>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./img/gardening-tips.jpg" class="d-block w-100" alt="gardening-tips">
@@ -73,9 +73,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row g-0 my-2">
-                        <div class="col-12 col-lg-4 px-4 py-3 slide_control active" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
-                            <div class="me-4 slide_picture">
+                    <div class="row gx-5 m-0 py-lg-4">
+                        <div class="col-12 col-lg-4 py-4 py-lg-0 slide_control active" data-bs-target="#carouselCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+                            <div class="slide_picture">
                                 <img src="./img/gardening-tips2.jpg" alt="gardening-tips">
                             </div>
                             <div class="slide_text">
@@ -83,8 +83,8 @@
                                 <p class="m-0">This is just a place holder. This is just a place holder.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 px-4 py-3 slide_control" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
-                            <div class="me-4 slide_picture">
+                        <div class="col-12 col-lg-4 py-4 py-lg-0 slide_control" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+                            <div class="slide_picture">
                                 <img src="./img/happy-gardener.jpg" alt="happy-gardener">
                             </div>
                             <div class="slide_text">
@@ -92,8 +92,8 @@
                                 <p class="m-0">This is just a place holder. This is just a place holder.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 px-4 py-3 slide_control" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
-                            <div class="me-4 slide_picture">
+                        <div class="col-12 col-lg-4 py-4 py-lg-0 slide_control" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+                            <div class="slide_picture">
                                 <img src="./img/planting.jpg" alt="planting">
                             </div>
                             <div class="slide_text">
@@ -104,56 +104,56 @@
                     </div>
                 </div>
             </section>
-            <section class="py-4">
-                <div class="mx-4 featured_garden_container">
+            <section class="p-4">
+                <div class="featured_garden_container">
                     <h2 class="text-uppercase mb-4 px-4 py-2 article_heading">featured gardens</h2>
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0 garden_card">
+                    <div class="row gy-4">
+                        <div class="col-12 col-sm-6 col-lg-3 garden_card">
                             <a href="##">
                                 <img class="garden_img" src="./img/feature-gardens1.jpg" alt="juliet's-garden">      
                             </a>
                             <div>
-                                <h3 class="text-uppercase my-3 garden_heading">juliet's garden</h3>
+                                <h3 class="text-uppercase garden_heading">juliet's garden</h3>
                                 <p class="m-0 garden_text">This is just a place holder, so you can see what the site would look like.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0 garden_card">
+                        <div class="col-12 col-sm-6 col-lg-3 garden_card">
                             <a href="##">
                                 <img class="garden_img" src="./img/feature-gardens2.jpg" alt="joanne's garden">
                             </a>
                             <div>
-                                <h3 class="text-uppercase my-3 garden_heading">joanne's garden</h3>
+                                <h3 class="text-uppercase garden_heading">joanne's garden</h3>
                                 <p class="m-0 garden_text">This is just a place holder, so you can see what the site would look like.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0 garden_card">
+                        <div class="col-12 col-sm-6 col-lg-3 garden_card">
                             <a href="##">
                                 <img class="garden_img" src="./img/feature-gardens3.jpg" alt="jettka's-garden">
                             </a>
                             <div>
-                                <h3 class="text-uppercase my-3 garden_heading">jettka's garden</h3>
+                                <h3 class="text-uppercase garden_heading">jettka's garden</h3>
                                 <p class="m-0 garden_text">This is just a place holder, so you can see what the site would look like.</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0 garden_card">
+                        <div class="col-12 col-sm-6 col-lg-3 garden_card">
                             <a href="##">
                                 <img class="garden_img" src="./img/feature-gardens4.jpg" alt="jia's-garden">
                             </a>
                             <div>
-                                <h3 class="text-uppercase my-3 garden_heading">jia's garden</h3>
+                                <h3 class="text-uppercase garden_heading">jia's garden</h3>
                                 <p class="m-0 garden_text">This is just a place holder, so you can see what the site would look like.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr class="m-4">
-                <div class="tips_container mx-4">
+                <hr class="my-4">
+                <div class="tips_container">
                     <div class="row">
                         <div class="col-12 col-md-7 col-lg-8">
                             <h2 class="text-uppercase mb-4 px-4 py-2 article_heading">tips of the week</h2>
-                            <ol class="m-md-0 ps-4">
-                                <li class="mb-2">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
-                                <li class="mb-2">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                            <ol class="m-md-0 p-0">
+                                <li class="mb-3">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
+                                <li class="mb-3">This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
                                 <li>This is just a place holder, so you can see what the site would look like. This is just a place holder, so you can see what the site would look like.</li>
                             </ol>
                         </div>
@@ -168,7 +168,7 @@
             <div class="row g-0">
                 <div class="col-12 col-sm-6 col-md-3 p-4">
                     <h3 class="text-uppercase">place holder</h3>
-                    <div class="footer_text">
+                    <div>
                         <p class="m-0">This is just a place holder.</p>
                         <p class="m-0">This is just a place holder.</p>
                         <p class="m-0">This is just a place holder.</p>
@@ -176,7 +176,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 p-4">
                     <h3 class="text-uppercase">place holder</h3>
-                    <div class="footer_text">
+                    <div>
                         <p class="m-0">This is just a place holder.</p>
                         <p class="m-0">This is just a place holder.</p>
                         <p class="m-0">This is just a place holder.</p>
@@ -184,7 +184,7 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-3 p-4">
                     <h3 class="text-uppercase">place holder</h3>
-                    <div class="footer_text">
+                    <div>
                         <p class="m-0">This is just a place holder.</p>
                         <p class="m-0">This is just a place holder.</p>
                         <p class="m-0">This is just a place holder.</p>
@@ -193,17 +193,21 @@
                 <div class="col-12 col-sm-6 col-md-3 p-4">
                     <h3 class="text-uppercase">connect</h3>
                     <div class="social_media">
-                        <a href="##" class="mb-1">
-                            <i class="fa-solid fa-envelope fa-fw me-2"></i>Email us
-                        </a>
-                        <a href="##" class="m-0 mb-1">
-                            <i class="fa-brands fa-square-facebook fa-fw me-2"></i>Facebook
-                        </a>
-                        <a href="##" class="mb-sm-1">
-                            <i class="fa-brands fa-twitter fa-fw me-2"></i>Twitter
+                        <a href="##">
+                            <i class="fa-solid fa-envelope fa-fw"></i>
+                            <span>Email us</span>
                         </a>
                         <a href="##">
-                            <i class="fa-brands fa-square-google-plus fa-fw me-2"></i>Google+
+                            <i class="fa-brands fa-square-facebook fa-fw"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="##">
+                            <i class="fa-brands fa-twitter fa-fw"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="##">
+                            <i class="fa-brands fa-square-google-plus fa-fw"></i>
+                            <span>Google+</span>
                         </a>
                     </div>
                 </div>

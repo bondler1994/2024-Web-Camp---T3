@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url(./img/bg-body.jpg);
 }
-.container{
+.whole_container{
     background-color: var(--dark-green);
 }
 
@@ -19,52 +19,52 @@ body {
 header {
     background-color: var(--white);
 }
-.logo_container {
+.logo {
     display: flex;
     justify-content: center;
 }
 @media (max-width: 767px) {
-    .logo_container {
+    .logo {
         justify-content: space-between;
     }
 }
-.logo_container .navbar-toggler {
+.logo .navbar-toggler {
     box-shadow: none;
 }
-.logo {
+h1 {
     width: 50%;
 }
 @media (max-width: 767px) {
-    .logo {
+    h1 {
         width: 80%;
     }
 }
-.logo a {
+h1 a {
     display: inline-block;
     width: 100%;
 }
-.logo a img {
+h1 a img {
     width: 100%;
 }
-nav {
+header nav {
     border-bottom: 1px solid var(--white);
     background-color: #4a4a4a;
 }
-.navbar-nav {
+header .navbar-nav {
     width: 100%;
 }
-.nav-item {
+header .nav-item {
     flex-basis: 0;
     flex-grow: 1;
     font-size: 18px;
 }
-.nav-link {
+header .nav-link {
     color: #f0f2c9;
 }
-.nav-link:hover {
+header .nav-link:hover {
     background-color: #daebd0;
 } 
-.navbar-nav .nav-link.active {
+header .navbar-nav .nav-link.active {
     background-color: #97b486;
     color: var(--dark-green);
 }
@@ -103,6 +103,7 @@ nav {
 }
 .slide_control {
     display: flex;
+    gap: 25px;
     cursor: pointer;
 }
 .slide_control:not(:last-child) {
@@ -120,7 +121,7 @@ nav {
 .slide_picture {
     height: 120px;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
     .slide_picture {
         height: 80px;
     }
@@ -149,6 +150,11 @@ section:nth-child(2){
     background-color: var(--light-green);
     color: var(--brown);
 }
+.garden_card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 .garden_card a {
     display: inline-block;
     width: 100%;
@@ -165,6 +171,9 @@ section:nth-child(2){
 }
 .garden_text {
     font-size: 21px;
+}
+.tips_container ol {
+    list-style-position: inside;
 }
 .tips_container ol li {
     font-size: 20px;
@@ -209,27 +218,32 @@ footer .col-12:last-child {
 footer h3 {
     font-size: 24px;
 }
-.footer_text {
+footer {
     font-size: 18px;
 }
-.footer_text p:hover {
+footer p:hover {
     cursor: pointer;
     color: var(--dark-green);
 }
 .social_media {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 @media (max-width: 575px) {
     .social_media {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 0;
     }
 }
 .social_media a {
-    color: #8c8c8c;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
     letter-spacing: 1px;
+    color: #8c8c8c;
 }
 .social_media a:hover {
     color: var(--dark-green);
@@ -241,7 +255,6 @@ footer h3 {
 }
 .social_media a i {
     font-size: 24px;
-    vertical-align: middle;
     color: var(--dark-green);
 }
 .copyright{
