@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 
 body {
@@ -9,6 +9,7 @@ body {
 
 .container {
   background-color: #356618;
+  min-width: 300px;
 }
 
 a {
@@ -20,17 +21,18 @@ a {
 }
 
 /* header */
-header {
+header {  
   background-color: white;
+}
+
+.header_wrapper {
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .logo a {
   display: inline-block;
 }
-
-/* .nav-link {
-  color: #f4f5c7;
-} */
 
 .navbar-nav {
   border-bottom: 1px solid white;
@@ -53,10 +55,7 @@ header {
 
 /* section banner */
 .banner_text {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .banner_text h2 {
@@ -75,6 +74,10 @@ header {
 .banner_list_img_box {
   flex-direction: row;
   background-color: transparent;
+}
+
+.banner_list_img_box>div+div {
+  border-top: 1px solid #6c757d;
 }
 
 .banner_list_img_box h5 {
@@ -99,6 +102,11 @@ header {
   color: #836045;
   border-bottom: #b3cca3 2px solid;
   text-transform: uppercase;
+
+}
+
+.weekly_tips h2 {
+  margin-top: 1.5rem;
 }
 
 .weekly_topics h5 {
@@ -118,7 +126,7 @@ header {
 }
 
 .footer_block:not(.footer_block:nth-of-type(4)) {
-  border-right: 1px #b3cca3 solid;
+  border-bottom: 1px #b3cca3 solid;
 }
 
 .social_media a {
@@ -130,7 +138,97 @@ header {
   font-size: 1.5em;
 }
 
-.copyright p{
-color:white;
-margin: 0;
+.copyright p {
+  color: white;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* RWD */
+
+@media screen and (max-width: 576px) {
+  .banner_list_img_box .card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .banner_list_img_box>div {
+    margin: 16px 0;
+  }
+
+  .banner_list_img_box>div+div {
+    border-top: unset;
+    border-left: 1px solid #6c757d;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .banner_list_img_box h5 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer_block:nth-of-type(2n) {
+    border-left: 1px #b3cca3 solid;
+  }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .banner_list_img_box h5 {
+    text-align: center;
+  }
+
+  .banner_list_img_box img {
+    margin-top: 16px;
+  }
+
+  .weekly_topics h5 {
+    height: 48px;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .navbar_button {
+    display: none;
+  }
+
+  .banner_text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .weekly_tips h2 {
+    margin-top: 0;
+  }
+
+  .footer_block:not(.footer_block:nth-of-type(4)) {
+    border-left: 1px #b3cca3 solid;
+  }
+
+  .copyright p {
+    font-size: 18px;
+  }
+}
+
+/* animation */
+
+.logo:hover, .banner_list_img_box img:hover {
+  transform: scale(1.1);
+}
+
+.garden_img:hover {
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+
+.social_media a:hover {
+  color: black;
 }

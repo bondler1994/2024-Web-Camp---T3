@@ -13,40 +13,47 @@
 
 <body>
   <div class="container px-3">
+    <!-- header -->
     <header class="m-0 text-center">
-      <h1 class="logo mb-0"><a class="p-3 col-sm-6" href="##"><img class="w-100" src="./img/logo.png"
-            alt="logo img"></a></h1>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light p-0" style="background-color: #4B4B4B;">
-      <div class="container-fluid p-0">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="header_wrapper navbar p-3">
+        <!-- navbar漢堡排 -->
+        <button class="navbar_button navbar-toggler navbar-light p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav col-12 text-center m-0">
-            <li class="nav-item px-0 col-12 col-sm-2">
-              <a class="nav-link py-3 active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item px-0 col-12 col-sm-2">
-              <a class="nav-link py-3" href="##">About</a>
-            </li>
-            <li class="nav-item px-0 col-12 col-sm-2">
-              <a class="nav-link py-3" href="##">Plants</a>
-            </li>
-            <li class="nav-item px-0 col-12 col-sm-2">
-              <a class="nav-link py-3" href="##">Gardens</a>
-            </li>
-            <li class="nav-item px-0 col-12 col-sm-2">
-              <a class="nav-link py-3" href="##">News</a>
-            </li>
-            <li class="nav-item px-0 col-12 col-sm-2">
-              <a class="nav-link py-3" href="##">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <!-- logo -->
+        <h1 class="logo mb-0"><a class="p-3" href="##"><img class="w-100" src="./img/logo.png" alt="logo img"></a>
+        </h1>
       </div>
-    </nav>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light p-0" style="background-color: #4B4B4B;">
+        <div class="container-fluid p-0">
+          <div class="collapse navbar-collapse row m-0" id="navbarNav">
+            <ul class="navbar-nav col-12 text-center m-0 p-0">
+              <li class="nav-item px-0 col-lg-2">
+                <a class="nav-link py-3 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-0 col-lg-2">
+                <a class="nav-link py-3" href="##">About</a>
+              </li>
+              <li class="nav-item px-0 col-lg-2">
+                <a class="nav-link py-3" href="##">Plants</a>
+              </li>
+              <li class="nav-item px-0 col-lg-2">
+                <a class="nav-link py-3" href="##">Gardens</a>
+              </li>
+              <li class="nav-item px-0 col-lg-2">
+                <a class="nav-link py-3" href="##">News</a>
+              </li>
+              <li class="nav-item px-0 col-lg-2">
+                <a class="nav-link py-3" href="##">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
     <main>
       <section class="banner">
         <div id="banner-carousel-Controls" class="carousel slide" data-bs-ride="carousel">
@@ -109,14 +116,14 @@
           </button>
         </div>
         <div class="banner_list">
-          <div class="card banner_list_img_box">
+          <div class="card row banner_list_img_box m-0">
             <div class="col-sm-4 row g-0">
-              <div class="col-md-4 m-auto text-center">
+              <div class="col-4 col-sm-12 col-lg-4 m-auto text-center">
                 <a type="button" data-bs-target="#banner-carousel-Controls" data-bs-slide-to="0" aria-label="Slide 1">
                   <img src="./img/gardening1.jpg" class="img-fluid rounded-start" alt="...">
                 </a>
               </div>
-              <div class="col-md-8">
+              <div class="col-8 col-sm-12 col-lg-8">
                 <div class="card-body">
                   <h5 class="card-title">Tips</h5>
                   <p class="card-text">This is just a place holder. This is just a place holder.</p>
@@ -124,12 +131,12 @@
               </div>
             </div>
             <div class="col-sm-4 row g-0">
-              <div class="col-md-4 m-auto text-center border-start border-secondary">
+              <div class="col-4 col-sm-12 col-lg-4 m-auto text-center">
                 <a type="button" data-bs-target="#banner-carousel-Controls" data-bs-slide-to="1" aria-label="Slide 2">
                   <img src="./img/gardening3.jpg" class="img-fluid rounded-start" alt="...">
                 </a>
               </div>
-              <div class="col-md-8">
+              <div class="col-8 col-sm-12 col-lg-8">
                 <div class="card-body">
                   <h5 class="card-title">Happy Gardener</h5>
                   <p class="card-text">This is just a place holder. This is just a place holder.</p>
@@ -137,12 +144,12 @@
               </div>
             </div>
             <div class="col-sm-4 row g-0">
-              <div class="col-md-4 m-auto text-center border-start border-secondary">
+              <div class="col-4 col-sm-12 col-lg-4 m-auto text-center">
                 <a type="button" data-bs-target="#banner-carousel-Controls" data-bs-slide-to="2" aria-label="Slide 3">
                   <img src="./img/gardening2.jpg" class="img-fluid rounded-start" alt="...">
                 </a>
               </div>
-              <div class="col-md-8">
+              <div class="col-8 col-sm-12 col-lg-8">
                 <div class="card-body">
                   <h5 class="card-title">Planting</h5>
                   <p class="card-text">This is just a place holder. This is just a place holder.</p>
@@ -157,7 +164,7 @@
           <h2 class="px-3 py-2 mb-4">featured gardens</h2>
           <div class="row">
             <div class="card col-sm-3">
-              <a href="##" class="garden-img">
+              <a href="##" class="garden_img">
                 <img src="./img/garden1.jpg" class="card-img-top" alt="...">
               </a>
               <div class="card-body px-0">
@@ -168,7 +175,7 @@
               </div>
             </div>
             <div class="card col-sm-3">
-              <a href="##" class="garden-img">
+              <a href="##" class="garden_img">
                 <img src="./img/garden2.jpg" class="card-img-top" alt="...">
               </a>
               <div class="card-body px-0">
@@ -179,7 +186,7 @@
               </div>
             </div>
             <div class="card col-sm-3">
-              <a href="##" class="garden-img">
+              <a href="##" class="garden_img">
                 <img src="./img/garden3.jpg" class="card-img-top" alt="...">
               </a>
               <div class="card-body px-0">
@@ -190,7 +197,7 @@
               </div>
             </div>
             <div class="card col-sm-3">
-              <a href="##" class="garden-img">
+              <a href="##" class="garden_img">
                 <img src="./img/garden4.jpg" class="card-img-top" alt="...">
               </a>
               <div class="card-body px-0">
@@ -205,20 +212,20 @@
         <hr>
         <div class="card weekly_tips">
           <div class="row g-0">
-            <div class="col-md-4">
+            <div class="col-lg-4 order-1 order-lg-0">
               <img src="./img/garden5.jpg" class="img-fluid rounded-start w-100" alt="...">
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8">
               <div class="card-body py-0">
                 <h2 class="card-title px-3 py-2 mb-4">tips of the week</h2>
                 <ol>
-                  <li class="mb-3">This is just a place holder, so you can see what the
+                  <li class="mb-2">This is just a place holder, so you can see what the
                     site would look like. This is just a place holder, so
                     you can see what the site would look like.</li>
-                  <li class="mb-3">This is just a place holder, so you can see what the
+                  <li class="mb-2">This is just a place holder, so you can see what the
                     site would look like. This is just a place holder, so
                     you can see what the site would look like.</li>
-                  <li class="mb-3">This is just a place holder, so you can see what the
+                  <li class="mb-2">This is just a place holder, so you can see what the
                     site would look like. This is just a place holder, so
                     you can see what the site would look like.</li>
                 </ol>
@@ -231,28 +238,33 @@
     </main>
     <footer>
       <div class="footer_blocks row m-0">
-      <div class="footer_block col py-4">
-        <h4>place holoder</h4>
-        <p>This is just a place holder, so you can see what the
-        site would look like.</p>
-      </div>
-      <div class="footer_block col py-4"><h4>place holoder</h4>
-      <p>This is just a place holder, so you can see what the
-        site would look like.</p>
-      </div>
-      <div class="footer_block col py-4">
-        <h4>place holoder</h4>
-        <p>This is just a place holder, so you can see what the
-          site would look like.</p>
-      </div>
-      <div class="footer_block col py-4"><h4>connect</h4>
-        <div class="social_media">
-          <a class="py-2" href="mailto:"><i class="fa-fw fa-solid fa-envelope"></i><span class="ms-2">Email us</span></a>
-          <a class="py-2" href="##"><i class="fa-fw fa-brands fa-facebook-square"></i><span class="ms-2">Facebook</span></a>
-          <a class="py-2" href="##"><i class="fa-fw fa-brands fa-twitter"></i><span class="ms-2">Twitter</span></a>
-          <a class="py-2" href="##"><i class="fa-fw fa-brands fa-google-plus-square"></i><span class="ms-2">Google+</span></a>
+        <div class="footer_block col-md-6 col-lg-3 py-4">
+          <h4>place holoder</h4>
+          <p>This is just a place holder, so you can see what the
+            site would look like.</p>
         </div>
-      </div>
+        <div class="footer_block col-md-6 col-lg-3 py-4">
+          <h4>place holoder</h4>
+          <p>This is just a place holder, so you can see what the
+            site would look like.</p>
+        </div>
+        <div class="footer_block col-md-6 col-lg-3 py-4">
+          <h4>place holoder</h4>
+          <p>This is just a place holder, so you can see what the
+            site would look like.</p>
+        </div>
+        <div class="footer_block col-md-6 col-lg-3 py-4">
+          <h4>connect</h4>
+          <div class="social_media">
+            <a class="py-2" href="mailto:"><i class="fa-fw fa-solid fa-envelope"></i><span class="ms-2">Email
+                us</span></a>
+            <a class="py-2" href="https://www.facebook.com" target="_blank"><i class="fa-fw fa-brands fa-facebook-square"></i><span
+                class="ms-2">Facebook</span></a>
+            <a class="py-2" href="##"><i class="fa-fw fa-brands fa-twitter"></i><span class="ms-2">Twitter</span></a>
+            <a class="py-2" href="##"><i class="fa-fw fa-brands fa-google-plus-square"></i><span
+                class="ms-2">Google+</span></a>
+          </div>
+        </div>
       </div>
       <div class="copyright text-center py-3">
         <p>Garden Walkthrough &copy; 2023 | All Rights Reserved</p>
