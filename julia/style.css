@@ -205,6 +205,10 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  .banner_list a {
+    margin-left: 16px;
+  }
+
   .weekly_tips h2 {
     margin-top: 0;
   }
