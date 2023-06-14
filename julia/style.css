@@ -41,13 +41,14 @@ nav {
   background-color: #4B4B4B;
 }
 
+/* 變更bootstrap預設 */
 .navbar-nav {
   border-bottom: 1px solid white;
 }
 
+/* 變更bootstrap預設 */
 .navbar-light .navbar-nav .nav-link {
   color: #f4f5c7;
-
 }
 
 .navbar-light:hover .navbar-nav:hover .nav-link:hover {
@@ -55,12 +56,13 @@ nav {
   color: black;
 }
 
+/* 變更bootstrap預設 */
 .navbar-light .navbar-nav .active {
   background-color: #95b285;
   color: #406e26;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .navbar_button {
     display: none;
   }
@@ -71,7 +73,7 @@ nav {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .banner_text {
     position: absolute;
     left: 0;
@@ -107,7 +109,7 @@ nav {
   color: #406e26;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .banner_list a {
     margin-left: 16px;
   }
@@ -140,14 +142,14 @@ nav {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .banner_list_img_box .card-body {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
   .banner_list_img_box>div {
     margin: 16px 0;
   }
@@ -158,13 +160,13 @@ nav {
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .banner_list_img_box h5 {
     font-size: 18px;
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 991px) {
+@media screen and (min-width: 576px) and (max-width: 991px) {
   .banner_list_img_box h5 {
     text-align: center;
   }
@@ -172,7 +174,6 @@ nav {
   .banner_list_img_box img {
     margin-top: 16px;
   }
-
 }
 
 /* section weekly_topics */
@@ -196,7 +197,7 @@ nav {
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .weekly_tips h2 {
     margin-top: 0;
   }
@@ -207,7 +208,7 @@ nav {
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 991px) {
+@media only (min-width: 576px) and (max-width: 991px) {
   .weekly_topics h5 {
     height: 48px;
   }
@@ -224,7 +225,7 @@ nav {
   text-align: center;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .footer_block {
     text-align: unset;
   }
@@ -239,13 +240,13 @@ nav {
   border-bottom: 1px #b3cca3 solid;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .footer_block:nth-of-type(2n) {
     border-left: 1px #b3cca3 solid;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .footer_block:not(.footer_block:nth-of-type(4)) {
     border-left: 1px #b3cca3 solid;
   }
@@ -263,7 +264,7 @@ nav {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .social_media a {
     width: unset;
     text-align: unset;
@@ -292,7 +293,7 @@ nav {
   font-size: 12px;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .copyright p {
     font-size: 18px;
   }
