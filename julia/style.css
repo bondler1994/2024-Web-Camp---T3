@@ -10,7 +10,7 @@ body {
 .container-fluid {
   background-color: #356618;
   min-width: 320px;
-  max-width: 1366px;
+  max-width: 1140px;
 }
 
 a {
@@ -22,13 +22,14 @@ a {
 }
 
 /* header */
-nav>div {
+.navbar>div {
   background-color: #4B4B4B;
 }
 
 /* 變更bootstrap預設 */
 .navbar-light .navbar-nav .nav-link {
   color: #f4f5c7;
+  font-weight: 500;
 }
 
 /* 變更bootstrap預設 */
@@ -40,7 +41,7 @@ nav>div {
 /* 變更bootstrap預設 */
 .navbar-light .navbar-nav .active {
   background-color: #95b285;
-  color: #406e26;
+  color: #356618;
 }
 
 @media (min-width: 992px) {
@@ -75,7 +76,7 @@ nav>div {
   color: #406e26;
 }
 
-.banner_list_img_box>div+div {
+.banner_list_img_box:not(:nth-of-type(1)) {
   border-top: 1px solid #6c757d;
 }
 
@@ -93,25 +94,29 @@ nav>div {
 }
 
 
-@media (min-width: 576px) {
-  .banner_list_img_box>div+div {
+@media (min-width: 992px) {
+  .banner_list_img_box:not(:nth-of-type(1)) {
     border-top: unset;
     border-left: 1px solid #6c757d;
   }
+}
 
+
+@media (min-width: 992px) {
   .banner_list_img_box h5 {
-    font-size: 18px;
+    height: unset;
+  }
+  .banner_list_img_box img {
+    width: 100%;
+    height: unset;
   }
 }
 
-@media (min-width: 768px) {
-  .banner_list_img_box h5 {
-    font-size: 20px;
-  }
-}
+
+
 
 /* main section weekly_topics */
-.weekly_topics h2 {
+.weekly_topics h3 {
   background-color: #DBE8D4;
   color: #836045;
   border-bottom: #b3cca3 2px solid;
