@@ -2,49 +2,63 @@
   outline: 1px solid red;
 } */
 
+:root {
+  --p_fz: 14px;
+}
+
+p,
+li,
+span {
+  font-size: var(--p_fz);
+}
+
 
 body {
   background-image: url(./img/bg-body.jpg);
 }
 
-.container-fluid {
+.body_wrapper {
   background-color: #356618;
-  min-width: 320px;
-  max-width: 1140px;
+}
+
+.container-fluid {
+  /* min-width: 320px; 造成捲軸困擾降低使用者體驗*/
+  max-width: 891px;
 }
 
 a {
   text-decoration: none;
 }
 
-.card {
-  border: none;
-}
-
 /* header */
-.navbar>div {
+nav {
   background-color: #4B4B4B;
 }
 
-/* 變更bootstrap預設 */
-.navbar-light .navbar-nav .nav-link {
-  color: #f4f5c7;
-  font-weight: 500;
+.logo a {
+  max-width: 400px;
+  box-sizing: content-box;
 }
 
 /* 變更bootstrap預設 */
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+.nav_wrapper.navbar-light .navbar-nav .nav-link {
+  color: #f4f5c7;
+  padding: 0.75em;
+}
+
+/* 變更bootstrap預設 */
+.nav_wrapper.navbar-light:hover .navbar-nav:hover .nav-link:hover {
   background-color: #D9EACF;
   color: black;
 }
 
 /* 變更bootstrap預設 */
-.navbar-light .navbar-nav .active {
+.nav_wrapper.navbar-light .navbar-nav .active {
   background-color: #95b285;
   color: #356618;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .banner_text {
     position: absolute;
     left: 0;
@@ -54,7 +68,7 @@ a {
 }
 
 /* main section banner */
-.banner_text h2 {
+.banner_text h4 {
   text-transform: uppercase;
   color: #e8ec9d;
 }
@@ -76,11 +90,7 @@ a {
   color: #406e26;
 }
 
-.banner_list_img_box:not(:nth-of-type(1)) {
-  border-top: 1px solid #6c757d;
-}
-
-.banner_list_img_box h5 {
+.banner_list_img_box h6 {
   color: #e8ec9d;
 }
 
@@ -93,27 +103,35 @@ a {
   transform: scale(1.1);
 }
 
+.banner_list_img_box:not(:nth-of-type(1)) {
+  border-top: 1px solid #6c757d;
+}
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .banner_list_img_box:not(:nth-of-type(1)) {
     border-top: unset;
-    border-left: 1px solid #6c757d;
+  }
+  .banner_list_img_box {
+    position: relative;
+  }
+  .banner_list_img_box:not(:nth-of-type(1))::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top:calc(-16px/2);
+    width: 1px;
+    height: calc(100% + 16px);
+    background-color: #6c757d;
   }
 }
 
 
-@media (min-width: 992px) {
-  .banner_list_img_box h5 {
-    height: unset;
-  }
+@media (min-width: 768px) {
   .banner_list_img_box img {
     width: 100%;
     height: unset;
   }
 }
-
-
-
 
 /* main section weekly_topics */
 .weekly_topics h3 {
@@ -121,6 +139,7 @@ a {
   color: #836045;
   border-bottom: #b3cca3 2px solid;
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .garden_img:hover {
@@ -133,17 +152,22 @@ a {
   text-transform: uppercase;
 }
 
-@media (min-width: 576px) {
-  .weekly_topics h5 {
-    height: 48px;
+/* .weekly_tips li {
+  text-indent: -2.5em;
+    list-style-type: none;
+    counter-increment: item;
   }
-}
 
-@media (min-width: 992px) {
-  .weekly_topics h5 {
-    height: unset;
-  }
-}
+.weekly_tips li::before {
+  width: 2em;
+    display: inline-block;
+    text-align: right;
+    content: counter(item) ".";
+    font-weight: bold;
+    padding-right: 0.5em;
+    box-sizing: content-box;
+} */
+
 
 /* footer */
 .footer_blocks {
@@ -160,25 +184,20 @@ a {
   border-bottom: 1px #b3cca3 solid;
 }
 
-@media (min-width: 768px) {
-  .footer_block:nth-of-type(2n) {
-    border-left: 1px #b3cca3 solid;
-  }
-}
 
-@media (min-width: 992px) {
-  .footer_block:not(.footer_block:nth-of-type(4)) {
+@media (min-width: 768px) {
+  .footer_block:not(.footer_block:nth-of-type(1)) {
     border-left: 1px #b3cca3 solid;
   }
 }
 
 .social_media a {
   color: gray;
-  width: 7em;
+  width: 6em;
   margin: 0 auto;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .social_media a {
     width: unset;
     margin: unset;
@@ -186,7 +205,7 @@ a {
 }
 
 .social_media i {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #356618;
   vertical-align: middle;
 }
@@ -203,11 +222,4 @@ a {
 .copyright p {
   color: white;
   margin: 0;
-  font-size: 12px;
-}
-
-@media (min-width: 992px) {
-  .copyright p {
-    font-size: 18px;
-  }
 }
