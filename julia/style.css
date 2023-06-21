@@ -151,23 +151,22 @@ nav {
   color: #836045;
   text-transform: uppercase;
 }
-
-/* .weekly_tips li {
+/* 為數字標號單獨粗體而寫 */
+.weekly_tips li {
+  list-style-type: none;
+  counter-increment: item;
   text-indent: -2.5em;
-    list-style-type: none;
-    counter-increment: item;
-  }
+}
 
 .weekly_tips li::before {
+  content: counter(item)".";
+  display: inline-block;
   width: 2em;
-    display: inline-block;
-    text-align: right;
-    content: counter(item) ".";
-    font-weight: bold;
-    padding-right: 0.5em;
-    box-sizing: content-box;
-} */
-
+  font-weight: bold;
+  text-align: right;
+  padding-right: 0.5em;
+  box-sizing: content-box;
+}
 
 /* footer */
 .footer_blocks {
