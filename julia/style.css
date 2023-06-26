@@ -4,6 +4,11 @@
 
 :root {
   --p_fz: 14px;
+  --green:#356618;
+  --light_green:#b3cca3;
+  --grass:#e8ec9d;
+  --gray:#6c757d;
+  --brown:#836045;  
 }
 
 p,
@@ -18,7 +23,7 @@ body {
 }
 
 .body_wrapper {
-  background-color: #356618;
+  background-color: var(--green);
 }
 
 .container-fluid {
@@ -41,6 +46,7 @@ nav {
 }
 
 /* 變更bootstrap預設 */
+/* 加入.nav_wrapper方便回復bootstrap預設及區域客製管理 */
 .nav_wrapper.navbar-light .navbar-nav .nav-link {
   color: #f4f5c7;
   padding: 0.75em;
@@ -55,7 +61,7 @@ nav {
 /* 變更bootstrap預設 */
 .nav_wrapper.navbar-light .navbar-nav .active {
   background-color: #95b285;
-  color: #356618;
+  color: var(--green);
 }
 
 @media (min-width: 768px) {
@@ -70,7 +76,7 @@ nav {
 /* main section banner */
 .banner_text h4 {
   text-transform: uppercase;
-  color: #e8ec9d;
+  color: var(--grass);
 }
 
 .banner_text p {
@@ -87,11 +93,11 @@ nav {
 
 .banner_text a:hover p,
 .banner_text a:hover i {
-  color: #406e26;
+  color: var(--green);
 }
 
 .banner_list_img_box h6 {
-  color: #e8ec9d;
+  color: var(--grass);
 }
 
 .banner_list_img_box p {
@@ -104,7 +110,7 @@ nav {
 }
 
 .banner_list_img_box:not(:nth-of-type(1)) {
-  border-top: 1px solid #6c757d;
+  border-top: 1px solid var(--gray);
 }
 
 @media (min-width: 768px) {
@@ -114,6 +120,7 @@ nav {
   .banner_list_img_box {
     position: relative;
   }
+  /* 裝飾線 */
   .banner_list_img_box:not(:nth-of-type(1))::before {
     content: "";
     position: absolute;
@@ -121,7 +128,7 @@ nav {
     top:calc(-16px/2);
     width: 1px;
     height: calc(100% + 16px);
-    background-color: #6c757d;
+    background-color: var(--gray);
   }
 }
 
@@ -136,8 +143,8 @@ nav {
 /* main section weekly_topics */
 .weekly_topics h3 {
   background-color: #DBE8D4;
-  color: #836045;
-  border-bottom: #b3cca3 2px solid;
+  color: var(--brown);
+  border-bottom: var(--light_green) 2px solid;
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -148,7 +155,7 @@ nav {
 }
 
 .weekly_topics h5 {
-  color: #836045;
+  color: var(--brown);
   text-transform: uppercase;
 }
 /* 為數字標號單獨粗體而寫 */
@@ -171,7 +178,7 @@ nav {
 /* footer */
 .footer_blocks {
   background-color: #dbe9d4;
-  color: gray;
+  color: var(--gray);
 }
 
 .footer_block h4 {
@@ -180,18 +187,18 @@ nav {
 }
 
 .footer_block:not(.footer_block:nth-of-type(4)) {
-  border-bottom: 1px #b3cca3 solid;
+  border-bottom: 1px var(--light_green) solid;
 }
 
 
 @media (min-width: 768px) {
   .footer_block:not(.footer_block:nth-of-type(1)) {
-    border-left: 1px #b3cca3 solid;
+    border-left: 1px var(--light_green) solid;
   }
 }
 
 .social_media a {
-  color: gray;
+  color: var(--gray);
   width: 6em;
   margin: 0 auto;
 }
@@ -205,7 +212,7 @@ nav {
 
 .social_media i {
   font-size: 1em;
-  color: #356618;
+  color: var(--green);
   vertical-align: middle;
 }
 
