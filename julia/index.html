@@ -27,7 +27,8 @@
         </h1>
       </div>
       <!-- navbar -->
-      <nav class="nav_wrapper navbar navbar-expand-md navbar-light p-0">
+      <!-- 平均分配順著bootstrap navbar思考不應該是加網格 -->
+      <!-- <nav class="nav_wrapper navbar navbar-expand-md navbar-light p-0">
         <div class="container-fluid p-0">
           <div class="collapse navbar-collapse row m-0" id="navbarNav">
             <ul class="navbar-nav col-12 text-center m-0 p-0 border-bottom border-1 border-white">
@@ -35,19 +36,45 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item px-0 col-md-2">
-                <a class="nav-link  href="##">About</a>
+                <a class="nav-link  href=" ##">About</a>
               </li>
               <li class="nav-item px-0 col-md-2">
-                <a class="nav-link  href="##">Plants</a>
+                <a class="nav-link  href=" ##">Plants</a>
               </li>
               <li class="nav-item px-0 col-md-2">
-                <a class="nav-link  href="##">Gardens</a>
+                <a class="nav-link  href=" ##">Gardens</a>
               </li>
               <li class="nav-item px-0 col-md-2">
-                <a class="nav-link  href="##">News</a>
+                <a class="nav-link  href=" ##">News</a>
               </li>
               <li class="nav-item px-0 col-md-2">
-                <a class="nav-link  href="##">Contact</a>
+                <a class="nav-link  href=" ##">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+      <nav class="nav_wrapper navbar navbar-expand-md navbar-light bg-light p-0">
+        <div class="container-fluid p-0">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav flex-fill">
+              <li class="nav-item flex-fill">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="##">About</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="##">Plants</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="##">Gardens</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="##">News</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="##">Contact</a>
               </li>
             </ul>
           </div>
@@ -117,9 +144,10 @@
           </button>
         </div>
         <div class="banner_list">
-          <div class="row m-0 py-0 py-md-3">
+          <!-- 平均分配 -->
+          <div class="row g-0">
             <div class="banner_list_img_box col-12 col-md-4 px-0 py-3 py-md-0">
-              <div class="row m-0">
+              <div class="row p-3">
                 <div class="col-4 col-sm-2 col-md-5 px-md-3 d-md-flex flex-column justify-content-center">
                   <div class="text-center">
                     <a type="button" data-bs-target="#banner_carousel_Controls" data-bs-slide-to="0"
@@ -138,7 +166,7 @@
               </div>
             </div>
             <div class="banner_list_img_box col-12 col-md-4 px-0 py-3 py-md-0">
-              <div class="row m-0">
+              <div class="row p-3">
                 <div class="col-4 col-sm-2 col-md-5 px-md-3 d-md-flex flex-column justify-content-center">
                   <div class="text-center">
                     <a type="button" data-bs-target="#banner_carousel_Controls" data-bs-slide-to="1"
@@ -157,7 +185,7 @@
               </div>
             </div>
             <div class="banner_list_img_box col-12 col-md-4 px-0 py-3 py-md-0">
-              <div class="row m-0">
+              <div class="row p-3">
                 <div class="col-4 col-sm-2 col-md-5 px-md-3 d-md-flex flex-column justify-content-center">
                   <div class="text-center">
                     <a type="button" data-bs-target="#banner_carousel_Controls" data-bs-slide-to="2"
@@ -239,7 +267,7 @@
         </div>
         <hr class="my-4">
         <div class="weekly_tips">
-          <div class="row m-0 justify-content-center">
+          <div class="row m-0">
             <div class="col-12 col-md-8 order-md-1 p-0">
               <div class="p-0">
                 <h3 class="px-3 py-2 mb-sm-3 fw-normal">tips of the week</h3>
@@ -252,12 +280,12 @@
                     you can see what the site would look like.</li>
                   <li class="mb-2">This is just a place holder, so you can see what the
                     site would look like. This is just a place holder, so
-                    you can see what the site would look like.</li>                    
+                    you can see what the site would look like.</li>
                 </ol>
               </div>
             </div>
-            <div class="col-8 col-md-4 text-center p-0 ps-md-0 pe-md-3">
-              <img src="./img/garden5.jpg" class="img-fluid rounded-start w-100" alt="planting img for weekly tips">
+            <div class="col-12 col-md-4 text-center p-0 ps-md-0 pe-md-3">
+              <img src="./img/garden5.jpg" class="img-fluid rounded-start w-80" alt="planting img for weekly tips">
             </div>
           </div>
         </div>
@@ -266,35 +294,43 @@
     <footer>
       <div class="footer_blocks row m-0">
         <div class="footer_block col-md-3 p-3 text-center text-md-start">
-          <h4 class="mb-3 fs-6">place holoder</h4>
-          <p class="m-0">This is just a place holder.</p>
-          <p class="m-0">This is just a place holder.</p>
-          <p class="m-0">This is just a place holder.</p>
+          <div>
+            <h4 class="mb-3 fs-6">place holoder</h4>
+            <p class="m-0">This is just a place holder.</p>
+            <p class="m-0">This is just a place holder.</p>
+            <p class="m-0">This is just a place holder.</p>
+          </div>
         </div>
         <div class="footer_block col-md-3 p-3 text-center text-md-start">
-          <h4 class="mb-3 fs-6">place holoder</h4>
-          <p class="m-0">This is just a place holder.</p>
-          <p class="m-0">This is just a place holder.</p>
-          <p class="m-0">This is just a place holder.</p>
+          <div>
+            <h4 class="mb-3 fs-6">place holoder</h4>
+            <p class="m-0">This is just a place holder.</p>
+            <p class="m-0">This is just a place holder.</p>
+            <p class="m-0">This is just a place holder.</p>
+          </div>
         </div>
         <div class="footer_block col-md-3 p-3 text-center text-md-start">
-          <h4 class="mb-3 fs-6">place holoder</h4>
-          <p class="m-0">This is just a place holder.</p>
-          <p class="m-0">This is just a place holder.</p>
-          <p class="m-0">This is just a place holder.</p>
+          <div>
+            <h4 class="mb-3 fs-6">place holoder</h4>
+            <p class="m-0">This is just a place holder.</p>
+            <p class="m-0">This is just a place holder.</p>
+            <p class="m-0">This is just a place holder.</p>
+          </div>
         </div>
         <div class="footer_block col-md-3 p-3 text-center text-md-start">
-          <h4 class="mb-3 fs-6">connect</h4>
-          <div class="social_media">
-            <a class="d-block text-start" href="mailto:"><i class="fa-fw fa-solid fa-envelope"></i><span
-                class="ms-1">Email
-                us</span></a>
-            <a class="d-block text-start" href="https://www.facebook.com" target="_blank"><i
-                class="fa-fw fa-brands fa-facebook-square"></i><span class="ms-1">Facebook</span></a>
-            <a class="d-block text-start" href="##"><i class="fa-fw fa-brands fa-twitter"></i><span
-                class="ms-1">Twitter</span></a>
-            <a class="d-block text-start" href="##"><i class="fa-fw fa-brands fa-google-plus-square"></i><span
-                class="ms-1">Google+</span></a>
+          <div>
+            <h4 class="mb-3 fs-6">connect</h4>
+            <div class="social_media">
+              <a class="d-block text-start" href="mailto:"><i class="fa-fw fa-solid fa-envelope"></i><span
+                  class="ms-1">Email
+                  us</span></a>
+              <a class="d-block text-start" href="https://www.facebook.com" target="_blank"><i
+                  class="fa-fw fa-brands fa-facebook-square"></i><span class="ms-1">Facebook</span></a>
+              <a class="d-block text-start" href="##"><i class="fa-fw fa-brands fa-twitter"></i><span
+                  class="ms-1">Twitter</span></a>
+              <a class="d-block text-start" href="##"><i class="fa-fw fa-brands fa-google-plus-square"></i><span
+                  class="ms-1">Google+</span></a>
+            </div>
           </div>
         </div>
       </div>

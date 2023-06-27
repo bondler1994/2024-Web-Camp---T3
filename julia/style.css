@@ -36,7 +36,7 @@ a {
 }
 
 /* header */
-nav {
+.nav_wrapper.navbar-light .container-fluid {
   background-color: #4B4B4B;
 }
 
@@ -125,9 +125,9 @@ nav {
     content: "";
     position: absolute;
     left: 0;
-    top:calc(-16px/2);
+    top:calc(16px/2);
     width: 1px;
-    height: calc(100% + 16px);
+    height: calc(100% - 16px);
     background-color: var(--gray);
   }
 }
