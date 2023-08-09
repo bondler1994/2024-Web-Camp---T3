@@ -144,9 +144,8 @@ a {
 .weekly_topics h3 {
   background-color: #DBE8D4;
   color: var(--brown);
-  border-bottom: var(--light_green) 2px solid;
+  border-bottom: #afca9f 2px solid;
   text-transform: uppercase;
-  font-size: 18px;
 }
 
 .garden_img:hover {
