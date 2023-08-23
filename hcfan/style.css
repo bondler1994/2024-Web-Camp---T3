@@ -16,33 +16,9 @@ body {
     background-color: var(--green);
 }
 
-.site-logo {
-    display: flex;
-    gap: 20px;
-    align-items: stretch;
-    justify-content: space-evenly;
-
-    max-height: 150px;
-    padding: 30px 10px;
-
-    background-color: white;
-}
-
 .site-logo .navbar-toggler {
-    /* display: none; */
     flex-basis: 80px;
     font-size: 2rem;
-}
-
-.site-logo img {
-    width: 100%;
-    object-fit: contain;
-}
-
-nav ul {
-    /* margin: 0;
-    padding: 0;
-    gap: 0; */
 }
 
 nav :is(li, a) {
@@ -56,8 +32,6 @@ nav :is(li, a) {
 
 nav a {
     color: #E4E6C0;
-    text-decoration: none;
-
     background-color: #4B4B4B;
 }
 
@@ -110,4 +84,12 @@ footer .info h2 {
 
 footer .info i {
     color: var(--green);
+}
+
+footer .info a {
+    color: gray;
+}
+
+footer .info a:hover {
+    color: darkgreen;
 }

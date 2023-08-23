@@ -18,9 +18,9 @@
   <div class="body-wrapper container-xxl px-0 px-sm-4">
     <!-- Header includes logo and navigation bar -->
     <header class="bg-white">
-      <div class="site-logo px-2 py-2 px-sm-8 py-sm-4 d-flex g-2 justify-content-space-evenly align-items-stretch">
-        <img src="img/logo.png">
-        <button class="navbar-toggler d-md-none display-1" data-bs-toggle="collapse" data-bs-target="#nav-bar"
+      <div class="site-logo row g-2 justify-content-evenly justify-content-md-center align-items-stretch px-2 py-2 px-sm-8 py-sm-4">
+        <img class="col-8 col-lg-6 object-fit-contain" src="img/logo.png">
+        <button class="col-4 navbar-toggler d-md-none display-1" data-bs-toggle="collapse" data-bs-target="#nav-bar"
           aria-expanded="false" aria-controls="nav">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -29,12 +29,12 @@
       <nav class="navbar collapse d-md-block py-1" id="nav-bar">
         <!-- Columns changes by screen size -->
         <ul class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 m-0 p-0">
-          <li class="col"><a class="w-100 p-3 fs-5 text-center" href="##" label="active">Home</a></li>
-          <li class="col"><a class="w-100 p-3 fs-5 text-center" href="##">About</a></li>
-          <li class="col"><a class="w-100 p-3 fs-5 text-center" href="##">Plants</a></li>
-          <li class="col"><a class="w-100 p-3 fs-5 text-center" href="##">Gardens</a></li>
-          <li class="col"><a class="w-100 p-3 fs-5 text-center" href="##">News</a></li>
-          <li class="col"><a class="w-100 p-3 fs-5 text-center" href="##">Contacts</a>
+          <li class="col"><a class="w-100 p-3 fs-5 text-center text-decoration-none" href="##" label="active">Home</a></li>
+          <li class="col"><a class="w-100 p-3 fs-5 text-center text-decoration-none" href="##">About</a></li>
+          <li class="col"><a class="w-100 p-3 fs-5 text-center text-decoration-none" href="##">Plants</a></li>
+          <li class="col"><a class="w-100 p-3 fs-5 text-center text-decoration-none" href="##">Gardens</a></li>
+          <li class="col"><a class="w-100 p-3 fs-5 text-center text-decoration-none" href="##">News</a></li>
+          <li class="col"><a class="w-100 p-3 fs-5 text-center text-decoration-none" href="##">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -77,13 +77,13 @@
       </section>
       <!-- Indicator for carousel -->
       <div class="row row-cols-1 row-cols-md-3 justify-content-evenly align-items-stretch text-white py-4">
-        <article class="col row justify-content-between px-3 py-2 py-md-0" data-bs-target="#carousel-banner"
+        <article class="col row justify-content-between px-3 py-2 py-md-0" data-bs-t-arget="#carousel-banner"
           data-bs-slide-to="0" class="active" aria-label="Slide0" aria-current="true">
           <div class="col-4">
             <img class="align-self-center w-100 text-center objec-fit-contain border border-2" src="img/gardening1.jpg"
               alt="gardening-tips">
           </div>
-          <div class="col-7">
+          <div class="col-7 d-md-block d-flex flex-column justify-content-center">
             <header>
               <h2 class="fs-5">Tips</h2>
             </header>
@@ -96,7 +96,7 @@
             <img class="align-self-center w-100 text-center objec-fit-contain border border-2" src="img/gardening2.jpg"
               alt="Happy Gardening">
           </div>
-          <div class="col-7">
+          <div class="col-7 d-md-block d-flex flex-column justify-content-center">
             <header>
               <h2 class="fs-5">Happy Gardening</h2>
             </header>
@@ -109,7 +109,7 @@
             <img class="align-self-center w-100 text-center objec-fit-contain border border-2" src="img/gardening3.jpg"
               alt="Planting">
           </div>
-          <div class="col-7">
+          <div class="col-7 d-md-block d-flex flex-column justify-content-center">
             <header>
               <h2 class="fs-5">Planting</h2>
             </header>
@@ -200,10 +200,21 @@
         <section class="info col p-4 border border-1">
           <h2 class="fs-4 text-uppercase">Connect</h2>
           <div>
-              <a class="d-block text-decoration-none fs-4"><i class="fa-solid fa-envelope"></i><span class="ms-1">Email us</span></a>
-              <a class="d-block text-decoration-none fs-4"><i class="fa-brands fa-square-facebook"></i><span class="ms-1">Facebook</span></a>
-              <a class="d-block text-decoration-none fs-4"><i class="fa-brands fa-twitter"></i><span class="ms-1">Twitter</i></span></a>
-              <a class="d-block text-decoration-none fs-4"><i class="fa-brands fa-square-google-plus"></i><span class="ms-1">Google+</span></a>
+            <a class="d-block text-decoration-none fs-5" href="mailto:contact@gardenworkthrough.org">
+              <i class="fa-fw fa-solid fa-envelope"></i>
+              <span class="ms-1">Email us</span>
+            </a>
+            <a class="d-block text-decoration-none fs-5" href="https://facebook.com">
+              <i class="fa-fw fa-brands fa-square-facebook"></i>
+              <span class="ms-1">Facebook</span>
+            </a>
+            <a class="d-block text-decoration-none fs-5" href="https://twitter.com">
+              <i class="fa-fw fa-brands fa-twitter"></i>
+              <span class="ms-1">Twitter</span></a>
+            <a class="d-block text-decoration-none fs-5" href="https://google-plus.com">
+              <i class="fa-fw fa-brands fa-square-google-plus"></i>
+              <span class="ms-1">Google+</span>
+            </a>
           </div>
         </section>
       </div>
