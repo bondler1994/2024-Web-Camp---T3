@@ -55,12 +55,7 @@ nav :is(li, a) {
 }
 
 nav a {
-    width: 100%;
-    padding: 20px;
-
-    font-size: 22px;
     color: #E4E6C0;
-    text-align: center;
     text-decoration: none;
 
     background-color: #4B4B4B;
@@ -85,11 +80,15 @@ article h2 {
     color: #e9ec9d;
 }
 
+.carousel-caption [class^="fa"] {
+    color: #798f92;
+}
+
 .topics h2 {
     background-color: #DBE8D4;
     color: var(--brown);
     border-bottom: #afca9f 2px solid;
-    font-size: 18px;
+    text-shadow: 1px 1px white;
 }
 
 .topics h3 {
@@ -97,30 +96,18 @@ article h2 {
 }
 
 footer {
-    display: grid;
-    grid-template: 1fr/ repeat(var(--num-info-items), 1fr);
-    gap: 30px;
-
-    width: 100%;
-
-    color: gray;
-
     background-color: var(--bright-green);
 }
 
-footer section {
-    /* margin: 0 auto;
-    padding: 25px; */
-    border: #c8dabd 5px; 
+footer .info {
+    color: gray;
+    border-color: #c7d9bc !important;
 }
 
-footer p    {
-    margin: 0;
+footer .info h2 {
+    text-shadow: 1px 1px white;
 }
 
-.copyright {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
+footer .info i {
+    color: var(--green);
 }
