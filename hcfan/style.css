@@ -18,11 +18,6 @@ body {
     background-color: var(--green);
 }
 
-.site-logo .navbar-toggler {
-    flex-basis: 80px;
-    font-size: 2rem;
-}
-
 header {
     padding-bottom: 2px;
 }
@@ -42,8 +37,13 @@ header {
     background-color: #DAEACF;
 }
 
-.topics {
-    background-color: white;
+[class^="carousel-control-"] {
+    visibility: invicible;
+}
+
+[class^="carousel-control-"]:hover {
+    background-color: black;
+    opacity: 0.3;
 }
 
 .carousel-caption h2,
@@ -67,15 +67,27 @@ article h2 {
     -webkit-box-orient: vertical;
 }
 
-.topics h2 {
-    background-color: #DBE8D4;
-    color: var(--brown);
-    border-bottom: #afca9f 2px solid;
-    text-shadow: 1px 1px white;
+.topics {
+    background-color: white;
 }
 
 .topics h3 {
     color: var(--brown);
+}
+
+.topics h2 {
+    border-bottom: #afca9f 2px solid;
+    background-color: #DBE8D4;
+    color: var(--brown);
+    text-shadow: 1px 1px white;
+}
+
+.indicator_img {
+    transition: scale 0.2s ease;
+}
+
+.indicator_img:hover {
+    scale: 1.15;
 }
 
 .section_tips li {
@@ -86,31 +98,55 @@ article h2 {
     font-weight: bold;
 }
 
+.tips_list {
+    height: 230px;
+    overflow-y: auto;
+}
+
 footer {
     background-color: var(--bright-green);
 }
 
-footer .info {
+.accordion-button_custom {
+    padding: 0;
+    color: gray;
+    background-color: var(--bright-green);
+    justify-content: center;
+    border: 0px;
+}
+
+.accordion-button_custom::after {
+    position: absolute;
+    right: 0;
+}
+
+.accordion-button_custom:not(.collapsed) {
+    color: gray;
+    background-color: var(--bright-green);
+    box-shadow: none;
+}
+
+footer .more_info {
     color: gray;
     border-color: #c7d9bc !important;
 }
 
-footer .info >* {
+footer .more_info >* {
     width: fit-content;
 }
 
-footer .info h2 {
+footer .more_info h2 * {
     text-shadow: 1px 1px white;
 }
 
-footer .info i {
+footer .more_info [class^="fa"] {
     color: var(--green);
 }
 
-footer .info a {
+footer .more_info a {
     color: gray;
 }
 
-footer .info a:hover {
-    color: darkgreen;
+footer .more_info a:hover {
+    color: var(--green);
 }
