@@ -1,7 +1,4 @@
 :root {
-    --num-nav-items: 6;
-    --num-info-items: 4;
-
     --w-mobile-min: 375px; /* iPhone SE */
 
     --green: #326611;
@@ -38,7 +35,7 @@ header {
 }
 
 [class^="carousel-control-"] {
-    visibility: invicible;
+    visibility: hidden;
 }
 
 [class^="carousel-control-"]:hover {
@@ -103,10 +100,6 @@ article h2 {
     overflow-y: auto;
 }
 
-footer {
-    background-color: var(--bright-green);
-}
-
 .accordion-button_custom {
     padding: 0;
     color: gray;
@@ -126,27 +119,28 @@ footer {
     box-shadow: none;
 }
 
-footer .more_info {
+.more_info {
     color: gray;
+    background-color: var(--bright-green);
     border-color: #c7d9bc !important;
 }
 
-footer .more_info >* {
+.more_info >* {
     width: fit-content;
 }
 
-footer .more_info h2 * {
+.more_info h2 * {
     text-shadow: 1px 1px white;
 }
 
-footer .more_info [class^="fa"] {
+.more_info [class^="fa"] {
     color: var(--green);
 }
 
-footer .more_info a {
+.more_info a {
     color: gray;
 }
 
-footer .more_info a:hover {
+.more_info a:hover {
     color: var(--green);
 }
