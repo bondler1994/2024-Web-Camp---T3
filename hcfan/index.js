@@ -62,3 +62,9 @@ window.addEventListener("keydown", (event) => {
             break;
     }
 }, true,);
+
+function showCaption(display) {
+    document.querySelectorAll(".carousel-caption").forEach(element => {
+       element.style.opacity = display ? 1 : 0; 
+    });
+}

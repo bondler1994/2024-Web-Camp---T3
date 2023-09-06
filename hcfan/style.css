@@ -1,9 +1,9 @@
 :root {
     --w-mobile-min: 375px; /* iPhone SE */
 
-    --green: #326611;
+    --dark-green: #326611;
     --bright-green: #DCE8D4;
-    --brown: #81533c;
+    --brown-for-heading: #81533c;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 .container_body {
     min-width: var(--w-mobile-min);
-    background-color: var(--green);
+    background-color: var(--dark-green);
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 }
 
 .nav_link.active {
-    color: var(--green);
+    color: var(--dark-green);
     background-color: #96B285;
 }
 
@@ -34,11 +34,8 @@ header {
     background-color: #DAEACF;
 }
 
-[class^="carousel-control-"] {
-    visibility: hidden;
-}
-
-[class^="carousel-control-"]:hover {
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
     background-color: black;
     opacity: 0.3;
 }
@@ -53,7 +50,7 @@ article h2 {
 }
 
 .caption_selectable_text *:hover {
-   color: var(--green);
+   color: var(--dark-green);
    background-color: var(--bright-green);
 }
 
@@ -69,13 +66,13 @@ article h2 {
 }
 
 .topics h3 {
-    color: var(--brown);
+    color: var(--brown-for-heading);
 }
 
 .topics h2 {
     border-bottom: #afca9f 2px solid;
     background-color: #DBE8D4;
-    color: var(--brown);
+    color: var(--brown-for-heading);
     text-shadow: 1px 1px white;
 }
 
@@ -134,7 +131,7 @@ article h2 {
 }
 
 .more_info [class^="fa"] {
-    color: var(--green);
+    color: var(--dark-green);
 }
 
 .more_info a {
@@ -142,5 +139,5 @@ article h2 {
 }
 
 .more_info a:hover {
-    color: var(--green);
+    color: var(--dark-green);
 }
