@@ -34,6 +34,11 @@ header {
     background-color: #DAEACF;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    visibility: hidden;
+}
+
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
     visibility: visible;
