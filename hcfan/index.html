@@ -36,8 +36,8 @@
       <div class="position-relative px-2 py-2 py-md-4">
         <h1 class="text-center">
           <!-- Show different logo image by medium size -->
-          <img class="d-none d-md-inline object-fit-contain w-50" src="img/logo.png" alt="Garden Walkthrough">
-          <img class="d-md-none object-fit-scale" src="img/logo-small.ico" alt="Garden Walkthrough">
+          <img class="d-inline object-fit-contain" srcset="img/logo-small.ico 65w, img/logo.png 505w"
+            sizes="(max-width: 768px) 65px, 505px" alt="Garden Walkthrough">
         </h1>
         <button class="navbar-toggler position-absolute top-0 end-0 h-100 p-4 d-md-none fs-1" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
@@ -108,12 +108,10 @@
           </div>
         </div>
         <!-- Buttons for moving slides -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-banner" data-bs-slide="prev"
-          onmouseover="showCaption(false)" onmouseout="showCaption(true)">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-banner" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-banner" data-bs-slide="next"
-          onmouseover="showCaption(false)" onmouseout="showCaption(true)">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-banner" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </section>

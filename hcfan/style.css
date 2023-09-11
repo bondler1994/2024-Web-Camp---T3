@@ -34,10 +34,17 @@ header {
     background-color: #DAEACF;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    visibility: visible;
+
+    box-sizing: content-box;
+    border: 30px solid black;
+    border-radius: 50px;
+
+    color: white;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.9;
 }
 
 .carousel-caption h2,
