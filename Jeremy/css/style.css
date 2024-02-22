@@ -1,0 +1,389 @@
+body {
+    background: url(../img/bg-body.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 950px;
+    padding: 0 25px;
+    margin: 0 auto;
+    background-color: #326611;
+}
+
+.logo {
+    display: block;
+}
+
+.small-logo {
+    display: none;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.small-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-expand-lg {
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.nav_home {
+    background-color: #97b486;
+    color: #47772e;
+}
+
+.nav-item {
+    flex: 1 1 0;
+    text-align: center;
+    background-color: #4a4a4a;
+}
+
+.nav-item a {
+    color: #eef0c8;
+    padding: 12px;
+}
+
+.nav-item a:hover {
+    background-color: #daebd0;
+    color: #334f2c;
+}
+
+.nav-link:focus {
+    color: #eef0c8;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item article {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.496);
+    padding: 16px 20px;
+}
+
+.carousel-inner article h2 {
+    color: #e1e398;
+    font-size: 26px;
+}
+
+.carousel-inner article p {
+    color: white;
+    font-size: 14.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.carousel-inner article h2,
+.carousel-inner article p {
+    margin: 0;
+}
+
+.carousel-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.carousel-button > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.carousel-button a {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.carousel-button__picture {
+    transition: 0.5s;
+}
+
+.carousel-button__picture:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.carousel-button__picture img {
+    border: white 1px solid;
+}
+
+img {
+    width: 100%;
+}
+
+.carousel-button article h3,
+.carousel-button article p {
+    margin: 0;
+}
+
+.carousel-button article h3 {
+    color: #e1e398;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.carousel-button article p {
+    color: white;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.whose-garden {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.whose-garden__title {
+    padding: 8px 20px 10px;
+    flex: 100%;
+    background-color: #dde8d5;
+    border-bottom: #c0d5b4 solid;
+    color: #7b3f20;
+    font-size: 18px;
+    margin: 0;
+}
+
+.whose-garden .card {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    align-items: center;
+}
+
+.whose-garden .card img {
+    border-radius: 0;
+}
+
+.whose-garden .card a {
+    transition: 0.5s;
+    max-width: 250px;
+}
+
+.whose-garden .card a:hover {
+    filter: contrast(150%);
+    transition: 0.5s;
+}
+
+.whose-garden .card-body {
+    padding: 0;
+}
+
+.whose-garden h4 {
+    font-size: 18px;
+    margin: 18px 0;
+    color: #774703;
+}
+
+.whose-garden p {
+    font-size: 15px;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tips-of-the-week {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.drug-picture {
+    max-width: 350px;
+}
+
+.tips-of-the-week .card-title {
+    padding: 8px 20px 10px;
+    flex: 100%;
+    background-color: #dde8d5;
+    border-bottom: #c0d5b4 solid;
+    color: #7b3f20;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.tips-of-the-week li {
+    font-size: 15.2px;
+}
+
+.tips-of-the-week li:nth-child(n + 2) {
+    margin-top: 15px;
+}
+
+.tips-of-the-week .card-body {
+    padding: 0;
+}
+
+.tips-of-the-week .card-body {
+    padding-left: 20px;
+}
+
+ol {
+    margin: 0;
+    padding-left: 18px;
+}
+
+footer .container {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    background-color: #dde7d6;
+    color: #898989;
+    flex-wrap: wrap;
+}
+
+.footer__content {
+    padding: 20px;
+    margin: 0;
+    border: 2px solid #c0d5b4;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 13.5px;
+    margin: 0;
+}
+
+.icon {
+    display: flex;
+    flex-flow: column;
+    width: fit-content;
+    gap: 5px;
+}
+
+.icon a {
+    color: #336613;
+    display: inline-block;
+    display: flex;
+    gap: 5px;
+}
+
+.icon a:hover,
+.icon a:hover p {
+    transform: scale(1.1);
+    color: #336613;
+}
+
+.icon i {
+    font-size: 22px;
+    width: 24px;
+}
+
+.icon p {
+    color: #898989;
+    font-size: 15.5px;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .carousel-button {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-button > div {
+        padding: 20px;
+    }
+
+    .carousel-button > div + div {
+        border-top: solid 1px gray;
+        border-left: none;
+    }
+    .whose-garden .card {
+        text-align: center;
+    }
+
+    .drug-picture {
+        order: 1;
+    }
+
+    .tips-of-the-week .card-body {
+        padding: 0;
+    }
+
+    .tips-of-the-week .row {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-button > div:not(:last-child) {
+        border-right: 1px solid gray;
+    }
+    .whose-garden .card {
+        flex: 1 1 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-button article {
+        text-align: center;
+        max-width: 210px;
+    }
+    .footer__content {
+        text-align: center;
+    }
+    .icon {
+        margin: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        display: none;
+    }
+    .small-logo {
+        display: block;
+    }
+}
