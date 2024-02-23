@@ -16,7 +16,7 @@
         <div class="container">
             <header>
                 <nav
-                    class="navbar navbar-expand-lg bg-body-tertiary row-gap-1 pb-1"
+                    class="navbar navbar-expand-lg bg-body-tertiary justify-content-center flex-wrap row-gap-1 pb-lg-1 pt-lg-1 p-0"
                 >
                     <h1>
                         <a href="#" class="logo">
@@ -25,7 +25,10 @@
                                 alt="Garden Walkthrough"
                             />
                         </a>
-                        <a href="#" class="small-logo">
+                        <a
+                            href="#"
+                            class="small-logo d-lg-none position-absolute top-0 start-0 end-0 m-auto"
+                        >
                             <img
                                 src="./img/logo-small.png"
                                 alt="Garden Walkthrough"
@@ -48,7 +51,7 @@
                             class="collapse navbar-collapse"
                             id="navbarTogglerDemo02"
                         >
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav w-100 me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link nav_home" href="#"
                                         >Home</a
@@ -81,11 +84,11 @@
                     data-bs-ride="false"
                 >
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active position-relative">
                             <img
                                 src="./img/carousel-1.jpg"
                                 class="d-block w-100"
-                                alt="..."
+                                alt="gardening tips"
                             />
                             <article>
                                 <h2>GARDENING TIPS</h2>
@@ -103,7 +106,7 @@
                             <img
                                 src="./img/carousel-2.jpg"
                                 class="d-block w-100"
-                                alt="..."
+                                alt="happy gardener"
                             />
                             <article>
                                 <h2>Happy Gardener</h2>
@@ -121,7 +124,7 @@
                             <img
                                 src="./img/carousel-3.jpg"
                                 class="d-block w-100"
-                                alt="..."
+                                alt="planting"
                             />
                             <article>
                                 <h2>Planting</h2>
@@ -136,7 +139,9 @@
                             </article>
                         </div>
                     </div>
-                    <div class="carousel-button">
+                    <div
+                        class="carousel-button d-flex flex-wrap justify-content-center"
+                    >
                         <div class="col-md-3 col-xl-4">
                             <a
                                 href="##"
@@ -209,7 +214,9 @@
                 </div>
             </main>
             <section>
-                <div class="whose-garden">
+                <div
+                    class="whose-garden d-flex flex-wrap justify-content-center"
+                >
                     <h3 class="whose-garden__title">FEATURED GARDENS</h3>
                     <div class="card col-12 col-sm-5 col-md-3">
                         <a href="##">
@@ -280,20 +287,20 @@
                         </div>
                     </div>
                 </div>
-                <hr />
-                <div class="card tips-of-the-week mb-3">
+                <hr class="w-100" />
+                <div class="card tips-of-the-week w-100 border-0 mb-3">
                     <div class="row g-0 justify-content-center">
-                        <div class="col-md-4 drug-picture">
+                        <div class="col-md-4 planting-picture">
                             <img
                                 src="./img/gardening5.jpg"
                                 class="img-fluid"
-                                alt="..."
+                                alt="planting"
                             />
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">TIPS OF THE WEEK</h5>
-                                <ol>
+                                <ol class="m-0">
                                     <li>
                                         This is just a place holder, so you can
                                         see what the side would look like.This
@@ -319,45 +326,89 @@
                 </div>
             </section>
             <footer>
-                <div class="container">
-                    <div class="footer__content col-12 col-sm-6 col-md-3">
-                        <h5>PLACE HOLDER</h5>
-                        <p>This is just a place holder.</p>
-                        <p>This is just a place holder.</p>
-                        <p>This is just a place holder.</p>
+                <div class="container d-flex w-100 p-0 flex-wrap">
+                    <div class="footer__content m-0 col-12 col-sm-6 col-md-3">
+                        <h5
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample_1"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                            class="position-relative"
+                        >
+                            PLACE HOLDER
+                            <i
+                                class="fa-solid fa-caret-down position-absolute end-0 top-0 bottom-0 m-auto d-sm-none"
+                            ></i>
+                        </h5>
+                        <div class="collapse d-sm-block" id="collapseExample_1">
+                            <p>This is just a place holder.</p>
+                            <p>This is just a place holder.</p>
+                            <p>This is just a place holder.</p>
+                        </div>
                     </div>
-                    <div class="footer__content col-12 col-sm-6 col-md-3">
-                        <h5>PLACE HOLDER</h5>
-                        <p>This is just a place holder.</p>
-                        <p>This is just a place holder.</p>
-                        <p>This is just a place holder.</p>
+                    <div class="footer__content m-0 col-12 col-sm-6 col-md-3">
+                        <h5
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample_2"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                            class="position-relative"
+                        >
+                            PLACE HOLDER
+                            <i
+                                class="fa-solid fa-caret-down position-absolute end-0 top-0 bottom-0 m-auto d-sm-none"
+                            ></i>
+                        </h5>
+                        <div class="collapse d-sm-block" id="collapseExample_2">
+                            <p>This is just a place holder.</p>
+                            <p>This is just a place holder.</p>
+                            <p>This is just a place holder.</p>
+                        </div>
                     </div>
-                    <div class="footer__content col-12 col-sm-6 col-md-3">
-                        <h5>PLACE HOLDER</h5>
-                        <p>This is just a place holder.</p>
-                        <p>This is just a place holder.</p>
-                        <p>This is just a place holder.</p>
+                    <div class="footer__content m-0 col-12 col-sm-6 col-md-3">
+                        <h5
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample_3"
+                            aria-expanded="false"
+                            aria-controls="collapseExample"
+                            class="position-relative"
+                        >
+                            PLACE HOLDER
+                            <i
+                                class="fa-solid fa-caret-down position-absolute end-0 top-0 bottom-0 m-auto d-sm-none"
+                            ></i>
+                        </h5>
+                        <div class="collapse d-sm-block" id="collapseExample_3">
+                            <p>This is just a place holder.</p>
+                            <p>This is just a place holder.</p>
+                            <p>This is just a place holder.</p>
+                        </div>
                     </div>
                     <div class="footer__content col-12 col-sm-6 col-md-3">
                         <h5>CONNECT</h5>
-                        <div class="icon">
+                        <div
+                            class="icon d-flex flex-row flex-sm-column m-auto m-md-0"
+                        >
                             <a href="##"
                                 ><i class="fa-sharp fa-solid fa-envelope"></i>
-                                <p>Email us</p> </a
+                                <p class="d-none d-sm-block">Email us</p> </a
                             ><a href="##"
                                 ><i class="fa-brands fa-square-facebook"></i>
-                                <p>Facebook</p></a
+                                <p class="d-none d-sm-block">Facebook</p></a
                             ><a href="##"
                                 ><i class="fa-brands fa-twitter"></i>
-                                <p>Twitter</p></a
+                                <p class="d-none d-sm-block">Twitter</p></a
                             ><a href="##"
                                 ><i class="fa-brands fa-square-google-plus"></i>
-                                <p>Google+</p></a
+                                <p class="d-none d-sm-block">Google+</p></a
                             >
                         </div>
                     </div>
                 </div>
-                <p class="copyright">
+                <p class="copyright text-center">
                     Garden Walkthrough &copy; 2023 | All Right Reserved
                 </p>
             </footer>

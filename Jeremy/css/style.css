@@ -19,19 +19,9 @@ a {
     background-color: #326611;
 }
 
-.logo {
-    display: block;
-}
-
 .small-logo {
-    display: none;
     width: 45px;
     height: 45px;
-    position: absolute;
-    top: 8px;
-    right: 0;
-    left: 0;
-    margin: auto;
 }
 
 .small-logo img {
@@ -42,11 +32,6 @@ a {
 .logo img {
     width: 100%;
     height: 100%;
-}
-
-.navbar-expand-lg {
-    flex-flow: wrap;
-    justify-content: center;
 }
 
 .nav_home {
@@ -72,14 +57,6 @@ a {
 
 .nav-link:focus {
     color: #eef0c8;
-}
-
-.navbar-nav {
-    width: 100%;
-}
-
-.carousel-item {
-    position: relative;
 }
 
 .carousel-item article {
@@ -109,9 +86,6 @@ a {
 }
 
 .carousel-button {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 20px 0;
 }
 
@@ -167,10 +141,7 @@ section {
 }
 
 .whose-garden {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
 }
 
 .whose-garden__title {
@@ -219,17 +190,14 @@ section {
 }
 
 hr {
-    width: 100%;
     margin: 20px 0;
 }
 
 .tips-of-the-week {
-    width: 100%;
-    border: 0;
     border-radius: 0;
 }
 
-.drug-picture {
+.planting-picture {
     max-width: 350px;
 }
 
@@ -260,22 +228,16 @@ hr {
 }
 
 ol {
-    margin: 0;
     padding-left: 18px;
 }
 
 footer .container {
-    display: flex;
-    width: 100%;
-    padding: 0;
     background-color: #dde7d6;
     color: #898989;
-    flex-wrap: wrap;
 }
 
 .footer__content {
     padding: 20px;
-    margin: 0;
     border: 2px solid #c0d5b4;
 }
 
@@ -290,8 +252,6 @@ footer p {
 }
 
 .icon {
-    display: flex;
-    flex-flow: column;
     width: fit-content;
     gap: 5px;
 }
@@ -320,7 +280,6 @@ footer p {
 }
 
 .copyright {
-    text-align: center;
     color: white;
     padding: 5px;
 }
@@ -344,7 +303,7 @@ footer p {
         text-align: center;
     }
 
-    .drug-picture {
+    .planting-picture {
         order: 1;
     }
 
@@ -354,6 +313,9 @@ footer p {
 
     .tips-of-the-week .row {
         gap: 20px;
+    }
+    .footer__content {
+        text-align: center;
     }
 }
 
@@ -371,11 +333,15 @@ footer p {
         text-align: center;
         max-width: 210px;
     }
-    .footer__content {
-        text-align: center;
-    }
+
     .icon {
         margin: auto;
+    }
+}
+
+@media (min-width: 576px) {
+    .footer__content h5 {
+        pointer-events: none;
     }
 }
 
