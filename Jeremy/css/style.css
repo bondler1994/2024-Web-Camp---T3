@@ -269,6 +269,9 @@ footer p {
     color: #336613;
 }
 
+.down-button {
+    height: fit-content;
+}
 .icon i {
     font-size: 22px;
     width: 24px;
