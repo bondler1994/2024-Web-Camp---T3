@@ -10,11 +10,13 @@ body {
   background-color: #356618;
   padding: 0;
 }
+
 @media (min-width: 576px) {
   .modify_container {
     padding: 0 1rem;
   }
 }
+
 @media (min-width: 992px) {
   .modify_container {
     max-width: 1050px;
@@ -26,6 +28,7 @@ header h1 {
   width: 100%;
   margin: 0;
 }
+
 header a {
   background-color: white;
   text-align: center;
@@ -38,6 +41,7 @@ header a {
   margin-bottom: 0;
   background-image: url(./img/bg-body.jpg);
 }
+
 @media (min-width: 576px) {
   .navbar_container {
     background-image: none;
@@ -50,14 +54,17 @@ nav h1 {
   width: 70%;
   margin: .5rem;
 }
+
 @media (min-width: 768px) {
   nav h1 {
     background-color: white;
   }
 }
+
 nav h1 a {
   display: block;
 }
+
 .logo_img {
   width: 100%;
 }
@@ -72,19 +79,22 @@ nav.navbar.navbar_container {
   top: 0;
   z-index: 1000;
 }
+
 .modify_navbar_color {
   padding: 0;
   margin-bottom: 1px;
   border-radius: 0;
 }
-.nav-fill .nav-item, 
-.nav-fill .nav-fill > .nav-link {
+
+.nav-fill .nav-item,
+.nav-fill .nav-fill>.nav-link {
   flex: 1 1 calc(100%/6);
 }
 
 nav .modify_navbar_color .nav-item .nav-link.active {
   color: #3B771B;
 }
+
 nav .modify_navbar_color .nav-link.active,
 nav .modify_navbar_color .nav-link,
 nav .modify_navbar_color .nav-link:hover {
@@ -95,17 +105,19 @@ nav .modify_navbar_color .nav-link:hover {
   color: #3B771B;
   background-color: #A4BE98;
 }
+
 .navbar_container .modify_navbar_color .nav-link {
   color: #E3E5C7;
   background-color: #5D5D5D;
 }
+
 .navbar_container .modify_navbar_color .nav-link:hover {
   font-weight: unset;
   color: #254D14;
   background-color: #E0EED9;
 }
 
-  /* ~截斷文字 */
+/* ~截斷文字 */
 .ellipsis {
   color: white;
   text-overflow: ellipsis;
@@ -113,11 +125,13 @@ nav .modify_navbar_color .nav-link:hover {
   overflow: hidden;
   margin-bottom: 0;
 }
+
 @media (min-width: 576px) {
   .ellipsis {
     margin-bottom: unset;
   }
 }
+
 @media (min-width: 768px) {
   .ellipsis {
     text-overflow: unset;
@@ -132,11 +146,13 @@ nav .modify_navbar_color .nav-link:hover {
   width: 100%;
   background-color: rgb(41, 41, 41);
 }
+
 figcaption h2 {
   font-size: 1.2rem;
   color: #E6E8AB;
 }
-figcaption a  {
+
+figcaption a {
   background-color: #8AA0A3;
   border-radius: 50%;
   width: 1.2rem;
@@ -146,10 +162,12 @@ figcaption a  {
   display: inline-block;
   text-align: center;
 }
+
 .figcaption {
   background-color: black;
   opacity: .5;
 }
+
 @media (min-width: 576px) {
   .modify_figcaption {
     position: absolute;
@@ -157,10 +175,12 @@ figcaption a  {
     width: 100%;
     background-color: rgb(93, 93, 93, .6);
   }
+
   figcaption h2 {
     font-size: 1.7rem;
     color: #E6E8AB;
   }
+
   figcaption p a {
     background-color: #8AA0A3;
     border-radius: 50%;
@@ -171,17 +191,20 @@ figcaption a  {
     display: inline-block;
     text-align: center;
   }
+
   .figcaption {
     background-color: black;
     opacity: .5;
   }
 }
+
 /* ~control card 按鈕*/
 .modify_control_card .card {
   background-color: transparent;
   border: 0;
   border-radius: 0;
 }
+
 .modify_control_card h2 {
   font-size: 1.2rem;
   color: #D7DD91;
@@ -189,30 +212,36 @@ figcaption a  {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .modify_control_card p {
   font-size: 1rem;
   color: white;
 }
+
 .control_card_img {
   width: 100%;
   height: auto;
   border: 1px solid white;
 }
+
 .control_card_img:hover {
   cursor: pointer;
 }
+
 /* ~control card 按鈕分隔線 */
 @media (min-width:768px) {
-  .modify_control_card > div + div {
+  .modify_control_card>div+div {
     border-left: 2px solid #3D751A;
     box-shadow: inset 1px 0 rgba(0, 85, 4, 0.5);
   }
 }
+
 /* ~FEATURE GARDENS內容 */
 main article {
   background-color: white;
   padding: 1rem;
 }
+
 main article h3 {
   color: #864A08;
   background-color: #E2ECDD;
@@ -221,6 +250,7 @@ main article h3 {
   font-size: 20px;
   margin-bottom: 1rem;
 }
+
 @media (min-width: 576px) {
   main article hr {
     margin: 1rem 0;
@@ -240,6 +270,7 @@ main article .card-body p {
 .modify_section_tip ol.card-text {
   margin-bottom: 1rem;
 }
+
 @media (min-width: 768px) {
   .modify_section_tip ol.card-text {
     margin-bottom: 0;
@@ -249,13 +280,16 @@ main article .card-body p {
 .modify_section_tip div.col-md-4 {
   order: 2;
 }
+
 .modify_section_tip div.col-md-8 {
   order: 1;
 }
+
 @media (min-width: 768px) {
   .modify_section_tip div.col-md-4 {
     order: 1;
   }
+
   .modify_section_tip div.col-md-8 {
     order: 2;
   }
@@ -274,8 +308,9 @@ main article .card .card-img-top {
 main article .card-body {
   padding: 0;
 }
+
 @media (min-width: 768px) {
-  .modify_section_tip .card-body{
+  .modify_section_tip .card-body {
     padding: 0 0 0 1rem;
   }
 }
@@ -304,7 +339,7 @@ main article .card-body {
 }
 
 @media (min-width: 768px) {
-  .footer_section div + div {
+  .footer_section div+div {
     border-left: 1px solid #CFDFC8;
   }
 }
@@ -314,13 +349,15 @@ main article .card-body {
   border-top: 1px solid #CFDFC8;
 }
 
-footer h5, footer p {
+footer h5,
+footer p {
   margin-bottom: 0;
 }
 
 .footer_content_box a {
   justify-content: center;
 }
+
 .footer_content_box a:hover {
   color: darkgreen;
 }

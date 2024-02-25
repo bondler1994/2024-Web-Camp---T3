@@ -1,0 +1,74 @@
+body {
+    background: url(./img/bg-body.jpg) center;
+}
+
+header li {
+    background-color: rgb(45, 141, 109);
+}
+
+header nav {
+    display: flex;
+
+}
+
+.hoho {
+    display: flex;
+}
+
+.carousel.hoho {
+    padding: 20px 0 20px 0;
+}
+
+.carousel.hoho a img {
+    border: 1px solid rgb(255, 255, 255);
+    width: 80px;
+}
+
+.carousel.hoho a img::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 40px;
+    background-color: #4b4d4e;
+    margin: 20px auto;
+}
+
+.carousel-item {
+    border-left: 1px solid black;
+}
+
+.carousel-item a {
+    display: flex;
+}
+
+
+
+.button2,
+.button3 {
+    padding: 0 5px 0 5px;
+    border-left: 2px solid green;
+    box-shadow: inset 1px 0 rgba(0, 85, 4, 0.5);
+}
+
+.button1,
+.button2,
+.button3 {
+    display: flex;
+}
+
+.px-3 {
+    font-size: 12px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.col.navbar-forfun {
+    padding: 0;
+
+}
+
+nav {
+    width: 100%;
+}
