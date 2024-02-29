@@ -246,8 +246,10 @@ footer h5 {
     margin: 0;
 }
 
-footer h5 + * {
-    padding-top: 20px;
+footer h5 + div::before {
+    content: "";
+    display: block;
+    margin-top: 20px;
 }
 
 footer p {
