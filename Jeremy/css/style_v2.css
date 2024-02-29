@@ -3,7 +3,7 @@ body {
 }
 
 * {
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 a {
@@ -27,12 +27,33 @@ a {
     flex-wrap: wrap;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
 .navbar {
     padding: 0;
+    background-color: #dde8d5;
+    border-bottom: 3px solid #c0d5b4;
+}
+main {
+    padding-top: 55px;
 }
 @media (min-width: 992px) {
+    header {
+        padding: 0;
+        position: relative;
+    }
     .navbar {
+        border: none;
         padding-bottom: 1px;
+        background-color: #fefefe;
+    }
+    main {
+        padding: 0;
     }
 }
 
@@ -189,6 +210,10 @@ img {
 .carousel-button img {
     max-width: 90px;
     border: 1px solid white;
+}
+
+.carousel-button article {
+    max-width: 200px;
 }
 
 .carousel-button article h3,
