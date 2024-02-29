@@ -1,0 +1,246 @@
+/* navbar */
+body {
+    background: url(./img/bg-body.jpg)
+}
+
+header button {
+    color: #548137;
+}
+
+header button:hover {
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
+header button:focus {
+    box-shadow: none !important;
+}
+
+header .nav-link {
+    background-color: #4B4B4B;
+    color: #E3E699;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-bottom: 2px solid white;
+}
+
+header ul .active {
+    color: #356618;
+    background-color: #96B285;
+}
+
+header ul a:hover {
+    background-color: #D9EACF;
+    color: #356618 !important;
+
+}
+
+header ul a:focus {
+    color: !important;
+
+}
+
+.photoButton button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    border: none;
+    align-items: flex-start;
+
+}
+
+.carousel-caption {
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+.photoButton button img {
+    border: 2px solid white;
+}
+
+.photoButton button img:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    content: url(./img/imgonline-com-ua-resize-Xmlwdk3tstF5egjk.jpg);
+
+}
+
+.photoButton button div {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.photoButton h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.photoButton button p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+.sideLineSecond,
+.sideLineThird {
+    padding-left: 1rem;
+    border-left: 2px ridge rgb(171, 199, 153, 20%);
+}
+
+.sideLineSecond {
+    margin-right: 1rem;
+}
+
+.sideLineFrist p,
+.sideLineSecond p,
+.sideLineThird p {
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .photoButton h3 {
+        text-overflow: ellipsis;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .photoButton .carousel {
+        flex-direction: column;
+    }
+
+
+    .sideLineSecond,
+    .sideLineThird {
+        padding-left: 0;
+        padding-top: 1rem;
+        border-left: 0;
+        border-top: 2px ridge rgb(171, 199, 153, 20%);
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* main feature gardens  */
+.mainItem {
+    padding: 1rem;
+    background-color: rgb(0, 0, 0, 50%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mainItem h2 {
+    text-transform: uppercase;
+    color: #E3E699;
+}
+
+.mainItem p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mainItem i {
+
+    background-color: rgb(129, 129, 129);
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+
+.mainMiddle {
+    border-bottom: 2px solid #C4D8B9;
+}
+
+.photoButton h3 {
+    color: #E3E699;
+
+}
+
+
+.sectionBottom {
+    display: flex;
+}
+
+.sectionBottom h4 {
+    color: #835F3E;
+    background-color: #DAEAD0;
+    box-shadow: 0 1.5px 1px #5a6354;
+    text-shadow: 0 1.2px 0 rgba(255, 255, 255);
+}
+
+.sectionBottom img {
+    margin-bottom: 1rem;
+
+
+}
+
+.sectionBottom img:hover {
+    box-shadow: 3px 3px 3px black;
+    transform: scale(1.05);
+    transition: 0.1s;
+
+}
+
+.sectionBottom img:active {
+    content: url(./img/courage\ dog.jpg);
+}
+
+
+
+.sectionBottom h5 {
+    text-transform: uppercase;
+    color: #835F3E;
+}
+
+/* .imageLeft img {
+    width: fill-available;
+} */
+
+.setionBelow h6 {
+    font-size: ;
+    color: #835F3E;
+    background-color: #DAEAD0;
+    box-shadow: 0 1.5px 1px #5a6354;
+    text-shadow: 0 1px 0 rgba(255, 255, 255);
+}
+
+.setionBelow li~li {
+    margin-top: 1rem;
+}
+
+/* section bottomList */
+
+section .btnKingdom {
+    background-color: #DAEAD0;
+
+}
+
+section .btnKingdom .btn {
+    width: fit-content;
+}
+
+.imageLeft img {
+    width: 100%;
+}
+
+@media screen (max-width: 992px) {
+    main .imageLeft img {
+        width: 50%;
+    }
+
+
+    section .btnKingdom .collapse {
+        display: block;
+        opacity: 1;
+        visibility: hidden;
+    }
+}
