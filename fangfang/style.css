@@ -12,7 +12,7 @@ body {
 }
 
 
-h2 {
+.carousel-caption h2 {
   color: #D5D890;
 }
 
@@ -58,11 +58,59 @@ h2 {
     overflow:hidden;
   }
 }
-/* .carousel-indicators {
-  position: static;
-  margin: 0;
-} */
 
 .banner_list_text>h3{
   color:#D4DB8E;
 }
+
+.banner_list_item .image_box {
+  width: 25%;
+}
+.banner_list_item .banner_list_text {
+  width: 75%;
+}
+@media (min-width:768px){
+  .banner_list_item .image_box {
+    width: 35%;
+  }
+  .banner_list_item .banner_list_text {
+    width: 65%;
+  }
+}
+/*banner下方圖左右裝飾線*/
+@media (min-width:768px){
+  .banner_col + .banner_col {
+    border-left: 2px ridge rgba(216, 213, 213, 0.3);
+  }
+}
+
+/*section 2*/
+.garden_introduce h3{
+  background-color: #dce8d4;
+  color: #7b4e27;
+  border-bottom:2px solid #b6cfa9;
+  font-weight: 400;
+}
+.garden_introduce h4 {
+  color: #7b4e27;
+}
+
+.feature_text h4 {
+  color: #9d7d6d;
+}
+
+/* .feature_imagebox {
+  width: 30%;
+}
+.feature_text {
+  width: 70%;
+}
+
+@media (min-width:768px){
+  .feature_imagebox {
+    width: 40%;
+  }
+  .feature_text {
+    width: 60%;
+  }
+} */
