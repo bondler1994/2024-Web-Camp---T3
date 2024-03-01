@@ -160,9 +160,9 @@ header ul a:focus {
 }
 
 
-.mainMiddle {
+/* .mainMiddle {
     border-bottom: 2px solid #C4D8B9;
-}
+} */
 
 .photoButton h3 {
     color: #E3E699;
@@ -287,6 +287,10 @@ section .btnKingdom .btn {
 }
 
 
+.teamnavbar {
+    border: 1px ridge #96B285;
+}
+
 
 .teamnav .nav-link {
     align-items: center;
@@ -306,6 +310,7 @@ section .btnKingdom .btn {
 } */
 
 .teamnav button {
+    width: 100%;
     padding: 0;
 }
 
@@ -325,10 +330,15 @@ section .btnKingdom .btn {
     }
 
     .teamnav i {
+        justify-content: end;
         color: rgb(85, 85, 85);
         text-shadow: 0 1.2px 0 rgba(255, 255, 255);
         text-transform: uppercase;
 
+    }
+
+    .teamnav p {
+        text-align: center;
     }
 
 }
