@@ -1,0 +1,21 @@
+* {
+    outline: 1px solid red;
+}
+
+body {
+    background-image: url(./img/bg-body.jpg);
+}
+
+:root {
+    --whiteColor: #ffffff;
+    --mainColor: #366719;
+    --navbarColor: #4B4B4B;
+    --navHomeColor: #96B285;
+    --navHoverColor: #D9EACF;
+    --insetWordColor: #681000;
+    --topicWordColor: #EBEE9F;
+}
+
+.allContainer {
+    background-color: var(--mainColor);
+}

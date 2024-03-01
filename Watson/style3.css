@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid red;
-} */
+}
 
 /* navbar */
 body {
@@ -16,9 +16,6 @@ header button:hover {
     transform: rotate(180deg);
 }
 
-header button:focus {
-    box-shadow: none !important;
-}
 
 header .nav-link {
     background-color: #4B4B4B;
@@ -66,7 +63,7 @@ header ul a:focus {
 .photoButton button img:hover {
     transform: scale(1.1);
     transition: 0.1s;
-    content: url(./img/imgonline-com-ua-resize-Xmlwdk3tstF5egjk.jpg);
+    content: url(./img/11\ \(2\).jpg);
 
 }
 
@@ -267,19 +264,19 @@ section .btnKingdom .btn {
     }
 }
 
-.teamnav p,
-.teamnav a {
+.teamNav p,
+.teamNav a {
     text-align: left;
     padding: 0;
     font-size: 16px;
 }
 
-.teamnav h6 {
+.teamNav h6 {
     font-size: 1.5rem;
 }
 
-.teamnav h6,
-.teamnav p {
+.teamNav h6,
+.teamNav p {
     color: rgb(85, 85, 85);
     text-shadow: 0 1.2px 0 rgba(255, 255, 255);
     text-transform: uppercase;
@@ -287,29 +284,29 @@ section .btnKingdom .btn {
 }
 
 
-.teamnavbar {
+.teamNavbar {
     border: 1px ridge #96B285;
 }
 
 
-.teamnav .nav-link {
+.teamNav .nav-link {
     align-items: center;
     color: #356618;
 }
 
 
 
-.teamnav ul {
+.teamNav ul {
     padding: 0;
     list-style: none;
 }
 
-/* .teamnav h6::after {
+/* .teamNav h6::after {
     content: "\2b";
 
 } */
 
-.teamnav button {
+.teamNav button {
     width: 100%;
     padding: 0;
 }
@@ -317,19 +314,19 @@ section .btnKingdom .btn {
 
 @media screen and (max-width: 768px) {
 
-    .teamnav i:hover {
+    .teamNav i:hover {
         transition: 0.5s;
         transform: rotate(180deg);
     }
 
 
-    .teamnav span {
+    .teamNav span {
         color: rgb(85, 85, 85);
         text-shadow: 0 1.2px 0 rgba(255, 255, 255);
 
     }
 
-    .teamnav i {
+    .teamNav i {
         justify-content: end;
         color: rgb(85, 85, 85);
         text-shadow: 0 1.2px 0 rgba(255, 255, 255);
@@ -337,7 +334,7 @@ section .btnKingdom .btn {
 
     }
 
-    .teamnav p {
+    .teamNav p {
         text-align: center;
     }
 

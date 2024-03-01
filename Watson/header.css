@@ -1,0 +1,13 @@
+header {
+    background-color: var(--whiteColor);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--navbarColor);
+
+}
+
+.headerLogo {
+    padding: 1rem 0 1rem 0;
+}
