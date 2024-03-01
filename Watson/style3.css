@@ -1,3 +1,7 @@
+/* * {
+    outline: 1px solid red;
+} */
+
 /* navbar */
 body {
     background: url(./img/bg-body.jpg)
@@ -232,15 +236,113 @@ section .btnKingdom .btn {
     width: 100%;
 }
 
-@media screen (max-width: 992px) {
-    main .imageLeft img {
-        width: 50%;
+/* teamHolder */
+
+.teamHolder {
+    background-color: #DAEAD0;
+}
+
+.teamHolder p {
+    margin: 0;
+}
+
+
+.teamHolder .navbar {
+    display: block;
+    padding: 1rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .teamHolder .navbar-collapse {
+        justify-content: center;
+
+    }
+
+    .teamHolder h6 {
+        text-align: center;
+    }
+}
+
+.teamnav p,
+.teamnav a {
+    text-align: left;
+    padding: 0;
+    font-size: 16px;
+}
+
+.teamnav h6 {
+    font-size: 1.5rem;
+}
+
+.teamnav h6,
+.teamnav p {
+    color: rgb(85, 85, 85);
+    text-shadow: 0 1.2px 0 rgba(255, 255, 255);
+    text-transform: uppercase;
+
+}
+
+
+
+.teamnav .nav-link {
+    align-items: center;
+    color: #356618;
+}
+
+
+
+.teamnav ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* .teamnav h6::after {
+    content: "\2b";
+
+} */
+
+.teamnav button {
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .teamnav i:hover {
+        transition: 0.5s;
+        transform: rotate(180deg);
     }
 
 
-    section .btnKingdom .collapse {
-        display: block;
-        opacity: 1;
-        visibility: hidden;
+    .teamnav span {
+        color: rgb(85, 85, 85);
+        text-shadow: 0 1.2px 0 rgba(255, 255, 255);
+
     }
+
+    .teamnav i {
+        color: rgb(85, 85, 85);
+        text-shadow: 0 1.2px 0 rgba(255, 255, 255);
+        text-transform: uppercase;
+
+    }
+
+}
+
+
+
+
+/* footer */
+footer p {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer a i {
+    vertical-align: middle;
 }
