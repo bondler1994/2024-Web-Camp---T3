@@ -1,13 +1,17 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 body {
   background: url("./img/bg-body.jpg");
 }
 
+a {
+  text-decoration: none;
+}
+
 .container_color{
-  max-width: 1100px;
+  max-width: 1000px;
   background: #356618;
 }
 
@@ -34,6 +38,12 @@ body {
   background-color: #96b285;
   color: #427125;
 }
+nav .navbar-toggler {
+  border:none;
+}
+
+
+
 /*main*/
 /*section 1*/
 .carousel-caption {
@@ -44,18 +54,18 @@ body {
   padding:1.25rem ;
 }
 
-.carousel-caption>span>i {
+.carousel_text i {
   color: #768C8F;
 }
 
 @media (min-width:576px) and (max-width:767px) {
-  .banner_text {
+  .carousel_text {
     width: 100%;
   }
-  .banner_text>span {
-    text-overflow:ellipsis;
+  .carousel_text>span {
     white-space: nowrap;
     overflow:hidden;
+    text-overflow:ellipsis;
   }
 }
 
@@ -99,18 +109,95 @@ body {
   color: #9d7d6d;
 }
 
-/* .feature_imagebox {
-  width: 30%;
-}
-.feature_text {
-  width: 70%;
+.feature_text h4 {
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
+/*tips of the week*/
+.tips_text>h3 {
+  background-color: #dce8d4;
+  color: #7b4e27;
+  font-weight: 400;
+  border-bottom:2px solid #b6cfa9;
+}
 @media (min-width:768px){
-  .feature_imagebox {
-    width: 40%;
+  .tips_text {
+    order:2;
   }
-  .feature_text {
-    width: 60%;
+}
+/*彩色項目符號*/
+.tips ol li::marker { 
+  font-weight:600; 
+}
+
+/*footer*/
+.footer_list {
+  background-color: #dce8d4;
+}
+.footer_item h4 {
+  color: #828083;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footer_item .item_text p{
+  color: #828083;
+  margin: 0;
+}
+.footer_item button {
+  border-radius: 0;
+}
+.footer_item button i {
+  color: #828083;
+  font-size: 26px;
+}
+
+.social_media i {
+  color: #346517;
+  font-size: 26px;
+  width: 2rem;
+  text-align: center;
+
+}
+.social_media span {
+  color: #828083;
+}
+
+.social_media span:hover {
+  color: #346517;
+}
+
+.footer_item {
+  border: 1px solid #b6cfa9;
+}
+
+.social_media a {
+  width: 50%;
+}
+@media(min-width:576px){
+  .social_media a {
+    width: 110px;
   }
-} */
+}
+
+
+
+@media (min-width:576px){
+  .footer_item button {
+    pointer-events: none;
+  }
+  .footer_item button i {
+    display: none;
+  }
+  .footer_item .collapse {
+    display: block;
+    text-align: center;
+  }
+  @media(min-width:992px){
+    .footer_item .collapse {
+      text-align: start;
+    }
+  }
+}

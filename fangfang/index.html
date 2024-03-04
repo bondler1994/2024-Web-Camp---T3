@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T3-Garden Walkthrough</title>
+    <link rel="shortcut icon" href="./img/logo-small.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -11,7 +12,9 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/31ae856914.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -61,8 +64,9 @@
           </nav>
       </header>
       <main>
+
         <!-- carousel輪播 -->
-        <section id="banner_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+        <section id="banner_carousel" class="carousel slide carousel-fade" data-bs-ride="carousel"  >
           <!-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#banner_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#banner_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -73,12 +77,13 @@
                 <img src="./img/carousel-1.jpg" class="d-block w-100" alt="gardening tips">
                 <div class="carousel-caption  bg-dark bg-opacity-75 d-none d-sm-block">
                   <h2 class="text-uppercase h3">gardening tips</h2>
-                  <div class="banner_text d-inline-flex align-items-center ">
+                  <div class="carousel_text d-inline-flex align-items-center ">
                     <span>This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like.
                     </span>
-                    <i class="bi bi-arrow-right-circle-fill fs-5"></i>
+                    <i class="fa-solid fa-circle-arrow-right fs-5"></i>
+                    <!-- <i class="bi bi-arrow-right-circle-fill "></i> -->
                   </div>
                 </div>
               </div>
@@ -86,12 +91,12 @@
                 <img src="./img/carousel-2.jpg" class="d-block w-100" alt="happy gardener">
                 <div class="carousel-caption  bg-dark bg-opacity-75 d-none d-sm-block">
                   <h2 class="text-uppercase h3">happy gardener</h2>
-                  <div class="banner_text d-inline-flex align-items-center ">
+                  <div class="carousel_text d-inline-flex align-items-center ">
                     <span>This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like.
                     </span>
-                    <i class="bi bi-arrow-right-circle-fill fs-5"></i>
+                    <i class="fa-solid fa-circle-arrow-right fs-5"></i>
                   </div>
                 </div>
               </div>
@@ -99,12 +104,12 @@
                 <img src="./img/carousel-3.jpg" class="d-block w-100" alt="planting">
                 <div class="carousel-caption  bg-dark bg-opacity-75 d-none d-sm-block">
                   <h2 class="text-uppercase h3">planting</h2>
-                  <div class="banner_text d-inline-flex align-items-center ">
+                  <div class="carousel_text d-inline-flex align-items-center ">
                     <span>This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like.
                     </span>
-                    <i class="bi bi-arrow-right-circle-fill fs-5"></i>
+                    <i class="fa-solid fa-circle-arrow-right fs-5"></i>
                   </div>
                 </div>
               </div>
@@ -157,59 +162,148 @@
               </div>
             </div>
         </section>
-        <section class="bg-white ">
-          <div class="container_fluid garden_introduce p-3">
+        <!-- featured gardens區 -->
+        <section class="bg-white p-3">
+          <div class="container_fluid garden_introduce ">
             <h3 class="h4 text-uppercase mb-3 py-2 px-3">featured gardens</h3>
-            <div class="row ">
-              <div class="col-12 col-md-3 mb-3 mb-md-0">
-                <div class="d-flex d-md-block">
-                  <a class="feature_imagebox" href="##">
-                    <img class="img-fluid" src="./img/feature-gardens1.jpg" alt="juliet's garden">
+            <div class="row  ">
+              <div class="col-12 col-md-3 mb-3 mb-md-0 ">
+                <div class="featured_item d-flex align-items-center  d-md-block ">
+                  <a class="feature_imagebox " href="##">
+                    <img class="w-100 " src="./img/feature-gardens1.jpg" alt="juliet's garden">
                   </a>
-                  <div class="feature_text px-2 px-md-0">
-                    <h4 class="h6 text-uppercase mb-3">juliet's garden</h4>
+                  <div class="feature_text ms-3 ms-md-0 mt-md-3">
+                    <h4 class="h5 text-uppercase mb-3 ">juliet's garden</h4>
+                    <p class="m-0">This is just a place holder, so you can see what the site would look like. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 mb-3 mb-md-0 ">
+                <div class="d-flex align-items-center d-md-block">
+                  <a class="feature_imagebox " href="##">
+                    <img class="w-100 " src="./img/feature-gardens2.jpg" alt="Joanne's garden">
+                  </a>
+                  <div class="feature_text ms-3 ms-md-0 mt-md-3">
+                    <h4 class="h5 text-uppercase mb-3">joanne's garden</h4>
                     <p>This is just a place holder, so you can see what the site would look like. </p>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
-                <div class="d-flex d-md-block">
-                  <a class="feature_imagebox d-inline-block" href="##">
-                    <img class="img-fluid " src="./img/feature-gardens1.jpg" alt="juliet's garden">
+              <div class="col-12 col-md-3  mb-3 mb-md-0">
+                <div class="d-flex align-items-center d-md-block">
+                  <a class="feature_imagebox " href="##">
+                    <img class="w-100" src="./img/feature-gardens3.jpg" alt="jettka's garden">
                   </a>
-                  <div class="feature_text px-3">
-                    <h4 class="h5 text-uppercase mb-3">juliet's garden</h4>
+                  <div class="feature_text ms-3 ms-md-0 mt-md-3">
+                    <h4 class="h5 text-uppercase mb-3">jettka's garden</h4>
                     <p>This is just a place holder, so you can see what the site would look like. </p>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-3">
-                <div class="d-flex d-md-block">
-                  <a class="feature_imagebox d-inline-block" href="##">
-                    <img class="img-fluid " src="./img/feature-gardens1.jpg" alt="juliet's garden">
+              <div class="col-12 col-md-3 ">
+                <div class="d-flex align-items-center d-md-block">
+                  <a class="feature_imagebox " href="##">
+                    <img class="w-100 " src="./img/feature-gardens4.jpg" alt="jia's garden">
                   </a>
-                  <div class="feature_text px-3">
-                    <h4 class="h5 text-uppercase mb-3">juliet's garden</h4>
-                    <p>This is just a place holder, so you can see what the site would look like. </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-3">
-                <div class="d-flex d-md-block">
-                  <a class="feature_imagebox d-inline-block" href="##">
-                    <img class="img-fluid " src="./img/feature-gardens1.jpg" alt="juliet's garden">
-                  </a>
-                  <div class="feature_text px-3">
-                    <h4 class="h5 text-uppercase mb-3">juliet's garden</h4>
+                  <div class="feature_text ms-3 ms-md-0 mt-md-3">
+                    <h4 class="h5 text-uppercase mb-3">jia's garden</h4>
                     <p>This is just a place holder, so you can see what the site would look like. </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <hr class="my-4">
+          <!-- tips of the week區 -->
+          <div class="tips">
+            <div class="row">
+              <div class="col-12 col-md-8 tips_text">
+                <h3 class="text-uppercase py-2 px-3 mb-4">tips of the week</h3>
+                <ol class="ps-3">
+                  <li class="mb-3 ps-2">This is just a place holder, so you can see what the site would look like. 
+                      This is just a place holder, so you can see what the site would look like.
+                  </li>
+                  <li class="mb-3 ps-2">This is just a place holder, so you can see what the site would look like. 
+                      This is just a place holder, so you can see what the site would look like.
+                  </li>
+                  <li class="ps-2">This is just a place holder, so you can see what the site would look like. 
+                      This is just a place holder, so you can see what the site would look like.
+                  </li>
+                </ol>
+              </div> 
+              <div class="col-12 col-md-4 text-center tips_imagebox">
+                <a class="d-inline-block  " href="##">
+                  <img class="w-100 " src="./img/tip-of-the-week.jpg" alt="tip of the week">
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
-      <footer></footer>
+
+      <footer>
+        <div class="container_fluid footer_list">
+          <div class="row g-0">
+            <div class="col-12 col-sm-6 col-lg-3 footer_item ">
+              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem1" aria-expanded="false" aria-controls="collapseExample">
+                <h4 class="m-0">place holder</h4>
+                <i class="fa-solid fa-angle-down "></i>
+              </button>
+              <div class="collapse item_text p-3 " id="collapseItem1">
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 footer_item">
+              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem2" aria-expanded="false" aria-controls="collapseExample">
+                <h4 class="m-0">place holder</h4>
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="collapse item_text p-3" id="collapseItem2">
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 footer_item">
+              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem3" aria-expanded="false" aria-controls="collapseExample">
+                <h4 class="m-0">place holder</h4>
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="collapse item_text p-3" id="collapseItem3">
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+                <p>This is just a place holder.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 footer_item">
+              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button">
+                <h4 class="m-0">connect</h4>
+              </button>
+              <div class="social_media px-3 pb-3  d-flex flex-wrap  flex-sm-column align-items-sm-center align-items-lg-start">
+                <a href="##" class="d-inline-flex align-items-center justify-content-sm-start py-2">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span class="ms-2">Email us</span>
+                </a>
+                <a href="##" class="d-inline-flex align-items-center justify-content-sm-start  py-2">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <span class="ms-2">Facebook</span>
+                </a>
+                <a href="##" class="d-inline-flex align-items-center justify-content-sm-start  py-2">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span class="ms-2">Twitter</span>
+                </a>
+                <a href="##" class="d-inline-flex align-items-center justify-content-sm-start  py-2">
+                  <i class="fa-brands fa-square-google-plus"></i>
+                  <span class="ms-2">Google+</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-white text-center p-3">Garden Walkthrough © 2023 | All Rights Reserved</div>
+      </footer>
     </div>
 
     <!-- Bootstrap JS  -->
