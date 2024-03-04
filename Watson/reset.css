@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid red;
-}
+} */
 
 body {
     background-image: url(./img/bg-body.jpg);
@@ -14,6 +14,8 @@ body {
     --navHoverColor: #D9EACF;
     --insetWordColor: #681000;
     --topicWordColor: #EBEE9F;
+    --bannerColor: #DCE8D4;
+    --bottomWordColor: #7A787B;
 }
 
 .allContainer {

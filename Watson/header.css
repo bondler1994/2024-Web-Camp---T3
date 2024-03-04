@@ -11,3 +11,28 @@ nav {
 .headerLogo {
     padding: 1rem 0 1rem 0;
 }
+
+header .nav-link {
+    text-transform: capitalize;
+    color: var(--topicWordColor);
+}
+
+header .homeLi a {
+    background-color: var(--navHomeColor);
+    color: var(--mainColor);
+    text-transform: capitalize;
+}
+
+
+header .nav-link:hover {
+    color: var(--mainColor);
+    background-color: var(--navHoverColor);
+}
+
+header .nav-link:link {
+    color: var(--mainColor);
+}
+
+header .nav-link:focus {
+    color: var(--topicWordColor);
+}
