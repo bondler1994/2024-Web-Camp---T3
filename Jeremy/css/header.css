@@ -1,0 +1,25 @@
+@media (min-width: 992px) {
+    h1 {
+        width: 100%;
+    }
+}
+
+.small-logo {
+    width: 40px;
+    font-size: 0;
+}
+
+.nav-link {
+    background-color: #4b4b4b;
+    color: #f4f5cc;
+}
+
+.nav-link:hover {
+    background-color: #dae9d0;
+    color: #002900;
+}
+
+.nav-item .nav-link.active {
+    background-color: #95b285;
+    color: #2d620f;
+}

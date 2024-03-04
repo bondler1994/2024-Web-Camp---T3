@@ -1,0 +1,115 @@
+.carousel-item h2 {
+    color: #e1e398;
+    font-size: 24px;
+}
+
+.carousel-item p {
+    color: white;
+    font-size: 14.4px;
+    overflow: hidden;
+    white-space: nowrap; /* 文字隱藏 */
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+/* 文章尾端箭頭 */
+.carousel-item p::after {
+    content: "\f061";
+    display: inline-block;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    text-align: center;
+    margin-left: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media (min-width: 576px) {
+    .carousel-item p {
+        white-space: initial;
+        overflow: initial;
+        text-overflow: initial;
+    }
+    .carousel-item p::after {
+        position: static;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-button:not(:first-of-type) {
+        border-left: 1px ridge #8e8e8e;
+    }
+}
+
+.carousel-button img {
+    max-width: 90px; /* 轉滿版時圖片不要過大 */
+}
+
+.carousel-button h3 {
+    color: #e1e398;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.carousel-button p {
+    color: white;
+    font-size: 14px;
+}
+
+.section-title {
+    background-color: #dde8d5;
+    border-bottom: #c0d5b4 solid;
+    color: #7b3f20;
+    font-size: 18px;
+}
+
+.whose-garden img {
+    max-width: 300px;
+}
+
+.whose-garden h4 {
+    font-size: 18px;
+    margin: 18px 0;
+    color: #774703;
+}
+
+.whose-garden p {
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+section img {
+    max-width: 350px;
+}
+
+.news li {
+    list-style-type: none;
+    counter-increment: li; /* 計數器 */
+}
+
+.news ul {
+    padding-left: 21px;
+}
+
+/* 將上面計數加在段落前 */
+.news li::before {
+    display: inline-block;
+    width: 16px;
+    margin-left: -21px;
+    content: counter(li) ".";
+    font-weight: 700;
+}
+
+.news li {
+    font-size: 14.2px;
+}
+
+.news li:not(:last-child) {
+    margin-bottom: 1rem;
+}

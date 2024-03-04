@@ -42,40 +42,38 @@
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="container-fluid p-0 justify-content-end">
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav w-100">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link nav_home"
-                                        aria-current="page"
-                                        href="#"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Plants</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Gardens</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">News</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link nav_home"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#plants">Plants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#gardens">Gardens</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#news">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </header>
             <main>
                 <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" id="about">
                         <div class="carousel-item active">
                             <img
                                 src="./img/carousel-1.jpg"
@@ -90,10 +88,7 @@
                                     place holder, so you can see what the side
                                     would look like.This is just a place holder,
                                     so you can see what the side would look
-                                    like. &nbsp;
-                                    <i
-                                        class="fa-solid fa-arrow-right fa-fw right-button"
-                                    ></i>
+                                    like.
                                 </p>
                             </article>
                         </div>
@@ -111,10 +106,7 @@
                                     place holder, so you can see what the side
                                     would look like.This is just a place holder,
                                     so you can see what the side would look
-                                    like. &nbsp;
-                                    <i
-                                        class="fa-solid fa-arrow-right right-button"
-                                    ></i>
+                                    like.
                                 </p>
                             </article>
                         </div>
@@ -132,10 +124,7 @@
                                     place holder, so you can see what the side
                                     would look like.This is just a place holder,
                                     so you can see what the side would look
-                                    like. &nbsp;
-                                    <i
-                                        class="fa-solid fa-arrow-right right-button"
-                                    ></i>
+                                    like.
                                 </p>
                             </article>
                         </div>
@@ -143,7 +132,10 @@
                 </div>
                 <div class="carousel-buttons container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-4 carousel-button">
+                        <div
+                            class="col-12 col-sm-4 carousel-button"
+                            id="plants"
+                        >
                             <button
                                 type="button"
                                 data-bs-target="#carouselExampleIndicators"
@@ -210,8 +202,8 @@
                     </div>
                 </div>
                 <section>
-                    <div class="container-fluid">
-                        <div class="feature_gardens row">
+                    <div class="container">
+                        <div class="feature_gardens row" id="gardens">
                             <h3 class="feature_gardens__title col-12">
                                 FEATURED GARDENS
                             </h3>
@@ -285,18 +277,16 @@
                     </div>
                     <hr />
                     <div class="container-fluid">
-                        <div class="tips-of-the-week row">
+                        <div class="tips-of-the-week row" id="news">
                             <div class="col-12 tips-of-the-week__img">
                                 <img
                                     src="./img/gardening5.jpg"
                                     alt="planting"
                                 />
                             </div>
-                            <div
-                                class="col-12 col-md-8 tips-of-the-week__items"
-                            >
+                            <div class="col-12 tips-of-the-week__items">
                                 <h3>TIPS OF THE WEEK</h3>
-                                <ol>
+                                <ul>
                                     <li>
                                         This is just a place holder, so you can
                                         see what the site would look like. This
@@ -315,7 +305,7 @@
                                         is just a place holder, so you can see
                                         what the site would look like.
                                     </li>
-                                </ol>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -325,7 +315,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div
-                            class="footer__item col-12 col-sm-6 col-md-3"
+                            class="footer__item collapse-button col-12 col-sm-6 col-md-3"
                             data-bs-toggle="collapse"
                             href="#collapseExample1"
                         >
@@ -346,7 +336,7 @@
                             </article>
                         </div>
                         <div
-                            class="footer__item col-12 col-sm-6 col-md-3"
+                            class="footer__item collapse-button col-12 col-sm-6 col-md-3"
                             data-bs-toggle="collapse"
                             href="#collapseExample2"
                         >
@@ -367,7 +357,7 @@
                             </article>
                         </div>
                         <div
-                            class="footer__item col-12 col-sm-6 col-md-3"
+                            class="footer__item collapse-button col-12 col-sm-6 col-md-3"
                             data-bs-toggle="collapse"
                             href="#collapseExample3"
                         >
@@ -387,12 +377,15 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="footer__item col-12 col-sm-6 col-md-3">
+                        <div
+                            class="footer__item col-12 col-sm-6 col-md-3"
+                            id="contact"
+                        >
                             <article>
                                 <h5>CONNECT</h5>
                                 <div class="footer__icons">
                                     <div class="footer__icon">
-                                        <a href="##">
+                                        <a href="mailto:">
                                             <i
                                                 class="fa-solid fa-envelope fa-fw"
                                             ></i

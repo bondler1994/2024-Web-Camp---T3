@@ -23,6 +23,7 @@ a {
     }
 }
 
+/* nav中的logo跟list能分兩行 */
 .navbar-expand-lg {
     flex-wrap: wrap;
 }
@@ -34,14 +35,18 @@ header {
     width: 100%;
     z-index: 1;
 }
+
 .navbar {
     padding: 0;
     background-color: #dde8d5;
     border-bottom: 3px solid #c0d5b4;
 }
+
+/* header後方區域 */
 main {
     padding-top: 55px;
 }
+
 @media (min-width: 992px) {
     header {
         padding: 0;
@@ -92,6 +97,8 @@ img {
         display: none;
     }
 }
+
+/* nav的內容能延伸填滿 */
 .nav-item {
     flex: 1 0 0;
     text-align: center;
@@ -143,7 +150,24 @@ img {
 
 .carousel-item p {
     color: white;
-    font-size: 14.5px;
+    font-size: 14.2px;
+    position: relative;
+}
+
+/* 添加箭頭在跑馬燈文章的最後 */
+.carousel-item p::after {
+    content: "\f061";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    text-align: center;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {
@@ -152,15 +176,10 @@ img {
         white-space: nowrap;
         overflow: hidden;
     }
-}
-
-.right-button {
-    font-size: 14px;
-    padding: 3px;
-    background-color: #788e91;
-    border-radius: 50%;
-    color: white;
-    cursor: pointer;
+    .carousel-item p::after {
+        position: absolute;
+        right: 0;
+    }
 }
 
 .carousel-buttons .row {
@@ -173,16 +192,22 @@ img {
     display: flex;
     gap: 18px;
 }
+
 @media (min-width: 576px) {
-    .carousel-button:nth-child(n + 2) {
-        border-left: 1px solid gray;
+    .carousel-button:not(:last-child) {
+        border-right: 0.5px ridge #8e8e8e;
     }
 }
 
+/* 讓圖不會過大 */
 .carousel-button button {
     max-width: 215px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
 }
 
+/* 畫面縮小時字不會過擠 */
 @media (max-width: 992px) {
     .carousel-button {
         flex-wrap: wrap;
@@ -192,19 +217,9 @@ img {
 }
 
 @media (max-width: 576px) {
-    .carousel-button article {
-        max-width: 215px;
-    }
-
     .carousel-button:nth-child(n + 2) {
         margin-top: 18px;
     }
-}
-
-.carousel-button button {
-    padding: 0;
-    background-color: transparent;
-    border: none;
 }
 
 .carousel-button img {
@@ -262,14 +277,17 @@ section {
 .feature_gardens > div {
     padding: 0;
 }
+
 @media (max-width: 768px) {
     .feature_gardens > div {
         max-width: 300px;
     }
 }
+
 @media (min-width: 768px) {
+    /* 為了加上gap，歸零做延伸 */
     .feature_gardens > div {
-        flex: 1 1 0;
+        flex: 1 0 0;
     }
 }
 
@@ -308,6 +326,7 @@ hr {
     max-width: 400px;
     order: 0;
 }
+
 @media (max-width: 768px) {
     .tips-of-the-week__img {
         order: 1;
@@ -323,6 +342,7 @@ hr {
 .tips-of-the-week__items {
     padding: 0;
 }
+
 @media (min-width: 768px) {
     .tips-of-the-week__items {
         width: 63%;
@@ -339,13 +359,13 @@ hr {
     margin: 0 0 35px 0;
 }
 
-.tips-of-the-week ol {
+.tips-of-the-week ul {
     margin: 0;
     padding-left: 24px;
-    list-style: none;
 }
 
 .tips-of-the-week li {
+    list-style: none;
     font-size: 13.3px;
     counter-increment: li;
 }
@@ -353,6 +373,8 @@ hr {
 .tips-of-the-week li:nth-child(n + 2) {
     margin-top: 18px;
 }
+
+/* 前面加上數字 */
 .tips-of-the-week li::before {
     content: counter(li) ".";
     display: inline-block;
@@ -377,16 +399,8 @@ footer {
     color: #898989;
 }
 
-@media (min-width: 576px) {
-    footer .footer__item h5 i {
-        display: none;
-    }
-    .footer__item {
-        pointer-events: none;
-    }
-    footer .footer__item .collapse {
-        display: block;
-    }
+.collapse-button {
+    cursor: pointer;
 }
 
 footer h5 {
@@ -394,11 +408,34 @@ footer h5 {
     margin: 0;
 }
 
+footer h5 i {
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* footer的文章縮小時的按鈕 */
+@media (min-width: 576px) {
+    footer .footer__item h5 i {
+        display: none;
+    }
+    .collapse-button {
+        pointer-events: none;
+    }
+    footer .footer__item .collapse {
+        display: block;
+    }
+}
+
 footer p {
     font-size: 14.5px;
     margin: 0;
 }
 
+/* footer文章跟標題的間隔 */
 .footer__content::before {
     content: "";
     display: block;
@@ -413,25 +450,16 @@ footer p {
     }
 }
 
-footer h5 i {
-    height: fit-content;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
 .footer__icons {
     margin: auto;
     margin-top: 18px;
-    width: fit-content;
     font-size: 0;
 }
 
 .footer__icon {
     display: inline-block;
 }
+/* 小板面時並排，大版面垂直排 */
 @media (min-width: 768px) {
     .footer__icon {
         display: block;
@@ -440,8 +468,14 @@ footer h5 i {
 
 .footer__icon a {
     display: inline-block;
-    color: #336613;
+    color: #898989;
 }
+
+.footer__icon a:hover {
+    color: #336613;
+    transform: scale(1.1);
+}
+
 @media (min-width: 768px) {
     .footer__icon a {
         margin-bottom: 6px;
@@ -451,7 +485,9 @@ footer h5 i {
 .footer__icon i {
     font-size: 22px;
     vertical-align: middle;
+    color: #336613;
 }
+
 @media (min-width: 768px) {
     .footer__icon i {
         margin-right: 5px;
@@ -461,21 +497,15 @@ footer h5 i {
 .footer__icon span {
     display: none;
     font-size: 17px;
-    color: #898989;
     vertical-align: middle;
 }
 
 @media (min-width: 768px) {
     .footer__icons {
-        text-align: start;
+        text-align: initial;
     }
     .footer__icon span {
         display: inline;
-    }
-}
-@media (min-width: 768px) {
-    .footer__icons {
-        margin: 18px 0 0 0;
     }
 }
 
