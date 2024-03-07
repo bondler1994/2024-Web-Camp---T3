@@ -21,7 +21,7 @@
         <title>t3_v3</title>
     </head>
     <body>
-        <header class="container-lg p-0 px-md-3">
+        <header class="container-lg px-2 px-md-3">
             <nav
                 class="navbar navbar-expand-lg bg-body-tertiary flex-lg-wrap p-0"
             >
@@ -30,10 +30,14 @@
                         <img
                             src="./img/logo-small.png"
                             alt="Garden Walkthrough"
+                            class="img-fluid"
                         />
                     </a>
                     <a href="#" class="d-none d-lg-inline-block"
-                        ><img src="./img/logo.png" alt="Garden Walkthrough"
+                        ><img
+                            src="./img/logo.png"
+                            alt="Garden Walkthrough"
+                            class="img-fluid"
                     /></a>
                 </h1>
 
@@ -77,7 +81,7 @@
                 </div>
             </nav>
         </header>
-        <main class="container-lg p-0 px-md-3">
+        <main class="container-lg px-2 px-md-3">
             <div id="carousel" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -138,83 +142,6 @@
                         </article>
                     </div>
                 </div>
-                <!-- <div class="container-fluid p-3 text-center text-md-start">
-                    <div class="row g-5 justify-content-center">
-                        <div class="carousel-button col-12 col-sm-7 col-md-4">
-                            <div
-                                class="active row g-3 align-items-center py-1"
-                                type="button"
-                                data-bs-target="#carousel"
-                                data-bs-slide-to="0"
-                                aria-current="true"
-                                aria-label="Slide 1"
-                            >
-                                <div class="col-12 col-sm-5">
-                                    <img
-                                        src="./img/gardening2.jpg"
-                                        alt=""
-                                        class="border border-light"
-                                    />
-                                </div>
-                                <div class="col-12 col-sm-7">
-                                    <h3>Tips</h3>
-                                    <p>
-                                        This is just a place holder. This is
-                                        just a place holder.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-button col-12 col-sm-7 col-md-4">
-                            <div
-                                class="row g-3 align-items-center py-1"
-                                type="button"
-                                data-bs-target="#carousel"
-                                data-bs-slide-to="1"
-                                aria-label="Slide 2"
-                            >
-                                <div class="col-12 col-sm-5">
-                                    <img
-                                        src="./img/gardening3.jpg"
-                                        alt=""
-                                        class="border border-light"
-                                    />
-                                </div>
-                                <div class="col-12 col-sm-7">
-                                    <h3>Happy Gardener</h3>
-                                    <p>
-                                        This is just a place holder. This is
-                                        just a place holder.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-button col-12 col-sm-7 col-md-4">
-                            <div
-                                class="row g-3 align-items-center py-1"
-                                type="button"
-                                data-bs-target="#carousel"
-                                data-bs-slide-to="2"
-                                aria-label="Slide 3"
-                            >
-                                <div class="col-12 col-sm-5">
-                                    <img
-                                        src="./img/gardening4.jpg"
-                                        alt=""
-                                        class="border border-light"
-                                    />
-                                </div>
-                                <div class="col-12 col-sm-7">
-                                    <h3>Planting</h3>
-                                    <p>
-                                        This is just a place holder. This is
-                                        just a place holder.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="container-fluid px-3 py-4 py-lg-2">
                     <div class="row g-3 gy-lg-0 gx-lg-5 justify-content-center">
                         <div class="carousel-button col-12 col-sm-7 col-lg-4">
@@ -230,7 +157,7 @@
                                     <img
                                         src="./img/gardening2.jpg"
                                         alt=""
-                                        class="border border-light"
+                                        class="border border-light img-fluid"
                                     />
                                 </div>
                                 <div class="col-12 col-sm-7">
@@ -254,7 +181,7 @@
                                     <img
                                         src="./img/gardening3.jpg"
                                         alt=""
-                                        class="border border-light"
+                                        class="border border-light img-fluid"
                                     />
                                 </div>
                                 <div class="col-12 col-sm-7">
@@ -278,7 +205,7 @@
                                     <img
                                         src="./img/gardening4.jpg"
                                         alt=""
-                                        class="border border-light"
+                                        class="border border-light img-fluid"
                                     />
                                 </div>
                                 <div class="col-12 col-sm-7">
@@ -296,20 +223,21 @@
 
             <section class="bg-white container-fluid p-3">
                 <div
-                    class="feature-garden row g-5 g-md-3 text-center text-md-start"
+                    class="feature-garden row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5 g-md-3 text-center text-md-start"
                 >
-                    <div class="col-12">
+                    <div class="w-100">
                         <h3 class="section-title pt-1 px-3 pb-2">
                             FEATURE GARDENS
                         </h3>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col">
                         <div class="whose-garden">
                             <a href="##"
                                 ><img
                                     src="./img/garden1.jpg"
                                     alt="juliat's garden"
+                                    class="img-fluid"
                             /></a>
                             <article>
                                 <a href="##"><h4>JULIET'S GARDEN</h4></a>
@@ -321,12 +249,13 @@
                             </article>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col">
                         <div class="whose-garden">
                             <a href="##"
                                 ><img
                                     src="./img/garden2.jpg"
                                     alt="joanne's garden"
+                                    class="img-fluid"
                             /></a>
                             <article>
                                 <a href="##"><h4>JOANNE'S GARDEN</h4></a>
@@ -338,12 +267,13 @@
                             </article>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col">
                         <div class="whose-garden">
                             <a href="##"
                                 ><img
                                     src="./img/garden3.jpg"
                                     alt="jettka's garden"
+                                    class="img-fluid"
                             /></a>
                             <article>
                                 <a href="##"><h4>JETTKA'S GARDEN</h4></a>
@@ -355,12 +285,13 @@
                             </article>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-3">
+                    <div class="col">
                         <div class="whose-garden">
                             <a href="##"
                                 ><img
                                     src="./img/garden4.jpg"
                                     alt="jia's garden"
+                                    class="img-fluid"
                             /></a>
                             <article>
                                 <a href="##"><h4>JIA'S GARDEN</h4></a>
@@ -375,10 +306,14 @@
                 </div>
                 <hr class="my-3" />
                 <div class="news row g-3">
-                    <div class="col-12 col-md-5 text-center order-1 order-md-0">
-                        <img src="./img/gardening5.jpg" alt="" />
+                    <div class="col-12 col-md-4 text-center order-1 order-md-0">
+                        <img
+                            src="./img/gardening5.jpg"
+                            alt=""
+                            class="img-fluid"
+                        />
                     </div>
-                    <div class="col-12 col-md-7">
+                    <div class="col-12 col-md-8">
                         <article>
                             <h3 class="section-title pt-1 px-3 pb-2 mb-4">
                                 TIPS OF THE WEEK
@@ -408,8 +343,7 @@
                 </div>
             </section>
         </main>
-
-        <footer class="container-lg p-0 px-md-3">
+        <footer class="container-lg px-2 px-md-3">
             <div class="container-fluid">
                 <div class="row text-center text-md-start">
                     <div

@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
     h1 {
-        width: 100%;
+        flex-basis: 100%;
     }
 }
 

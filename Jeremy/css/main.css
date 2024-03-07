@@ -6,8 +6,9 @@
 .carousel-item p {
     color: white;
     font-size: 14.4px;
+    /* 文字隱藏 */
     overflow: hidden;
-    white-space: nowrap; /* 文字隱藏 */
+    white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
 }
@@ -47,10 +48,6 @@
     }
 }
 
-.carousel-button img {
-    max-width: 90px; /* 轉滿版時圖片不要過大 */
-}
-
 .carousel-button h3 {
     color: #e1e398;
     font-size: 18px;
@@ -69,10 +66,6 @@
     font-size: 18px;
 }
 
-.whose-garden img {
-    max-width: 300px;
-}
-
 .whose-garden h4 {
     font-size: 18px;
     margin: 18px 0;
@@ -84,13 +77,10 @@
     margin-top: 18px;
 }
 
-section img {
-    max-width: 350px;
-}
-
+/* 計數器 */
 .news li {
     list-style-type: none;
-    counter-increment: li; /* 計數器 */
+    counter-increment: li;
 }
 
 .news ul {
@@ -100,7 +90,7 @@ section img {
 /* 將上面計數加在段落前 */
 .news li::before {
     display: inline-block;
-    width: 16px;
+    width: 1rem;
     margin-left: -21px;
     content: counter(li) ".";
     font-weight: 700;
