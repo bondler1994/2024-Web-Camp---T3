@@ -5,7 +5,7 @@
 
 .carousel-item p {
     color: white;
-    font-size: 14.4px;
+    font-size: 14px;
     /* 文字隱藏 */
     overflow: hidden;
     white-space: nowrap;
@@ -50,13 +50,13 @@
 
 .carousel-button h3 {
     color: #e1e398;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14.5px;
+    margin-bottom: 8px;
 }
 
 .carousel-button p {
     color: white;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .section-title {
