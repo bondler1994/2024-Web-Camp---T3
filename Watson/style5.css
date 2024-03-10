@@ -1,0 +1,263 @@
+/* reset */
+/* * {
+    outline: 1px solid red;
+} */
+
+body {
+    background-image: url(./img/bg-body.jpg);
+}
+
+:root {
+    --whiteColor: #ffffff;
+    --mainColor: #366719;
+    --navbarColor: #4B4B4B;
+    --navHomeColor: #96B285;
+    --navHoverColor: #D9EACF;
+    --insetWordColor: #681000;
+    --topicWordColor: #EBEE9F;
+    --bannerColor: #DCE8D4;
+    --bottomWordColor: #7A787B;
+}
+
+.allContainer {
+    background-color: var(--mainColor);
+}
+
+/* headerButton */
+header[alt="logo"] {}
+
+header {
+    background-color: var(--whiteColor);
+}
+
+
+
+header .nav-link {
+    text-transform: capitalize;
+    color: var(--topicWordColor);
+}
+
+header .nav-link:hover {
+    background-color: var(--navHoverColor);
+    color: var(--mainColor);
+}
+
+header .nav-link:focus {
+    color: var(--topicWordColor);
+}
+
+
+header .active {
+    background-color: var(--navHomeColor);
+    color: var(--mainColor);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem 0 1rem 0;
+}
+
+header nav {
+    background-color: var(--navbarColor);
+}
+
+
+/* caption */
+.caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--whiteColor);
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.caption p {
+    margin-bottom: 0;
+}
+
+.caption h2 {
+    text-transform: uppercase;
+    color: var(--topicWordColor);
+}
+
+/* carouselSwitch */
+
+
+
+.carouselSwitch button {
+    background-color: var(--mainColor);
+    /* margin: 1rem 0 1rem 0; */
+    /* border: none;
+    padding: 0; */
+}
+
+.carouselSwitch button img {
+    border: 1px solid white;
+}
+
+.carouselSwitch button p {
+    font-size: 16px;
+    color: var(--whiteColor);
+    margin-bottom: 0;
+}
+
+.carouselSwitch button h3 {
+    text-transform: capitalize;
+    color: var(--topicWordColor);
+    font-size: 1rem;
+}
+
+.carouselSwitch button .item {
+    margin-left: 1rem;
+}
+
+.carouselSwitch .row {
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 992px) {
+
+    .carouselButton {
+        border-left: 2px solid rgb(217, 234, 207, 20%);
+        /* padding-top: 0.5rem; */
+        padding-bottom: 0.5rem;
+        border-top: unset;
+    }
+
+}
+
+main section {
+    margin-top: 1rem;
+}
+
+
+/* .carouselButton {
+    border-top: 2px solid rgb(217, 234, 207, 20%);
+    padding-top: 1rem;
+    margin-top: 1rem;
+} */
+
+
+/* 還有其他方法嘛？  */
+
+@media (max-width: 768px) {
+    main .caption {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+
+
+
+/* mainBelow */
+
+.mainBelowDown li::marker {
+    font-weight: bold;
+}
+
+.mainBelowUp h4,
+.mainBelowDown h4 {
+    text-transform: uppercase;
+    color: var(--insetWordColor);
+    text-shadow: 0 1px 0 white;
+    box-shadow: 0 2px 1px var(--navHomeColor);
+    background-color: var(--bannerColor);
+}
+
+.mainBelowUp h5 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: var(--insetWordColor);
+
+}
+
+
+
+/* 576以下效果不再 以上會有效果*/
+@media (min-width: 576px) {
+    .mainBelowUp img {
+        width: 100%;
+    }
+
+}
+
+/* 此處已用img-fluid處理 */
+
+@media (min-width: 992px) {
+    .mainBelowDown img {
+        width: 100%;
+    }
+
+}
+
+.mainBelow h5 {
+    text-transform: uppercase;
+    color: var(--insetWordColor);
+    margin-top: 1rem;
+}
+
+/* footer */
+.footerTop {
+    background-color: var(--bannerColor);
+}
+
+.footerTop h6,
+.footerTop p {
+    color: var(--bottomWordColor);
+}
+
+.footerTop h6 {
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px white;
+}
+
+@media (min-width: 576px) {
+    .footerTop .collapse {
+        display: block;
+    }
+}
+
+.footerTop .col {
+    border-top: 1px solid var(--navHomeColor);
+    border-right: 1px solid var(--navHomeColor);
+}
+
+
+@media (min-width:568px) {
+    .footerTop a {
+        display: block;
+    }
+
+
+}
+
+.footerTop a {
+    /* display: block; */
+    text-decoration: none;
+}
+
+
+.footerTop span {
+    color: var(--bottomWordColor);
+}
+
+.footerTop i {
+    color: var(--mainColor);
+}
+
+.copyright {
+    /* white-space: nowrap; */
+    word-break: break-all;
+    color: var(--whiteColor);
+    font-weight: bold;
+}

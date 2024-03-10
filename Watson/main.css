@@ -22,6 +22,7 @@
 }
 
 .gardenButton button h3 {
+    text-transform: capitalize;
     font-size: 1rem;
     color: var(--topicWordColor);
 }
@@ -39,7 +40,15 @@
 
 /* .gardenButton button img */
 
+.gardenButton .imagePack {
+    padding: 1rem;
+    border-left: 2px ridge rgb(150, 178, 133, 50%);
+}
+
+
 .gardenButton button img {
+    width: 100px;
+    flex: none;
     border: 2px solid white;
 }
 
@@ -60,9 +69,9 @@
     content: url(./img/YR3.jpg);
 }
 
-.gardenButton .col+.col {
+/* .gardenButton .col+.col {
     border-left: 2px ridge rgb(150, 178, 133, 50%);
-}
+} */
 
 .gardenButton .col {
     padding: 0 1rem 0 1rem;
@@ -192,4 +201,9 @@
     color: var(--mainColor);
 
 
+}
+
+
+.mainBottom .card {
+    height: 100%;
 }
