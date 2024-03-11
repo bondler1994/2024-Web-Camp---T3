@@ -4,6 +4,9 @@
 
 body {
   background: url("./img/bg-body.jpg");
+  min-width: 375px;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
 a {
@@ -11,14 +14,23 @@ a {
 }
 
 .container_color {
-  max-width: 1000px;
   background: #356618;
 }
-
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 5;
+}
 @media (min-width: 768px) {
-  h1 {
-    width: 100%;
+  header {
+    position: unset;
   }
+}
+nav .small_logo {
+  width: 42px;
+  height: 42px;
 }
 
 .navbar .nav-link {
@@ -39,52 +51,83 @@ nav .navbar-toggler {
 }
 
 /*main*/
+main {
+  padding-top: 58px;/*fixed會使元素位移,要再推回來*/
+}
+@media (min-width:768px) {
+  main {
+    padding-top: 0;
+  }
+}
 /*section 1*/
 .carousel-caption {
   right: 0;
   left: 0;
   bottom: 0;
   text-align: left;
-  padding: 1.25rem;
+  padding: 1rem;
+  z-index: 2;
 }
 
 .carousel-caption h2 {
   color: #d5d890;
 }
-
-.carousel_text i {
-  color: #768c8f;
+.carousel_text {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
 }
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .carousel_text {
-    width: 100%;
-  }
+.carousel_text:hover {
+  background-color: rgba(150, 178, 133, 0.8);
+}
+.carousel_text > span {
+  color: #fff;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
   .carousel_text > span {
+    display:inline-block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: calc(100% - 16px);
+    vertical-align: middle;
+  }
+}
+.carousel_text > i {
+  color: #768c8f;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .carousel_text > i {
+    vertical-align: middle;
   }
 }
 
+.banner_item .image_box {
+  flex-basis: 20%;
+}
+@media (min-width:768px){
+  .banner_item .image_box {
+    flex-basis:35%;
+  }
+}
+.banner_text {
+  flex-basis: 80%;
+}
+@media (min-width:768px){
+  .banner_text {
+    flex-basis: 65%;
+  }
+}
+
+.banner_item .image_box:hover {
+  transform:scale(1.05);
+}
 .banner_text > h3 {
   color: #d4db8e;
 }
 
-.banner_item .image_box {
-  width: 25%;
-}
-.banner_item .banner_text {
-  width: 75%;
-}
-@media (min-width: 768px) {
-  .banner_item .image_box {
-    width: 35%;
-  }
-  .banner_item .banner_text {
-    width: 65%;
-  }
-}
 /*banner下方圖左右裝飾線*/
 @media (min-width: 768px) {
   .banner_content + .banner_content {
@@ -93,14 +136,11 @@ nav .navbar-toggler {
 }
 
 /*section 2*/
-.garden_introduce h3 {
+.garden_introduce > h3 {
   background-color: #dce8d4;
   color: #7b4e27;
   border-bottom: 2px solid #b6cfa9;
   font-weight: 400;
-}
-.garden_introduce h4 {
-  color: #7b4e27;
 }
 
 .feature_text h4 {
@@ -122,7 +162,7 @@ nav .navbar-toggler {
     order: 1;
   }
 }
-/*項目符號調整*/
+/*項目符號樣式*/
 .tips ol li::marker {
   font-weight: 600;
 }
@@ -130,6 +170,9 @@ nav .navbar-toggler {
 /*footer*/
 .footer_list {
   background-color: #dce8d4;
+}
+.footer_item {
+  border: 1px solid #b6cfa9;
 }
 .footer_item h4 {
   color: #828083;
@@ -140,18 +183,28 @@ nav .navbar-toggler {
   color: #828083;
   margin: 0;
 }
+/*清除button的預設樣式*/
 .footer_item button {
   border-radius: 0;
 }
+@media (min-width: 576px) {
+  .footer_item button {
+    pointer-events: none;
+  }
+}
+/*箭頭符號*/
 .footer_item button i {
   color: #828083;
   font-size: 26px;
 }
-
+@media (min-width: 576px) {
+  .footer_item button i {
+    display: none;
+  }
+}
 .social_media i {
   color: #346517;
   font-size: 26px;
-  width: 2rem; /*調整icon寬度*/
   text-align: center;
 }
 .social_media span {
@@ -161,27 +214,22 @@ nav .navbar-toggler {
 .social_media span:hover {
   color: #346517;
 }
-
-.footer_item {
-  border: 1px solid #b6cfa9;
+.media_item {
+  flex: 0 0 50%;
+}
+@media(min-width:768px) {
+  .media_item {
+    width: 120px;
+  }
+}
+.media_item a i {
+  vertical-align: middle;
+}
+.media_item a span {
+  vertical-align: middle;
 }
 
-.social_media a {
-  width: 50%;
-}
 @media (min-width: 576px) {
-  .social_media a {
-    width: 110px;
-  }
-}
-
-@media (min-width: 576px) {
-  .footer_item button {
-    pointer-events: none;
-  }
-  .footer_item button i {
-    display: none;
-  }
   .footer_item .collapse {
     display: block;
     text-align: center;
@@ -190,5 +238,14 @@ nav .navbar-toggler {
     .footer_item .collapse {
       text-align: start;
     }
+  }
+}
+
+.copyright {
+  font-size: 14px;
+}
+@media(min-width:768px){
+  .copyright {
+    font-size: 18px;
   }
 }
