@@ -20,13 +20,13 @@
   <body>
     <div class="container_color px-sm-4">
       <header>
-          <nav class="navbar navbar-expand-md bg-light p-0 flex-wrap justify-content-center ">
-            <div class="logo p-2 p-md-3 d-flex w-100 justify-content-between justify-content-md-center  align-items-center ">
+          <nav class="navbar navbar-expand-md bg-light p-0 ">
+            <div class="logo p-2 p-md-3 ">
               <h1 class="m-0">
                 <a class="d-none d-md-inline-block" href="./index.html">
                   <img class="img-fluid" src="./img/logo.png" alt="Garden Walkthrough" />
                 </a>
-                <a class="d-inline-block d-md-none small_logo" href="./index.html">
+                <a class="small_logo d-inline-block d-md-none " href="./index.html">
                   <img class="img-fluid " src="./img/logo-small.png" alt="Garden Walkthrough" />
                 </a>
               </h1>
@@ -67,16 +67,16 @@
           </nav>
       </header>
       <main>
-
         <!-- carousel輪播 -->
         <section id="banner_carousel" class="carousel slide" data-bs-ride="false"  >
           <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./img/carousel-1.jpg" class="d-block w-100" alt="gardening tips">
-                <div class="carousel-caption  bg-dark bg-opacity-75 ">
+                <div class="carousel-caption bg-dark bg-opacity-75 ">
                   <h2 class="text-uppercase h3 m-0">gardening tips</h2>
                   <a class="carousel_text " href="##">
-                    <p>This is just a place holder, so you can see what the site would look like. 
+                    <p>
+                      This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like.
                     </p>
@@ -86,10 +86,11 @@
               </div>
               <div class="carousel-item">
                 <img src="./img/carousel-2.jpg" class="d-block w-100" alt="happy gardener">
-                <div class="carousel-caption  bg-dark bg-opacity-75 ">
+                <div class="carousel-caption bg-dark bg-opacity-75 ">
                   <h2 class="text-uppercase h3 m-0">happy gardener</h2>
-                  <a class="carousel_text " href="##">
-                    <p >This is just a place holder, so you can see what the site would look like. 
+                  <a class="carousel_text" href="##">
+                    <p >
+                      This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like.
                     </p>
@@ -99,10 +100,11 @@
               </div>
               <div class="carousel-item">
                 <img src="./img/carousel-3.jpg" class="d-block w-100" alt="planting">
-                <div class="carousel-caption  bg-dark bg-opacity-75 ">
+                <div class="carousel-caption bg-dark bg-opacity-75 ">
                   <h2 class="text-uppercase h3 m-0">planting</h2>
-                  <a class="carousel_text " href="##">
-                    <p>This is just a place holder, so you can see what the site would look like. 
+                  <a class="carousel_text" href="##">
+                    <p>
+                      This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like. 
                       This is just a place holder, so you can see what the site would look like.
                     </p>
@@ -121,36 +123,39 @@
               </button>
             </div>
             <!-- banner下方小圖區 -->
-            <div class="container-fluid banner_list ">
-              <div class="row py-3">
-                <div class="col-12 col-md-4 px-3 pb-3 pb-md-0 banner_content ">
-                  <div class="banner_item d-flex justify-content-center align-items-center flex-md-column justify-content-md-between   flex-lg-row">
-                    <button class="image_box text-center px-0 mb-md-3 mb-lg-0 border-0" type="button" data-bs-target="#banner_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-                      <img class="w-100 border border-white border-2" src="./img/gardening-tip.jpg" alt="gardening tip">
+            <div class="banner_list container-fluid">
+              <div class="row py-3 align-items-center ">
+                <div class="banner_content col-4 px-3 pb-md-0">
+                  <div class="banner_item">
+                    <button class="image_box px-0 mb-md-3 mb-lg-0 border-0" type="button" data-bs-target="#banner_carousel" 
+                            data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                      <img class="w-100" src="./img/gardening-tip.jpg" alt="gardening tip">
                     </button>
-                    <div class="banner_text ps-3 ps-md-0 ps-lg-3 text-md-center text-lg-start ">
+                    <div class="banner_text ps-md-0 ps-lg-3">
                       <h3 class="h5 text-capitalize ">tips</h3>
                       <p class="text-white m-0 ">This is just a place holder. This is just a place holder.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 px-3 pb-3 pb-md-0 banner_content">
-                  <div class="banner_item d-flex justify-content-center align-items-center flex-md-column flex-lg-row">
-                    <button class="image_box text-center p-0 mb-md-3 mb-lg-0 border-0" type="button" data-bs-target="#banner_carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                      <img class="w-100 border border-white border-2" src="./img/gardening-happy-gardener.jpg" alt="happy grdener">
+                <div class="banner_content col-4 px-3 pb-md-0">
+                  <div class="banner_item">
+                    <button class="image_box text-center p-0 mb-md-3 mb-lg-0 border-0" type="button" data-bs-target="#banner_carousel" 
+                            data-bs-slide-to="1" aria-label="Slide 2">
+                      <img class="w-100" src="./img/gardening-happy-gardener.jpg" alt="happy grdener">
                     </button>
-                    <div class="banner_text ps-3 ps-md-0 ps-lg-3 text-md-center text-lg-start">
-                      <h3 class="h5 text-capitalize  ">happy gardener</h3> 
+                    <div class="banner_text ps-md-0 ps-lg-3">
+                      <h3 class="h5 text-capitalize">happy gardener</h3> 
                       <p class="text-white m-0">This is just a place holder. This is just a place holder.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-md-4 px-3 pb-3 pb-md-0 banner_content">
-                  <div class="banner_item d-flex justify-content-center align-items-center flex-md-column flex-lg-row">
-                    <button class="image_box text-center p-0 mb-md-3 mb-lg-0 border-0" type="button" data-bs-target="#banner_carousel" data-bs-slide-to="2" aria-label="Slide 3">
-                      <img class="w-100 border border-white border-2" src="./img/gardening-planting.jpg" alt="planting">
+                <div class="banner_content col-4 px-3 pb-md-0">
+                  <div class="banner_item">
+                    <button class="image_box text-center p-0 mb-md-3 mb-lg-0 border-0" type="button" data-bs-target="#banner_carousel" 
+                            data-bs-slide-to="2" aria-label="Slide 3">
+                      <img class="w-100" src="./img/gardening-planting.jpg" alt="planting">
                     </button>
-                    <div class="banner_text ps-3 ps-md-0 ps-lg-3 text-md-center text-lg-start">
+                    <div class="banner_text ps-md-0 ps-lg-3">
                       <h3 class="h5 text-capitalize ">planting</h3>
                       <p class="text-white m-0">This is just a place holder. This is just a place holder.</p>
                     </div>
@@ -163,73 +168,76 @@
         <section class="bg-white p-3">
           <div class="container_fluid garden_introduce ">
             <h3 class="h4 text-uppercase mb-3 py-2 px-3 ">featured gardens</h3>
-            <div class="row g-3">
+            <div class="row g-3 gy-md-0">
               <div class="col-12 col-md-3 ">
-                <div class="featured_item d-flex d-md-block ">
-                  <a class="feature_imagebox " href="##">
-                    <img class="w-100 " src="./img/feature-gardens1.jpg" alt="juliet's garden">
+                <div class="featured_item d-flex flex-md-column">
+                  <a class="feature_imagebox d-inline-block " href="##">
+                    <img class="w-100" src="./img/feature-gardens1.jpg" alt="juliet's garden">
                   </a>
-                  <div class="feature_text ps-3 ps-md-0">
+                  <article class="feature_text ps-3 ps-md-0">
                     <h4 class="h5 text-uppercase py-md-3 m-0">juliet's garden</h4>
                     <p class="m-0">This is just a place holder, so you can see what the site would look like. </p>
-                  </div>
+                  </article>
                 </div>
               </div>
               <div class="col-12 col-md-3">
-                <div class="d-flex d-md-block">
-                  <a class="feature_imagebox " href="##">
+                <div class="d-flex flex-md-column">
+                  <a class="feature_imagebox d-inline-block" href="##">
                     <img class="w-100 " src="./img/feature-gardens2.jpg" alt="Joanne's garden">
                   </a>
-                  <div class="feature_text ps-3 ps-md-0">
+                  <article class="feature_text ps-3 ps-md-0">
                     <h4 class="h5 text-uppercase py-md-3 m-0">joanne's garden</h4>
                     <p class="m-0">This is just a place holder, so you can see what the site would look like. </p>
-                  </div>
+                  </article>
                 </div>
               </div>
               <div class="col-12 col-md-3 ">
-                <div class="d-flex d-md-block">
-                  <a class="feature_imagebox " href="##">
+                <div class="d-flex flex-md-column">
+                  <a class="feature_imagebox d-inline-block" href="##">
                     <img class="w-100" src="./img/feature-gardens3.jpg" alt="jettka's garden">
                   </a>
-                  <div class="feature_text ps-3 ps-md-0">
+                  <article class="feature_text ps-3 ps-md-0">
                     <h4 class="h5 text-uppercase py-md-3 m-0">jettka's garden</h4>
                     <p class="m-0">This is just a place holder, so you can see what the site would look like. </p>
-                  </div>
+                  </article>
                 </div>
               </div>
               <div class="col-12 col-md-3 ">
-                <div class="d-flex  d-md-block">
-                  <a class="feature_imagebox " href="##">
+                <div class="d-flex flex-md-column">
+                  <a class="feature_imagebox d-inline-block" href="##">
                     <img class="w-100 " src="./img/feature-gardens4.jpg" alt="jia's garden">
                   </a>
-                  <div class="feature_text ps-3 ps-md-0">
+                  <article class="feature_text ps-3 ps-md-0">
                     <h4 class="h5 text-uppercase py-md-3 m-0">jia's garden</h4>
                     <p class="m-0">This is just a place holder, so you can see what the site would look like. </p>
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
           </div>
           <hr class="my-3">
+
           <!-- tips of the week區 -->
           <div class="tips">
             <div class="row">
               <div class="col-12 col-md-8 tips_text">
-                <h3 class="text-uppercase py-2 px-3 mb-4">tips of the week</h3>
-                <ol class="ps-0 ms-4">
-                  <li class="mb-3">This is just a place holder, so you can see what the site would look like. 
-                      This is just a place holder, so you can see what the site would look like.
-                  </li>
-                  <li class="mb-3">This is just a place holder, so you can see what the site would look like. 
-                      This is just a place holder, so you can see what the site would look like.
-                  </li>
-                  <li >This is just a place holder, so you can see what the site would look like. 
-                      This is just a place holder, so you can see what the site would look like.
-                  </li>
-                </ol>
+                <article>
+                  <h3 class="h4 text-uppercase py-2 px-3 mb-4">tips of the week</h3>
+                  <ol class="ps-0 ms-4">
+                    <li class="mb-3">This is just a place holder, so you can see what the site would look like. 
+                        This is just a place holder, so you can see what the site would look like.
+                    </li>
+                    <li class="mb-3">This is just a place holder, so you can see what the site would look like. 
+                        This is just a place holder, so you can see what the site would look like.
+                    </li>
+                    <li >This is just a place holder, so you can see what the site would look like. 
+                        This is just a place holder, so you can see what the site would look like.
+                    </li>
+                  </ol>
+                </article>
               </div> 
-              <div class="col-12 col-md-4 text-center tips_imagebox">
-                <a class="d-inline-block  " href="##">
+              <div class="tips_imagebox col-12 col-md-4 text-center ">
+                <a class="d-inline-block" href="##">
                   <img class="w-100 " src="./img/tip-of-the-week.jpg" alt="tip of the week">
                 </a>
               </div>
@@ -239,65 +247,65 @@
       </main>
 
       <footer>
-        <div class="container_fluid footer_list">
+        <div class="footer_list container_fluid ">
           <div class="row g-0">
-            <div class="col-12 col-sm-6 col-lg-3 footer_item ">
-              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem1" aria-expanded="false" aria-controls="collapseExample">
+            <div class="footer_item col-12 col-sm-6 col-lg-3">
+              <button class="btn w-100 p-3 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem1" aria-expanded="false" aria-controls="collapseExample">
                 <h4 class="m-0">place holder</h4>
                 <i class="fa-solid fa-angle-down "></i>
               </button>
-              <div class="collapse item_text px-3" id="collapseItem1">
+              <div class="item_text collapse px-3" id="collapseItem1">
                 <p>This is just a place holder.</p>
                 <p>This is just a place holder.</p>
                 <p>This is just a place holder.</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 footer_item">
-              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem2" aria-expanded="false" aria-controls="collapseExample">
+            <div class="footer_item col-12 col-sm-6 col-lg-3 ">
+              <button class="btn w-100 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem2" aria-expanded="false" aria-controls="collapseExample">
                 <h4 class="m-0">place holder</h4>
                 <i class="fa-solid fa-angle-down"></i>
               </button>
-              <div class="collapse item_text px-3" id="collapseItem2">
+              <div class="item_text collapse px-3" id="collapseItem2">
                 <p>This is just a place holder.</p>
                 <p>This is just a place holder.</p>
                 <p>This is just a place holder.</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 footer_item">
-              <button class="btn w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem3" aria-expanded="false" aria-controls="collapseExample">
+            <div class="footer_item col-12 col-sm-6 col-lg-3 ">
+              <button class="btn w-100 p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseItem3" aria-expanded="false" aria-controls="collapseExample">
                 <h4 class="m-0">place holder</h4>
                 <i class="fa-solid fa-angle-down"></i>
               </button>
-              <div class="collapse item_text px-3" id="collapseItem3">
+              <div class="item_text collapse px-3" id="collapseItem3">
                 <p>This is just a place holder.</p>
                 <p>This is just a place holder.</p>
                 <p>This is just a place holder.</p>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 footer_item">
-              <div class=" w-100 p-3 d-flex align-items-center justify-content-between justify-content-sm-center justify-content-lg-start">
+            <div class="footer_item col-12 col-sm-6 col-lg-3 ">
+              <div class="w-100 p-3 text-sm-center text-lg-start ">
                 <h4 class="m-0">connect</h4>
               </div>
-              <div class="social_media px-3 pb-3 d-flex flex-wrap flex-md-column align-items-md-center align-items-lg-start ">
-                  <div class="d-flex align-items-center py-2 media_item">
+              <div class="social_media px-3 pb-3 ">
+                  <div class="media_item d-flex align-items-center py-2 ">
                     <a href="mailto:" >
                       <i class="fa-solid fa-envelope fa-fw"></i>
                       <span class="ms-2">Email us</span>
                     </a>
                   </div>
-                  <div class="d-flex align-items-center py-2 media_item">
+                  <div class="media_item d-flex align-items-center py-2 ">
                     <a href="##">
                       <i class="fa-brands fa-square-facebook fa-fw"></i>
                       <span class="ms-2">Facebook</span>
                     </a>  
                   </div>
-                  <div class="d-flex align-items-center justify-content-sm-start py-2 media_item">
+                  <div class="media_item d-flex align-items-center justify-content-sm-start py-2 ">
                     <a href="##" >
                       <i class="fa-brands fa-twitter fa-fw"></i>
                       <span class="ms-2">Twitter</span>
                     </a>
                   </div>
-                  <div class="d-flex align-items-center justify-content-sm-start py-2 media_item">
+                  <div class="media_item d-flex align-items-center justify-content-sm-start py-2 ">
                     <a href="##">
                       <i class="fa-brands fa-square-google-plus fa-fw"></i>
                       <span class="ms-2">Google+</span>
